@@ -1,0 +1,33 @@
+@import "default.css";
+
+h1 {
+    font-size: 3em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 2.5vw;
+}
+
+hr {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.mobile-text {
+    display: none;
+}
+
+@media(max-width: 600px) {
+    #normal-text {
+        display: none;
+    }
+    .mobile-text {
+        display: block;
+        text-align: center;
+        font-size: 15px;
+    }
+}

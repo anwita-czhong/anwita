@@ -1,0 +1,95 @@
+@import "default.css";
+
+#text-wrap {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.subtitle-font,
+.title-font {
+    color: #f5f5f5;
+    font-size: 4em;
+    padding: 0 15%;
+    text-align: center;
+}
+
+@media(max-width: 600px) {
+    .title-font {
+        text-align: left;
+        padding: 1em;
+        font-size: 2em;
+    }
+}
+
+.subtitle-font {
+    font-size: 25px;
+}
+
+@media only screen and (max-device-width: 1366px) {
+    #home-page-name {
+        /*background-attachment: scroll;*/
+    }
+}
+
+.header-container {
+    background-color: #7a7a7a;
+}
+
+.text-header {
+    font-size: 3em;
+    font-weight: 300;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+.half-chunk {
+    float: left;
+    max-width: 45%;
+    margin: 20px 0 20px 4%;
+    vertical-align: middle;
+    background: transparent;
+}
+
+.image-background {
+    overflow: auto;
+    background: url(../images/IMG_7985.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.tint-2 {
+    overflow: auto;
+    background: rgba(54, 140, 204, 0.75);
+    color: white;
+}
+
+#about-paragraph {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+.clear {
+    clear: both;
+}
+
+@media(max-width: 900px), (pointer: coarse) {
+    .half-chunk {
+        max-width: 100%;
+        width: 100%;
+        margin: 0;
+    }
+}
+
+body p {
+    font-size: 1.3em;
+}
+
+.text-box {
+    max-width: 100%;
+    width: 100%;
+    z-index: 1;
+    background: white;
+}

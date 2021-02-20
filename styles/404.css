@@ -1,0 +1,19 @@
+@import "default.css";
+
+#page-not-found {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 5em;
+    margin-bottom: 15px;
+    padding-top: 15px;
+}
+
+@media(max-width: 900px) {
+    #page-not-found {
+        font-size: 2em;
+    }
+}
+
+hr.more-margin {
+    margin: 0 15%
+}

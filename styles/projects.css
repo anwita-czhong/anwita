@@ -1,0 +1,88 @@
+@import "default.css";
+
+#project-pipeline, #mobile-table {
+    width: 90%;
+    max-width: 90%;
+    margin: 15px auto 30px;
+    border-spacing: 0 2px;
+}
+
+#mobile-table {
+    display: none;
+}
+
+th, td {
+    padding: 3px 10px;
+}
+
+th {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 1.75vw;
+}
+
+td {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+tr.alternate {
+    background: #cccccc;
+}
+
+@media(max-width: 900px) {
+    #project-pipeline {
+        display: none;
+    }
+    #mobile-table {
+        display: table;
+    }
+    th {
+        text-align: left;
+        font-size: 1.6em;
+    }
+    td {
+        font-size: 1.1em;
+    }
+
+}
+@media(max-width: 615px) {
+    th {
+        min-font-size: 18px;
+        font-size: 4vw;
+    }
+    td {
+        min-font-size: 18px;
+        font-size: 3vw;
+    }
+}
+
+.completed {
+    background: #FFA500;
+}
+
+.current {
+    background-image: linear-gradient(to right, #FFA500 50%, #ffffff 50%);
+    /*animation: pulse 2s infinite;
+    animation-timing-function: ease-in-out;*/
+}
+
+tr.alternate .current {
+    background-image: linear-gradient(to right, #FFA500 50%, #cccccc 50%);
+}
+
+/*@keyframes pulse {
+    0% {
+        background: #FFA500;
+    }
+    50% {
+        background: #ffc472;
+    }
+    100% {
+        background: #FFA500;
+    }
+}*/
+
+
