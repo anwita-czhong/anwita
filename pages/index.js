@@ -88,9 +88,9 @@ export default function Home() {
               <h1 className='text-center text-4xl mb-2 font-semibold'>News</h1>
               <br/>
               <p className='text-xl'>
-                <ol className='list-decimal list-inside'>
-                  <li><a className={linkStyling} target='_blank' href='/assets/news/Anwita-Junshi First Collaboration (IL-21, HK Announcement).pdf'>Anwita and Shanghai Junshi Biosciences entered collaboration on Anwita’s Exenokine-21 program for Greater China territory.</a></li>
-                  <li><a className={linkStyling} target='_blank' href='/assets/news/Anwita-Junshi IL-2 Collaboration HK Announcement.pdf'>Anwita and Shanghai Junshi Biosciences entered collaboration on Anwita’s Exenokine-2, an improved IL-2 variant with half-life extended for Greater China territory.</a></li>
+                <ol className='list-inside' role='list'>
+                  <li>June 24<sup>th</sup>, 2019 - <a className={linkStyling} target='_blank' href='/assets/news/Anwita-Junshi First Collaboration (IL-21, HK Announcement).pdf'>Anwita and Shanghai Junshi Biosciences entered collaboration on Anwita’s Exenokine-21 program for Greater China territory.</a></li>
+                  <li>September 30<sup>th</sup>, 2020 - <a className={linkStyling} target='_blank' href='/assets/news/Anwita-Junshi IL-2 Collaboration HK Announcement.pdf'>Anwita and Shanghai Junshi Biosciences entered collaboration on Anwita’s Exenokine-2, an improved IL-2 variant with half-life extended for Greater China territory.</a></li>
                 </ol>
               </p>
             </div>
