@@ -26,7 +26,7 @@ export default function Home() {
           <div 
             className='flex flex-col w-full flex-none text-center content-center justify-center items-center space-y-2' style={{backgroundColor: 'rgba(54, 58, 69, 0.4)'}}
           >
-            <h1 className='text-8xl text-white font-bold' style={{textShadow: '4px 4px rgba(0,0,0, 0.8)'}}>Anwita Biosciences</h1>
+            <h1 className='text-4xl sm:text-6xl lg:text-8xl text-white font-bold' style={{textShadow: '4px 4px rgba(0,0,0, 0.8)'}}>Anwita Biosciences</h1>
           </div>
         </div>
         <div id='primary-content-wrapper' className='py-2 mx-auto text-blue-900' style={{width: '1200px', maxWidth: "80vw"}}>
@@ -57,23 +57,19 @@ export default function Home() {
 
             <hr className='my-3 h-px border-1 border-gray-400'></hr>
 
-            <div className={sectionWrapperClasses}>
+            <div className={sectionWrapperClasses + ' flex flex-col items-start'}>
               <span id='technology' className='anchor'/>
               <h1 className='text-center text-4xl mb-2 font-semibold'>Our Approach</h1>
               <br/><br/>
               <p className='text-xl'>
                 Exenokines<sup>TM</sup> are proprietary cytokines designed using Anwita Biosciences’ patented platform technology.  Our modular design enables accelerated development of a diversified portfolio of cytokine-based products with improved pharmaceutical properties. 
               </p>
-              <br/><br/><br/>
-              <img src='/assets/graphics/tech-01.jpg' className='object-scale-down w-full' style={{height: '28rem'}}/>
-            </div>
-            <div className={sectionWrapperClasses}>
-              <br/><br/><br/>
+              <img src='/assets/graphics/tech-01.jpg' className='my-12 object-scale-down w-full place-self-center' style={{maxWidth: '36rem'}}/>
               <p className='text-xl'>
               Our scientists are developing a suite of innovative ADC technologies and payloads. The company is advancing a pipeline of tumor targeting ADCs with enhanced efficacy <i>in vivo</i>. 
               </p>
               <br/><br/><br/>
-              <img src='/assets/graphics/tech-02.jpg' className='object-scale-down w-full' style={{height: '18rem'}}/>
+              <img src='/assets/graphics/tech-02.jpg' className='object-scale-down w-full place-self-center my-12' style={{maxWidth: '36rem'}}/>
             </div>
 
             <hr className='my-3 h-px border-1 border-gray-400'></hr>
@@ -142,9 +138,9 @@ export default function Home() {
             <span id='contact' className='anchor'/>
             <h1 className='text-center text-4xl mb-2 font-semibold'>Contact</h1>
             <br/>
-            <div className='flex flex-col sm:flex-row content-around justify-center'>
-              <img src='/assets/graphics/map.jpg' className='w-96 mx-8' alt='Anwita Biosciences Map'></img>
-              <div className='clear-right'>
+            <div className='flex flex-col sm:flex-row content-evenly justify-center'>
+              <img src='/assets/graphics/map.jpg' className='w-96 object-scale-down' alt='Anwita Biosciences Map'></img>
+              <div className='px-0 sm:px-8'>
                 <p>Company Address: <br/><a href='https://www.google.com/maps/place/300+Industrial+Rd,+San+Carlos,+CA+94070/@37.5149181,-122.2641003,17z/data=!3m1!4b1!4m5!3m4!1s0x808f98aa79063b39:0x9744f7cb0ddf62fa!8m2!3d37.5149181!4d-122.2619063' className={linkStyling}>300 Industrial Road,<br/>San Carlos, CA 94070</a></p>
                 <p>Phone: <a href='tel:1-650-600-9828' target='_blank' className={linkStyling}>(650) 600-9828</a></p>
                 <p>Email: <a href='mailto:contact@anwitabio.com' className={linkStyling}>contact@anwitabio.com</a></p>

@@ -30,12 +30,14 @@ export const Person = (props) => {
     const [modalActive, setModalActive] = useState(false);
 
     return (
-        <div className={peopleCardClasses} onClick={() => setModalActive(!modalActive)}>
-            <img src={`/assets/people/${props.fname}.jpg`} className='w-full h-56 overflow-hidden object-contain pb-6'/>
-            <p className='font-bold'>
-                {props.name}, {props.titles}<br/>
-                {props.position}
-            </p>
+        <div>
+            <div className={peopleCardClasses} onClick={() => setModalActive(!modalActive)} onTouchStart={() => setModalActive(!modalActive)}>
+                <img src={`/assets/people/${props.fname}.jpg`} className='w-full h-56 overflow-hidden object-contain pb-6'/>
+                <p className='font-bold'>
+                    {props.name}, {props.titles}<br/>
+                    {props.position}
+                </p>
+            </div>
 
             <ReactModal
                 isOpen={modalActive}
@@ -49,12 +51,14 @@ export const Person = (props) => {
                 <h1 className='font-bold text-xl'>{props.name}, {props.titles}</h1>
                 <h1 className='font-bold text-xl'>{props.position}</h1>
                 <hr className='my-3'/>
-                {props.bio.map(function (text, index) {
-                    return <div>
-                        <p key={ index }>{text}</p>
-                        { props.bio[index + 1] ? <br/> : '' }
-                    </div>;
-                })}
+                <div className='overflow-scroll' style={{maxHeight: '80vw'}}>
+                    {props.bio.map(function (text, index) {
+                        return <div key={ index }>
+                            <p>{text}</p>
+                            { props.bio[index + 1] ? <br/> : '' }
+                        </div>;
+                    })}
+                </div>
                 <hr className='my-3'/>
                 <button onClick={() => setModalActive(!modalActive)} className='place-self-end mt-3 rounded bg-red-600 text-white p-2'>Close</button>
             </ReactModal>

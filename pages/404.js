@@ -3,9 +3,9 @@ export default function FourOhFour() {
 
     return (
         <div class='h-screen w-full flex flex-col justify-center items-center'>
-            <img src='/assets/branding/AnwitaLogoAlphaGradient.png' className='max-h-128 mb-16' />
-            <h1 className='font-bold text-5xl mb-16'>404 Page Not Found</h1>
-            <a className={linkStyling + ' text-3xl'} href='/'>Go Home</a>
+            <img src='/assets/branding/AnwitaLogoAlphaGradient.png' className='max-h-128 mb-16' style={{maxWidth: '95vw'}} />
+            <h1 className='font-bold text-5xl mb-16 text-center'>404 Page Not Found</h1>
+            <a className={linkStyling + ' text-3xl text-center'} href='/'>Go Home</a>
         </div>
     )
 }
