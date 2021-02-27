@@ -46,7 +46,7 @@ export const Person = (props) => {
                     content: modalStyling,
                 }}
             >
-                <h1 className='font-bold text-xl'>{props.name}, {props.title}</h1>
+                <h1 className='font-bold text-xl'>{props.name}, {props.titles}</h1>
                 <h1 className='font-bold text-xl'>{props.position}</h1>
                 <hr className='my-3'/>
                 {props.bio.map(function (text, index) {
