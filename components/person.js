@@ -50,7 +50,10 @@ export const Person = (props) => {
                 <h1 className='font-bold text-xl'>{props.position}</h1>
                 <hr className='my-3'/>
                 {props.bio.map(function (text, index) {
-                    return <p key={ index }>{text}</p>;
+                    return <div>
+                        <p key={ index }>{text}</p>
+                        { props.bio[index + 1] ? <br/> : '' }
+                    </div>;
                 })}
                 <hr className='my-3'/>
                 <button onClick={() => setModalActive(!modalActive)} className='place-self-end mt-3 rounded bg-red-600 text-white p-2'>Close</button>

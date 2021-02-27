@@ -1,3 +1,6 @@
+import Head from 'next/head';
+import { Navbar } from '../components/header';
+import { Footer } from '../components/footer';
 import { People } from '../components/people';
 
 export default function Home() {
@@ -7,6 +10,17 @@ export default function Home() {
 
   return (
     <div>
+      <Head>
+        <title>Anwita Biosciences Inc.</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
+      <header>
+        <Navbar />
+      </header>
+      
+      <div style={{height: '64px'}}></div>
+
       <main>
         <div id='banner-wrapper' className='bg-home-banner bg-cover bg-center flex content-center justify-center h-third-screen sm:h-banner' style={{maxHeight: 'fit-content(50vh)', minHeight: 'min-content'}}>
           <div 
@@ -75,8 +89,8 @@ export default function Home() {
               <br/>
               <p className='text-xl'>
                 <ol className='list-decimal list-inside'>
-                  <li>Anwita and Shanghai Junshi Biosciences entered collaboration on Anwita’s Exenokine-21 program for Greater China territory.</li>
-                  <li>Anwita and Shanghai Junshi Biosciences entered collaboration on Anwita’s Exenokine-2, an improved IL-2 variant with half-life extended for Greater China territory.</li>
+                  <li><a className={linkStyling} target='_blank' href='/assets/news/Anwita-Junshi First Collaboration (IL-21, HK Announcement).pdf'>Anwita and Shanghai Junshi Biosciences entered collaboration on Anwita’s Exenokine-21 program for Greater China territory.</a></li>
+                  <li><a className={linkStyling} target='_blank' href='/assets/news/Anwita-Junshi IL-2 Collaboration HK Announcement.pdf'>Anwita and Shanghai Junshi Biosciences entered collaboration on Anwita’s Exenokine-2, an improved IL-2 variant with half-life extended for Greater China territory.</a></li>
                 </ol>
               </p>
             </div>
@@ -128,19 +142,24 @@ export default function Home() {
             <span id='contact' className='anchor'/>
             <h1 className='text-center text-4xl mb-2 font-semibold'>Contact</h1>
             <br/>
-            <div className='flex flex-row content-around'>
+            <div className='flex flex-row content-around justify-center'>
+              <img src='/assets/graphics/map.jpg' className='w-96 mx-8' alt='Anwita Biosciences Map'></img>
               <div className='clear-right'>
                 <p>Company Address: <br/><a href='https://google.com' className={linkStyling}>300 Industrial Road,<br/>San Carlos, CA 94070</a></p>
                 <p>Phone: <a href='tel:1-650-600-9828' target='_blank' className={linkStyling}>(650) 600-9828</a></p>
                 <p>Email: <a href='mailto:contact@anwitabio.com' className={linkStyling}>contact@anwitabio.com</a></p>
               </div>
-              <img src='/assets/graphics/map.jpg' className='w-96 mx-8' alt='Anwita Biosciences Map'></img>
             </div>
             
           </div>
 
         </div>
       </main>
+
+      <footer>
+        <Footer />
+      </footer>
+
     </div>
   )
 }
