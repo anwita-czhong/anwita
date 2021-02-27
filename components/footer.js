@@ -11,12 +11,12 @@ export const Footer = () => {
                     <h1 className='text-white text-2xl font-bold'>About</h1>
                     <hr className='my-3 h-px border-1 border-gray-400'></hr>
                     <p className='text-white font-light'>
-                        <Link href='/about'><a className={linkStyling}>Anwita Biosciences</a></Link> is a biopharmaceutical company headquartered in the San Francisco Bay Area.</p>
+                        <Link href='#about'><a className={linkStyling}>Anwita Biosciences</a></Link> is a biopharmaceutical company headquartered in the San Francisco Bay Area.</p>
                 </div>
                 <div className={footerItemContainerClasses}>
                     <h1 className='text-white text-2xl font-bold'>Careers</h1>
                     <hr className='my-3 h-px border-1 border-gray-400'></hr>
-                    <p className='text-white font-light'>Visit our <Link href='/careers'><a className={linkStyling}>careers</a></Link> page for listings.</p>
+                    <p className='text-white font-light'>Visit our <Link href='#careers'><a className={linkStyling}>careers</a></Link> page for listings.</p>
                 </div>
                 <div className={footerItemContainerClasses}>
                     <h1 className='text-white text-2xl font-bold'>Contact Us</h1>

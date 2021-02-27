@@ -142,10 +142,10 @@ export default function Home() {
             <span id='contact' className='anchor'/>
             <h1 className='text-center text-4xl mb-2 font-semibold'>Contact</h1>
             <br/>
-            <div className='flex flex-row content-around justify-center'>
+            <div className='flex flex-col sm:flex-row content-around justify-center'>
               <img src='/assets/graphics/map.jpg' className='w-96 mx-8' alt='Anwita Biosciences Map'></img>
               <div className='clear-right'>
-                <p>Company Address: <br/><a href='https://google.com' className={linkStyling}>300 Industrial Road,<br/>San Carlos, CA 94070</a></p>
+                <p>Company Address: <br/><a href='https://www.google.com/maps/place/300+Industrial+Rd,+San+Carlos,+CA+94070/@37.5149181,-122.2641003,17z/data=!3m1!4b1!4m5!3m4!1s0x808f98aa79063b39:0x9744f7cb0ddf62fa!8m2!3d37.5149181!4d-122.2619063' className={linkStyling}>300 Industrial Road,<br/>San Carlos, CA 94070</a></p>
                 <p>Phone: <a href='tel:1-650-600-9828' target='_blank' className={linkStyling}>(650) 600-9828</a></p>
                 <p>Email: <a href='mailto:contact@anwitabio.com' className={linkStyling}>contact@anwitabio.com</a></p>
               </div>
