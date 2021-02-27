@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import ReactModal from 'react-modal';
 
-const peopleCardClasses = 'flex-initial w-56 m-2 flex flex-col justify-center text-center items-center bg-gray-200 rounded shadow-md p-2 hover:bg-gray-400';
+const peopleCardClasses = 'flex-initial w-52 m-2 flex flex-col justify-center text-center items-center bg-gray-200 rounded shadow-md p-2 hover:bg-gray-400';
 
 const modalStyling = {
     position: 'relative',
@@ -31,7 +31,7 @@ export const Person = (props) => {
 
     return (
         <div className={peopleCardClasses} onClick={() => setModalActive(!modalActive)}>
-            <img src={`/assets/people/${props.fname}.jpg`} className='w-full h-64 overflow-hidden object-contain pb-6'/>
+            <img src={`/assets/people/${props.fname}.jpg`} className='w-full h-56 overflow-hidden object-contain pb-6'/>
             <p className='font-bold'>
                 {props.name}, {props.titles}<br/>
                 {props.position}

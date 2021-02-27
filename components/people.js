@@ -8,9 +8,7 @@ const people = [
         'titles': 'Ph.D.',
         'position': 'President & CEO',
         'bio': [
-            "Dr. Zhong is the founder and Chief Executive Office. He is an accomplished drug developer with 30 years of experience in biotechnology industry. He has deep expertise in drug development, which spans multiple therapeutic modalities and different phases of development. Before starting Anwita Biosciences, he was the VP of Research at Henlix, Inc., where he oversaw new drug discovery programs in their Fremont, CA research facility. He also guided downstream process development for Henlix ‘s parent company, Henlius Biotechnology, in Shanghai, China.",
-            "Before joining Henlix, Dr. Zhong was Director of Molecular Pharmacology at Ardelyx, where he oversaw the development of its APECCS Assay system, a functional ex vivo human intestinal epithelial system for high fidelity drug screening. Dr. Zhong also served as Director of Protein Sciences at Catalyst, Inc. Throughout his career, Dr. Zhong plays various roles in the development of several ADFA approved drugs, including Natrecor® , IBSRELA®, and Vectibix®, as well as trastuzumab and rituximab biosimilars (approved in China and EU).",
-            "Dr. Zhong received his Ph.D. from Texas A&M University in 1991. After completing his postdoctoral research at Scripps Research Institute, he joined Scios to start his biotech career. His experiences cover preclinical pharmacology, process development, and regulatory filings in the US, China, and Taiwan. Dr. Zhong is the co-authors of over 20 scientific publications. ",
+            "Dr. Zhong is the founder and Chief Executive Office. He is an accomplished drug developer with 30 years of experience in biotechnology industry. He has deep expertise in drug development, which spans multiple therapeutic modalities and different phases of development. Before starting Anwita Biosciences, he was the VP of Research at Henlix, Inc., where he oversaw new drug discovery programs in their Fremont, CA research facility. He also guided downstream process development for Henlix ‘s parent company, Henlius Biotechnology, in Shanghai, China. Before joining Henlix, Dr. Zhong was Director of Molecular Pharmacology at Ardelyx, where he oversaw the development of its APECCS Assay system, a functional ex vivo human intestinal epithelial system for high fidelity drug screening. Dr. Zhong also served as Director of Protein Sciences at Catalyst, Inc. Throughout his career, Dr. Zhong plays various roles in the development of several ADFA approved drugs, including Natrecor® , IBSRELA®, and Vectibix®, as well as trastuzumab and rituximab biosimilars (approved in China and EU). Dr. Zhong received his Ph.D. from Texas A&M University in 1991. After completing his postdoctoral research at Scripps Research Institute, he joined Scios to start his biotech career. His experiences cover preclinical pharmacology, process development, and regulatory filings in the US, China, and Taiwan. Dr. Zhong is the co-authors of over 20 scientific publications. ",
         ],
     },
     {
@@ -53,7 +51,7 @@ const people = [
 
 export const People = (props) => {
 
-    const peopleCardClasses = 'flex-initial w-56 m-2 flex flex-col justify-center text-center items-center bg-gray-200 rounded shadow-md p-2 hover:bg-gray-400';
+    const peopleCardClasses = 'flex-initial w-56 m-2 flex flex-col justify-center text-center items-center bg-gray-200 rounded p-2 hover:bg-gray-400';
 
     const [modal1Active, setModal1Active] = useState(false);
 
