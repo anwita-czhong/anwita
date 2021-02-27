@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import ReactModal from 'react-modal';
 
-const peopleCardClasses = 'flex-initial w-52 m-2 flex flex-col justify-center text-center items-center bg-gray-200 rounded shadow-md p-2 hover:bg-gray-400';
+const peopleCardClasses = 'flex-initial w-52 m-2 flex flex-col justify-center text-center items-center bg-gray-200 rounded p-2 hover:bg-gray-400';
 
 const modalStyling = {
     position: 'relative',
