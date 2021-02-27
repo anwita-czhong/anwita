@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import ReactModal from 'react-modal';
 
+ReactModal.setAppElement('#__next');
+
 const peopleCardClasses = 'flex-initial w-52 m-2 flex flex-col justify-center text-center items-center bg-gray-200 rounded p-2 hover:bg-gray-400';
 
 const modalStyling = {
@@ -31,13 +33,13 @@ export const Person = (props) => {
 
     return (
         <div>
-            <div className={peopleCardClasses} onClick={() => setModalActive(!modalActive)} onTouchStart={() => setModalActive(!modalActive)}>
+            <button className={peopleCardClasses} onClick={() => setModalActive(!modalActive)}>
                 <img src={`/assets/people/${props.fname}.jpg`} className='w-full h-56 overflow-hidden object-contain pb-6'/>
                 <p className='font-bold'>
                     {props.name}, {props.titles}<br/>
                     {props.position}
                 </p>
-            </div>
+            </button>
 
             <ReactModal
                 isOpen={modalActive}
@@ -51,7 +53,7 @@ export const Person = (props) => {
                 <h1 className='font-bold text-xl'>{props.name}, {props.titles}</h1>
                 <h1 className='font-bold text-xl'>{props.position}</h1>
                 <hr className='my-3'/>
-                <div className='overflow-scroll' style={{maxHeight: '80vw'}}>
+                <div className='overflow-y-auto overflow-x-hidden' style={{maxHeight: '80vw'}}>
                     {props.bio.map(function (text, index) {
                         return <div key={ index }>
                             <p>{text}</p>

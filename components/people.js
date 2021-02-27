@@ -57,11 +57,12 @@ export const People = (props) => {
 
     return (
         <div className={props.sectionWrapperClasses}>
-            <h1 id='team' className='text-center text-4xl mb-2 font-semibold'>Our Leadership</h1>
+            <span class='anchor' id='team'></span>
+            <h1 className='text-center text-4xl mb-2 font-semibold'>Our Leadership</h1>
             <br/>
             <div className='flex flex-row items-start flex-wrap justify-center'>
                 {people.map(function (person) {
-                    return <Person {...person} />
+                    return <Person key={person.fname} {...person} />
                 })}
             </div>
         </div>

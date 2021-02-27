@@ -83,12 +83,12 @@ export default function Home() {
               <span id='news' className='anchor'/>
               <h1 className='text-center text-4xl mb-2 font-semibold'>News</h1>
               <br/>
-              <p className='text-xl'>
+              <div className='text-xl'>
                 <ol className='list-inside' role='list'>
                   <li>June 24<sup>th</sup>, 2019 - <a className={linkStyling} target='_blank' href='/assets/news/Anwita-Junshi First Collaboration (IL-21, HK Announcement).pdf'>Anwita and Shanghai Junshi Biosciences entered collaboration on Anwita’s Exenokine-21 program for Greater China territory.</a></li>
                   <li>September 30<sup>th</sup>, 2020 - <a className={linkStyling} target='_blank' href='/assets/news/Anwita-Junshi IL-2 Collaboration HK Announcement.pdf'>Anwita and Shanghai Junshi Biosciences entered collaboration on Anwita’s Exenokine-2, an improved IL-2 variant with half-life extended for Greater China territory.</a></li>
                 </ol>
-              </p>
+              </div>
             </div>
 
             <hr className='my-3 h-px border-1 border-gray-400'></hr>
@@ -115,7 +115,7 @@ export default function Home() {
                 </ul>
               <br/>
               <h2 className='text-center text-3xl mb-2 italic font-semibold'>Benefits</h2>
-              <p className='text-xl'>
+              <div className='text-xl'>
                 <ul className='list-disc list-inside'>
                   <li>Competitive compensation.</li>
                   <li>Stock options at all levels</li>
@@ -128,7 +128,7 @@ export default function Home() {
                   <li>Visional plan</li>
                   <li>Life insurance</li>
                 </ul>
-              </p>
+              </div>
             </div>
           </div>
           

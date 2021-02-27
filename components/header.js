@@ -1,5 +1,39 @@
-import Link from 'next/link';
+import { Link, animateScroll as scroll } from "react-scroll";
 import { useState } from 'react';
+
+const navbarButtonWrapperStyling = 'lg:inline-flex lg:flex-1 lg:w-auto w-full items-center justify-center';
+const navbarButtonStyling = 'rounded text-blue-900 items-center justify-center px-3 py-2 hover:bg-gray-300 hover:text-blue focus:ring focus:ring-gray-300 outline-none';
+
+const links = [
+    {
+        "display": "Home",
+        "anchor":  "about",
+    },
+    {
+        "display": "Pipeline",
+        "anchor":  "pipeline",
+    },
+    {
+        "display": "Technology",
+        "anchor":  "technology",
+    },
+    {
+        "display": "Team",
+        "anchor":  "team",
+    },
+    {
+        "display": "News",
+        "anchor":  "news",
+    },
+    {
+        "display": "Careers",
+        "anchor":  "careers",
+    },
+    {
+        "display": "Contact",
+        "anchor":  "contact",
+    },
+]
 
 export const Navbar = () => {
     const [active, setActive] = useState(false);
@@ -13,8 +47,7 @@ export const Navbar = () => {
         document.documentElement.scrollTop = 0;
     };
 
-    const navbarButtonWrapperStyling = 'lg:inline-flex lg:flex-1 lg:w-auto w-full items-center justify-center';
-    const navbarButtonStyling = 'rounded text-blue-900 lg:font-bold items-center justify-center px-3 py-2 hover:bg-gray-300 hover:text-blue focus:ring focus:ring-gray-300 outline-none';
+    
 
     return (
         <div>
@@ -48,48 +81,15 @@ export const Navbar = () => {
                         active ? '': 'hidden'
                     } w-full lg:inline-flex lg:flex-grow lg:w-auto my-2 lg:my-0 text-xl lg:text-2xl`}>
                     <div className='lg:inline-flex lg:flex-grow lg:flex-row lg:mr-0 lg:w-auto w-full lg:items-center items-end flex flex-col lg:h-auto space-y-5 lg:space-y-0'>
-                        <div className={navbarButtonWrapperStyling}>
-                            <Link href='#about'>
-                                <a className={navbarButtonStyling} onClick={() => setActive(false)}>
-                                    Home
-                                </a>
-                            </Link>
-                        </div>
-                        <div className={navbarButtonWrapperStyling}>
-                            <Link href='#pipeline'>
-                                <a className={navbarButtonStyling} onClick={() => setActive(false)}>
-                                    Pipeline
-                                </a>
-                            </Link>
-                        </div>
-                        <div className={navbarButtonWrapperStyling}>
-                            <Link href='#technology'>
-                                <a className={navbarButtonStyling} onClick={() => setActive(false)}>
-                                    Technology
-                                </a>
-                            </Link>
-                        </div>
-                        <div className={navbarButtonWrapperStyling}>
-                            <Link href='#news'>
-                                <a className={navbarButtonStyling} onClick={() => setActive(false)}>
-                                    News
-                                </a>
-                            </Link>
-                        </div>
-                        <div className={navbarButtonWrapperStyling}>
-                            <Link href='#careers'>
-                                <a className={navbarButtonStyling} onClick={() => setActive(false)}>
-                                    Careers
-                                </a>
-                            </Link>
-                        </div>
-                        <div className={navbarButtonWrapperStyling}>
-                            <Link href='#contact'>
-                                <a className={navbarButtonStyling} onClick={() => setActive(false)}>
-                                    Contact
-                                </a>
-                            </Link>
-                        </div>
+                        {links.map(function (link, index) {
+                            return <div key={index} className={navbarButtonWrapperStyling}>
+                                <Link to={`${link.anchor}`} smooth={true} duration={250}>
+                                    <a className={navbarButtonStyling} onClick={() => setActive(false)}>
+                                        {link.display}
+                                    </a>
+                                </Link>
+                            </div>
+                        })}
                     </div>
                 </div>
                 <div className='hidden lg:inline-flex' style={{minWidth: '0.5em', width: '10%'}}></div>
