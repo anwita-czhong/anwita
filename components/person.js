@@ -31,9 +31,13 @@ const overlayStyling = {
 export const Person = (props) => {
     const [modalActive, setModalActive] = useState(false);
 
+    const handleClick = () => {
+        setModalActive(!active);
+    };
+
     return (
         <div>
-            <button className={peopleCardClasses} onClick={() => setModalActive(!modalActive)}>
+            <button className={peopleCardClasses} onClick={handleClick}>
                 <img src={`/assets/people/${props.fname}.jpg`} className='w-full h-56 overflow-hidden object-contain pb-6'/>
                 <p className='font-bold'>
                     {props.name}, {props.titles}<br/>
