@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p $PORT",
     "build:css": "postcss styles/tailwind.scss -o styles/main.scss",
     "build:watch": "postcss styles/tailwind.scss -o styles/main.scss --watch",
     "prod:build": "NODE_ENV=production yarn run build:css && npm run build"
