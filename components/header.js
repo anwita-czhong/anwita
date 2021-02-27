@@ -50,42 +50,42 @@ export const Navbar = () => {
                     <div className='lg:inline-flex lg:flex-grow lg:flex-row lg:mr-0 lg:w-auto w-full lg:items-center items-end flex flex-col lg:h-auto space-y-5 lg:space-y-0'>
                         <div className={navbarButtonWrapperStyling}>
                             <Link href='#about'>
-                                <a className={navbarButtonStyling} onClick={() => setActive(!active)}>
+                                <a className={navbarButtonStyling} onClick={() => setActive(false)}>
                                     Home
                                 </a>
                             </Link>
                         </div>
                         <div className={navbarButtonWrapperStyling}>
                             <Link href='#pipeline'>
-                                <a className={navbarButtonStyling}>
+                                <a className={navbarButtonStyling} onClick={() => setActive(false)}>
                                     Pipeline
                                 </a>
                             </Link>
                         </div>
                         <div className={navbarButtonWrapperStyling}>
                             <Link href='#technology'>
-                                <a className={navbarButtonStyling}>
+                                <a className={navbarButtonStyling} onClick={() => setActive(false)}>
                                     Technology
                                 </a>
                             </Link>
                         </div>
                         <div className={navbarButtonWrapperStyling}>
                             <Link href='#news'>
-                                <a className={navbarButtonStyling}>
+                                <a className={navbarButtonStyling} onClick={() => setActive(false)}>
                                     News
                                 </a>
                             </Link>
                         </div>
                         <div className={navbarButtonWrapperStyling}>
                             <Link href='#careers'>
-                                <a className={navbarButtonStyling}>
+                                <a className={navbarButtonStyling} onClick={() => setActive(false)}>
                                     Careers
                                 </a>
                             </Link>
                         </div>
                         <div className={navbarButtonWrapperStyling}>
                             <Link href='#contact'>
-                                <a className={navbarButtonStyling}>
+                                <a className={navbarButtonStyling} onClick={() => setActive(false)}>
                                     Contact
                                 </a>
                             </Link>
