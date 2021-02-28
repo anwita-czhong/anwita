@@ -51,7 +51,7 @@ export const Navbar = () => {
 
     return (
         <div>
-            <nav className='fixed flex items-center flex-wrap p-3 bg-white w-full content-around'>
+            <nav className='fixed flex items-center flex-wrap p-3 bg-white w-full content-around z-10'>
                 <div className='hidden lg:inline-flex' style={{minWidth: '0.5em', width: '10%'}}></div>
                 <button onClick={toTop} className='inline-flex items-center mr-4 focus:outline-none focus:ring focus:ring-gray-300 rounded'>
                     <img src="/assets/branding/AnwitaLogoAlphaGradient.png" alt="Anwita Biosciences" className="max-h-12" style={{maxWidth: '50vw'}}/>
