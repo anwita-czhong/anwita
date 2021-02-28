@@ -51,10 +51,6 @@ const people = [
 
 export const People = (props) => {
 
-    const peopleCardClasses = 'flex-initial w-56 m-2 flex flex-col justify-center text-center items-center bg-gray-200 rounded p-2 hover:bg-gray-400';
-
-    const [modal1Active, setModal1Active] = useState(false);
-
     return (
         <div className={props.sectionWrapperClasses}>
             <span class='anchor' id='team'></span>

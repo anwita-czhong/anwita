@@ -32,7 +32,7 @@ export const Person = (props) => {
     const [modalActive, setModalActive] = useState(false);
 
     const handleClick = () => {
-        setModalActive(!active);
+        setModalActive(!modalActive);
     };
 
     return (
