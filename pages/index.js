@@ -85,8 +85,9 @@ export default function Home() {
               <br/>
               <div className='text-xl'>
                 <ol className='list-inside' role='list'>
-                  <li>June 24<sup>th</sup>, 2019 - <a className={linkStyling} target='_blank' href='/assets/news/Anwita-Junshi First Collaboration (IL-21, HK Announcement).pdf'>Anwita and Shanghai Junshi Biosciences entered collaboration on Anwita’s Exenokine-21 program for Greater China territory.</a></li>
-                  <li>September 30<sup>th</sup>, 2020 - <a className={linkStyling} target='_blank' href='/assets/news/Anwita-Junshi IL-2 Collaboration HK Announcement.pdf'>Anwita and Shanghai Junshi Biosciences entered collaboration on Anwita’s Exenokine-2, an improved IL-2 variant with half-life extended for Greater China territory.</a></li>
+                  <li>September 30<sup>th</sup>, 2020 - Anwita Biosciences and Shanghai Junshi Biosciences entered into a new collaboration in which Junshi was granted the exclusive rights to Anwita's Exenokine-2, an improved IL-2 variant, with half-life extended in the Greater China territories. (<a className={linkStyling} target='_blank' href='/assets/news/Anwita-Junshi IL-2 Collaboration HK Announcement.pdf'>PDF</a>)</li>
+                  <br/>
+                  <li>June 24<sup>th</sup>, 2019 - Strategic collaboration between Anwita Biosciences and Shanghai Junshi Biosciences whereby Junshi was granted the exclusive rights to develop and commercialize Anwita's Exenokine-21 program in the Greater China territories. (<a className={linkStyling} target='_blank' href='/assets/news/Anwita-Junshi First Collaboration (IL-21, HK Announcement).pdf'>PDF</a>)</li>
                 </ol>
               </div>
             </div>
