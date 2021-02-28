@@ -83,10 +83,8 @@ export const Navbar = () => {
                     <div className='lg:inline-flex lg:flex-grow lg:flex-row lg:mr-0 lg:w-auto w-full lg:items-center items-end flex flex-col lg:h-auto space-y-5 lg:space-y-0'>
                         {links.map(function (link, index) {
                             return <div key={index} className={navbarButtonWrapperStyling}>
-                                <Link to={`${link.anchor}`} smooth={true} duration={250}>
-                                    <a className={navbarButtonStyling} onClick={() => setActive(false)}>
-                                        {link.display}
-                                    </a>
+                                <Link to={`${link.anchor}`} smooth={true} duration={250} className={navbarButtonStyling} onClick={() => setActive(false)}>
+                                    {link.display}
                                 </Link>
                             </div>
                         })}
