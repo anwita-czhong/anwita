@@ -118,10 +118,10 @@ export default function Home() {
               <h2 className='text-center text-3xl mb-2 italic font-semibold'>Benefits</h2>
               <div className='text-xl'>
                 <ul className='list-disc list-inside'>
-                  <li>Competitive compensation.</li>
+                  <li>Competitive compensation</li>
                   <li>Stock options at all levels</li>
                   <li>401(K) plan</li>
-                  <li>Official holidays and floating holidays</li>
+                  <li>Official holidays</li>
                   <li>Generous paid time off (PTO)</li>
                   <li>Sick days</li>
                   <li>Medical plan</li>
