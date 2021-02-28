@@ -64,7 +64,7 @@ export default function Home() {
               <p className='text-xl'>
                 Exenokines<sup>TM</sup> are proprietary cytokines designed using Anwita Biosciences’ patented platform technology.  Our modular design enables accelerated development of a diversified portfolio of cytokine-based products with improved pharmaceutical properties. 
               </p>
-              <img src='/assets/graphics/tech-01.jpg' className='my-12 object-scale-down w-full place-self-center' style={{maxWidth: '36rem'}}/>
+              <img src='/assets/graphics/tech-01.jpg' className='my-12 object-scale-down w-full place-self-center' style={{maxWidth: '44rem'}}/>
               <p className='text-xl'>
               Our scientists are developing a suite of innovative ADC technologies and payloads. The company is advancing a pipeline of tumor targeting ADCs with enhanced efficacy <i>in vivo</i>. 
               </p>
@@ -85,7 +85,7 @@ export default function Home() {
               <br/>
               <div className='text-xl'>
                 <ol className='list-inside' role='list'>
-                  <li>September 30<sup>th</sup>, 2020 - Anwita Biosciences and Shanghai Junshi Biosciences entered into a new collaboration in which Junshi was granted the exclusive rights to Anwita's Exenokine-2, an improved IL-2 variant with half-life extended, in the Greater China territories. (<a className={linkStyling} target='_blank' href='/assets/news/Anwita-Junshi IL-2 Collaboration HK Announcement.pdf'>PDF</a>)</li>
+                  <li>September 30<sup>th</sup>, 2020 - Anwita Biosciences and Shanghai Junshi Biosciences entered into a new collaboration in which Junshi was granted the exclusive rights to Anwita's Exenokine-2, an improved IL-2 variant with extended half-life, in the Greater China territories. (<a className={linkStyling} target='_blank' href='/assets/news/Anwita-Junshi IL-2 Collaboration HK Announcement.pdf'>PDF</a>)</li>
                   <br/>
                   <li>June 24<sup>th</sup>, 2019 - Strategic collaboration between Anwita Biosciences and Shanghai Junshi Biosciences whereby Junshi was granted the exclusive rights to develop and commercialize Anwita's Exenokine-21 program in the Greater China territories. (<a className={linkStyling} target='_blank' href='/assets/news/Anwita-Junshi First Collaboration (IL-21, HK Announcement).pdf'>PDF</a>)</li>
                 </ol>
