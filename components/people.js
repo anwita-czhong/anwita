@@ -53,7 +53,7 @@ export const People = (props) => {
 
     return (
         <div className={props.sectionWrapperClasses}>
-            <span class='anchor' id='team'></span>
+            <span className='anchor' id='team'></span>
             <h1 className='text-center text-4xl mb-2 font-semibold'>Our Leadership</h1>
             <br/>
             <div className='flex flex-row items-start flex-wrap justify-center'>

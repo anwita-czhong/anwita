@@ -19,7 +19,10 @@ const modalStyling = {
 
 const overlayStyling = {
     position: 'fixed',
+    top: 0,
+    left: 0,
     inset: 0,
+    height: '100vh',
     display: 'flex',
     overflow: 'auto',
     zIndex: '1000',
