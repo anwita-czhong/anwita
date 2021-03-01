@@ -100,20 +100,8 @@ export default function Home() {
               <h1 className='text-center text-4xl mb-2 font-semibold'>Careers</h1>
               <hr className='my-3 h-px border-1 border-gray-400 w-1/3 place-self-center'></hr>
               <br/>
-              <h2 className='text-3xl mb-6 italic font-semibold text-center'>Openings</h2>
-              <h3 className='text-2xl my-2 font-bold'>Scientist</h3>
-              <p className='text-xl'>Scientist/Senior Scientist for in-vivo tumor models.</p>
-              <h3 className='text-2xl my-2 font-bold'>Description</h3>
-              <p className='text-xl'>We are seeking a talented Scientist/Sr. Scientist with experience with in vivo tumor biology. Ideal candidates will have experience testing pharmaceuticals in tumor xenograft models in mice, including tumor implantation, tumor growth measurement and treatment administration. Experience with xenograft models in NSG mice together with intravenous PBMC injection is highly desired. Experience in culturing cancer cell lines and isolating PBMCs is a plus. Preference will be given to candidates with expertise in immuno-oncology or related field. Candidates that have additional experience working with inflammatory disease rodent models, including inflammatory bowel disease, are preferred.</p>
-              <h3 className='text-2xl my-2 font-bold'>Preferences</h3>
-              <ul className='list-disc list-inside text-xl'>
-                  <li>Ph.D. in biological sciences, immunology or bio-engineering with a minimum 2 years post-doctoral or industry experience.</li>
-                  <li>Experience implanting xenograft tumors in immunocompromised mice, including NSG mice.</li>
-                  <li>Experience with intravenous injection, especially for PBMC implantation.</li>
-                  <li>Experience culturing cancer cell lines and isolating PBMCs.</li>
-                  <li>Experience with inflammatory disease rodent models.</li>
-                  <li>Publications in the field of immuno-oncology.</li>
-                </ul>
+              <h2 className='text-3xl mb-6 italic font-semibold text-center'>Working at Anwita</h2>
+              <p className='text-xl'>We are always seeking exceptional talent that is passionate about making a difference in the lives of patients with cancer or autoimmune disorders. If you share our mission, and are interested in joining our team, please reach out to us via email at <a href='mailto:contact@anwitabio.com' className={linkStyling}>contact@anwitabio.com</a>.</p>
               <br/>
               <h2 className='text-center text-3xl mb-2 italic font-semibold'>Benefits</h2>
               <div className='text-xl'>
