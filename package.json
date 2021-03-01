@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start -p $PORT",
     "build:css": "postcss styles/tailwind.scss -o styles/main.scss",
     "build:watch": "postcss styles/tailwind.scss -o styles/main.scss --watch",
