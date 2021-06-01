@@ -21,15 +21,6 @@ const people = [
         ],
     },
     {
-        'fname': 'msiegel',
-        'name': 'Matthew Siegel',
-        'titles': 'Ph.D.',
-        'position': 'VP of Research',
-        'bio': [
-            "Dr. Siegel serves as Anwita Bioscience’s Vice President of Research. He has 15 years of experience in the biotech industry and 20 years of experience in drug discovery. Prior to joining Anwita Biosciences, he served as the Director of Molecular and Cellular Pharmacology at Ardelyx Inc., where he developed an intestinal organoid platform and led the drug screening and biochemical assay group. During his tenure at Ardelyx, he helped to elucidate the mechanism by which Tenapanor, an investigational first-in-class drug candidate to treat hyperphosphatemia, blocks intestinal phosphate absorption and discovered a method to enhance intestinal potassium secretion as RDX013 program biology lead. Before joining Ardelyx, Dr. Siegel was a senior scientist at Alvine Pharmaceuticals where he played a key role in advancing their lead drug candidate into Phase 2b clinical trials for the treatment of celiac disease. He is an author on over 20 peer-reviewed publications and has broad expertise in biochemistry and cell biology with a particular interest in the fields of immunology and gastroenterology. Dr. Siegel received his BS in chemical engineering at the University of Notre Dame and his PhD from Stanford University."
-        ],
-    },
-    {
         'fname': 'blu',
         'name': 'Binfeng Lu',
         'titles': 'Ph.D.',
