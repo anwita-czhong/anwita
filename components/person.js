@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import ReactModal from 'react-modal';
+import Image from 'next/image';
 
 ReactModal.setAppElement('#__next');
 
@@ -32,6 +33,7 @@ const overlayStyling = {
 }
 
 export const Person = (props) => {
+
     const [modalActive, setModalActive] = useState(false);
 
     const handleClick = () => {
@@ -41,7 +43,9 @@ export const Person = (props) => {
     return (
         <div>
             <button className={peopleCardClasses} onClick={handleClick}>
-                <img src={`/assets/people/${props.fname}.jpg`} className='w-full h-56 overflow-hidden object-contain pb-6'/>
+                <div className='w-full h-full overflow-hidden object-contain pb-3'>
+                    <Image src={`/assets/people/${props.fname}-sq.webp`} width="200" height="200" layout="responsive" alt={`${props.name}'s picture'`}/>
+                </div>
                 <p className='font-bold'>
                     {props.name}, {props.titles}<br/>
                     {props.position}
