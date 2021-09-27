@@ -53,8 +53,10 @@ export const Navbar = () => {
         <div>
             <nav className='fixed flex items-center flex-wrap p-3 bg-white w-full content-around z-10'>
                 <div className='hidden lg:inline-flex' style={{minWidth: '0.5em', width: '10%'}}></div>
-                <button onClick={toTop} className='inline-flex items-center mr-4 focus:outline-none focus:ring focus:ring-gray-300 rounded'>
-                    <Image src="/assets/branding/AnwitaLogoAlphaGradient.png" width="500" height="131" layout="responsive" alt="Anwita Biosciences" className="max-h-12" style={{maxWidth: '50vw'}}/>
+                <button onClick={toTop} name="Home Button" className='inline-flex items-center mr-4 focus:outline-none focus:ring focus:ring-gray-300 rounded'>
+                    <div className="h-12 max-h-12 items-center" style={{width: '183.2px', maxWidth: '50vw'}}>
+                        <Image src="/assets/branding/AnwitaLogoAlphaGradient.png" width="500" height="131" layout="responsive" alt="Anwita Biosciences" />
+                    </div>
                 </button>
                 <button
                     className='inline-flex px-3 py-2 hover:bg-blue-900 rounded lg:hidden text-blue-900 ml-auto hover:text-white'
