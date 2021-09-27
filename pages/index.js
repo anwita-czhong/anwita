@@ -43,7 +43,7 @@ export default function Home() {
                 We are advancing our product pipeline of improved cytokines (Exenokines<sup>TM</sup>) and tumor targeting antibody drug conjugates. Our lead product is expected to enter clinical trials in 1H 2021.
               </p>
               <br/><br/>
-              <img src='/assets/graphics/about.jpg' className='object-scale-down w-full h-96'/>
+              <Image src='/assets/graphics/about.jpg' width="2159" height="1619" layout="responsive" className='object-scale-down w-full h-96'/>
             </div>
 
             <hr className='my-3 h-px border-1 border-gray-400'></hr>
