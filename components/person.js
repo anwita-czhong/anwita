@@ -10,6 +10,7 @@ const modalStyling = {
     position: 'relative',
     width: '90%',
     maxWidth: '800px',
+    maxHeight: '95vh',
     padding: '2rem',
     backgroundColor: 'white',
     borderRadius: '0.25rem',
@@ -64,7 +65,7 @@ export const Person = (props) => {
                 <h1 className='font-bold text-xl'>{props.name}, {props.titles}</h1>
                 <h1 className='font-bold text-xl'>{props.position}</h1>
                 <hr className='my-3'/>
-                <div className='overflow-y-auto overflow-x-hidden' style={{maxHeight: '80vw'}}>
+                <div className='overflow-y-auto overflow-x-hidden'>
                     {props.bio.map(function (text, index) {
                         return <div key={ index }>
                             <p>{text}</p>
