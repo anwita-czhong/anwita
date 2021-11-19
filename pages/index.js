@@ -22,7 +22,7 @@ export default function Home() {
       <div style={{height: '64px'}}></div>
 
       <main>
-        <div id='banner-wrapper' className='bg-home-banner bg-cover bg-center flex content-center justify-center h-third-screen sm:h-banner' style={{maxHeight: 'fit-content(50vh)', minHeight: 'min-content'}}>
+        <div id='banner-wrapper' className='bg-home-banner bg-cover bg-center flex content-center justify-center h-third-screen'>
           <div
             className='flex flex-col w-full flex-none text-center content-center justify-center items-center space-y-2' style={{backgroundColor: 'rgba(54, 58, 69, 0.4)'}}
           >
