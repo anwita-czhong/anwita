@@ -1,4 +1,3 @@
-import { Link, animateScroll as scroll } from "react-scroll";
 import { useState } from 'react';
 import Image from "next/image";
 
@@ -85,9 +84,9 @@ export const Navbar = () => {
                     <div className='navbar:inline-flex navbar:flex-grow navbar:flex-row navbar:mr-0 navbar:w-auto w-full navbar:items-center items-end flex flex-col navbar:h-auto space-y-5 navbar:space-y-0'>
                         {links.map(function (link, index) {
                             return <div key={index} className={navbarButtonWrapperStyling}>
-                                <Link to={`${link.anchor}`} smooth={true} duration={250} className={navbarButtonStyling} onClick={() => setActive(false)}>
+                                <a href={`#${link.anchor}`} tabIndex={0} className={navbarButtonStyling} onClick={() => setActive(false)}>
                                     {link.display}
-                                </Link>
+                                </a>
                             </div>
                         })}
                     </div>
