@@ -2,7 +2,7 @@ import { Link, animateScroll as scroll } from "react-scroll";
 import { useState } from 'react';
 import Image from "next/image";
 
-const navbarButtonWrapperStyling = 'lg:inline-flex lg:flex-1 lg:w-auto w-full items-center justify-center';
+const navbarButtonWrapperStyling = 'navbar:inline-flex navbar:flex-1 navbar:w-auto w-full items-center justify-center';
 const navbarButtonStyling = 'rounded text-blue-900 items-center justify-center px-3 py-2 hover:bg-gray-300 hover:text-blue focus:ring focus:ring-gray-300 outline-none';
 
 const links = [
@@ -52,14 +52,14 @@ export const Navbar = () => {
     return (
         <div>
             <nav className='fixed flex items-center flex-wrap p-3 bg-white w-full content-around z-10'>
-                <div className='hidden lg:inline-flex' style={{minWidth: '0.5em', width: '10%'}}></div>
+                <div className='hidden navbar:inline-flex' style={{minWidth: '0.5em', width: '10%'}}></div>
                 <button onClick={toTop} name="Home Button" className='inline-flex items-center mr-4 focus:outline-none focus:ring focus:ring-gray-300 rounded'>
                     <div className="h-12 max-h-12 items-center" style={{width: '183.2px', maxWidth: '50vw'}}>
                         <Image src="/assets/branding/AnwitaLogoAlphaGradient.png" width="500" height="131" layout="responsive" alt="Anwita Biosciences" />
                     </div>
                 </button>
                 <button
-                    className='inline-flex px-3 py-2 hover:bg-blue-900 rounded lg:hidden text-blue-900 ml-auto hover:text-white'
+                    className='inline-flex px-3 py-2 hover:bg-blue-900 rounded navbar:hidden text-blue-900 ml-auto hover:text-white'
                     onClick={handleClick}
                 >
                     <svg
@@ -77,12 +77,12 @@ export const Navbar = () => {
                         />
                     </svg>
                 </button>
-                <div className='hidden lg:inline-flex lg:flex-1' style={{width: '15%'}}></div>
+                <div className='hidden navbar:inline-flex navbar:flex-1' style={{width: '15%'}}></div>
                 <div
                     className={`${
                         active ? '': 'hidden'
-                    } w-full lg:inline-flex lg:flex-grow lg:w-auto my-2 lg:my-0 text-xl lg:text-2xl`}>
-                    <div className='lg:inline-flex lg:flex-grow lg:flex-row lg:mr-0 lg:w-auto w-full lg:items-center items-end flex flex-col lg:h-auto space-y-5 lg:space-y-0'>
+                    } w-full navbar:inline-flex navbar:flex-grow navbar:w-auto my-2 navbar:my-0 text-xl navbar:text-2xl`}>
+                    <div className='navbar:inline-flex navbar:flex-grow navbar:flex-row navbar:mr-0 navbar:w-auto w-full navbar:items-center items-end flex flex-col navbar:h-auto space-y-5 navbar:space-y-0'>
                         {links.map(function (link, index) {
                             return <div key={index} className={navbarButtonWrapperStyling}>
                                 <Link to={`${link.anchor}`} smooth={true} duration={250} className={navbarButtonStyling} onClick={() => setActive(false)}>
@@ -92,7 +92,7 @@ export const Navbar = () => {
                         })}
                     </div>
                 </div>
-                <div className='hidden lg:inline-flex' style={{minWidth: '0.5em', width: '10%'}}></div>
+                <div className='hidden navbar:inline-flex' style={{minWidth: '0.5em', width: '10%'}}></div>
             </nav>
         </div>
     )
