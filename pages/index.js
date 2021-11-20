@@ -35,15 +35,19 @@ export default function Home() {
 
             <div className={sectionWrapperClasses}>
               <span id='about' className='anchor'/>
-              <h1 className='text-center text-4xl mb-2 font-semibold'>Our Mission</h1>
-              <br/>
-              <p className='text-xl'>
-                Anwita Biosciences, Inc. is an emerging biopharmaceutical company headquartered in the San Francisco Bay Area.<br/><br/>
-                Our mission is to deliver transformative treatment options to improve the lives of patients with cancer and autoimmune diseases. We specialize in the discovery and development of optimized immunotherapeutics, leveraging our core expertise in cancer immunotherapy, bioinformatics, and structure-based protein engineering.<br/><br/>
-                We are advancing our product pipeline of improved cytokines (Exenokines<sup>TM</sup>) and tumor targeting antibody drug conjugates. Our lead product is expected to enter clinical trials in 1H 2021.
-              </p>
-              <br/><br/>
-              <img src='/assets/graphics/about.webp' width="870" height="872" layout="responsive" className='object-scale-down w-full h-96'/>
+              <h1 className='text-center text-4xl mb-4 font-semibold'>Our Mission</h1>
+              <div className='lg:grid grid-cols-3 gap-8'>
+                <div className='col-span-2 mb-8'>
+                  <p className='text-xl'>
+                    Anwita Biosciences, Inc. is an emerging biopharmaceutical company headquartered in the San Francisco Bay Area.<br/><br/>
+                    Our mission is to deliver transformative treatment options to improve the lives of patients with cancer and autoimmune diseases. We specialize in the discovery and development of optimized immunotherapeutics, leveraging our core expertise in cancer immunotherapy, bioinformatics, and structure-based protein engineering.<br/><br/>
+                    We are advancing our product pipeline of improved cytokines (Exenokines<sup>TM</sup>) and tumor targeting antibody drug conjugates. Our lead product is expected to enter clinical trials in 1H 2021.
+                  </p>
+                </div>
+                <div>
+                  <img src='/assets/graphics/about.webp' width="870" height="872" layout="responsive" className='object-scale-down w-full h-96'/>
+                </div>
+              </div>
             </div>
 
             <hr className='my-3 h-px border-1 border-gray-400'></hr>
@@ -54,6 +58,7 @@ export default function Home() {
               <br/>
               <div className='w-full'>
                 <Image src='/assets/graphics/pipeline.jpg' alt="Image of Anwita's pipeline" width="100%" height="33%" layout="responsive" objectFit="contain"/>
+                <div className='grid-cols-4'></div>
               </div>
             </div>
 
@@ -90,12 +95,17 @@ export default function Home() {
               <span id='news' className='anchor'/>
               <h1 className='text-center text-4xl mb-2 font-semibold'>News</h1>
               <br/>
-              <div className='text-xl'>
-                <ol className='list-inside' role='list'>
-                  <li>September 30<sup>th</sup>, 2020 - Anwita Biosciences and Shanghai Junshi Biosciences entered into a new collaboration in which Junshi was granted the exclusive rights to Anwita's Exenokine-2, an improved IL-2 variant with extended half-life, in the Greater China territories. (<a className={linkStyling} target='_blank' href='/assets/news/Anwita-Junshi IL-2 Collaboration HK Announcement.pdf'>PDF</a>)</li>
-                  <br/>
-                  <li>June 24<sup>th</sup>, 2019 - Strategic collaboration between Anwita Biosciences and Shanghai Junshi Biosciences whereby Junshi was granted the exclusive rights to develop and commercialize Anwita's Exenokine-21 program in the Greater China territories. (<a className={linkStyling} target='_blank' href='/assets/news/Anwita-Junshi First Collaboration (IL-21, HK Announcement).pdf'>PDF</a>)</li>
-                </ol>
+              <div className='text-xl grid md:grid-cols-2 xl:grid-cols-3 gap-4'>
+                <div className='bg-gray-100 p-8 rounded-lg'>
+                  <p className='mb-4'><b>Date:</b> September 30<sup>th</sup>, 2020</p>
+                  <p className='mb-4'>Anwita Biosciences and Shanghai Junshi Biosciences entered into a new collaboration in which Junshi was granted the exclusive rights to Anwita's Exenokine-2, an improved IL-2 variant with extended half-life, in the Greater China territories.</p>
+                  <p><b><a className={linkStyling} target='_blank' href='/assets/news/Anwita-Junshi IL-2 Collaboration HK Announcement.pdf'>Press Release</a></b></p>
+                </div>
+                <div className='bg-gray-100 p-8 rounded-lg'>
+                <p className='mb-4'><b>Date:</b> June 24<sup>th</sup>, 2019</p>
+                  <p className='mb-4'>Strategic collaboration between Anwita Biosciences and Shanghai Junshi Biosciences whereby Junshi was granted the exclusive rights to develop and commercialize Anwita's Exenokine-21 program in the Greater China territories.</p>
+                  <p><b><a className={linkStyling} target='_blank' href='/assets/news/Anwita-Junshi First Collaboration (IL-21, HK Announcement).pdf'>Press Release</a></b></p>
+                </div>
               </div>
             </div>
 
@@ -135,7 +145,7 @@ export default function Home() {
             <h1 className='text-center text-4xl mb-2 font-semibold'>Contact</h1>
             <br/>
             <div className='flex flex-col sm:flex-row content-evenly justify-center'>
-                <iframe className="w-96 h-48" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1669.5229423824994!2d-122.26270389781278!3d37.51492603078649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f98aa79bc4f55%3A0xd47219d8b27ce42a!2sAnwita%20Biosciences!5e0!3m2!1sen!2sus!4v1632246025164!5m2!1sen!2sus" style={{width: "35rem", height: "30rem", maxWidth: "95%", maxHeight: "35rem", border: 0}} allow="fullscreen" allowFullScreen={true} loading="lazy"></iframe>
+                {/* <iframe className="w-96 h-48" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1669.5229423824994!2d-122.26270389781278!3d37.51492603078649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f98aa79bc4f55%3A0xd47219d8b27ce42a!2sAnwita%20Biosciences!5e0!3m2!1sen!2sus!4v1632246025164!5m2!1sen!2sus" style={{width: "35rem", height: "30rem", maxWidth: "95%", maxHeight: "35rem", border: 0}} allow="fullscreen" allowFullScreen={true} loading="lazy"></iframe> */}
               <div className='px-0 sm:px-8'>
                 <p>Company Address: <br/><a href='https://www.google.com/maps/place/300+Industrial+Rd,+San+Carlos,+CA+94070/@37.5149181,-122.2641003,17z/data=!3m1!4b1!4m5!3m4!1s0x808f98aa79063b39:0x9744f7cb0ddf62fa!8m2!3d37.5149181!4d-122.2619063' target="_blank" rel="noreferrer noopener" className={linkStyling}>300 Industrial Road,<br/>San Carlos, CA 94070</a></p>
                 <p>Phone: <a href='tel:1-650-600-9828' target='_blank' className={linkStyling}>(650) 600-9828</a></p>

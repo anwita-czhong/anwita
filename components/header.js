@@ -50,8 +50,8 @@ export const Navbar = () => {
 
     return (
         <div>
-            <nav className='fixed flex items-center flex-wrap p-3 bg-white w-full content-around z-10'>
-                <div className='hidden navbar:inline-flex' style={{minWidth: '0.5em', width: '10%'}}></div>
+            <nav className='fixed flex items-center max-h-screen flex-wrap p-3 bg-white w-full content-around z-10'>
+                <div className='hidden lg:inline-flex' style={{minWidth: '0.5em', width: '10%'}}></div>
                 <button onClick={toTop} name="Home Button" className='inline-flex items-center mr-4 focus:outline-none focus:ring focus:ring-gray-300 rounded'>
                     <div className="h-12 max-h-12 items-center" style={{width: '183.2px', maxWidth: '50vw'}}>
                         <Image src="/assets/branding/AnwitaLogoAlphaGradient.png" width="500" height="131" layout="responsive" alt="Anwita Biosciences" />
@@ -80,7 +80,7 @@ export const Navbar = () => {
                 <div
                     className={`${
                         active ? '': 'hidden'
-                    } w-full navbar:inline-flex navbar:flex-grow navbar:w-auto my-2 navbar:my-0 text-xl navbar:text-2xl`}>
+                    } w-full navbar:inline-flex navbar:flex-grow navbar:w-auto my-2 navbar:my-0 text-xl navbar:text-2xl flex-shrink overflow-y-auto`} style={{ maxHeight: "calc(90vh - 1rem)" }}>
                     <div className='navbar:inline-flex navbar:flex-grow navbar:flex-row navbar:mr-0 navbar:w-auto w-full navbar:items-center items-end flex flex-col navbar:h-auto space-y-5 navbar:space-y-0'>
                         {links.map(function (link, index) {
                             return <div key={index} className={navbarButtonWrapperStyling}>
