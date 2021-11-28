@@ -1,0 +1,57 @@
+.pipelines {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray;
+}
+
+.pipelines__headers {
+  display: grid;
+  grid-template-columns: 1rem 6fr 4fr repeat(3, 5fr);
+
+  font-size: 0.75rem;
+  @media screen and (min-width: 860px) {
+    font-size: 1.5rem;
+  }
+  border-bottom: 0.25rem solid lightskyblue;
+  align-items: center;
+
+  div {
+    padding: 0.25rem;
+  }
+}
+
+.pipelines__row {
+  display: grid;
+  grid-template-columns: 1rem 6fr 4fr 15fr;
+  align-items: center;
+  font-size: 0.75rem;
+  @media screen and (min-width: 860px) {
+    font-size: 1.5rem;
+  }
+}
+
+.pipelines__row__progress-area {
+  position: relative;
+  width: 100%;
+}
+
+.pipelines__row__progress-bar {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 55%;
+  background-color: yellow;
+}
+
+.pipelines__row__progress-area__markers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  div {
+    border-left: 1px solid gray;
+  }
+
+  div:last-child {
+    border-right: 1px solid gray;
+  }
+}

@@ -5,10 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export",
-    "start": "next start -p $PORT",
-    "build:css": "postcss styles/tailwind.scss -o styles/main.scss",
-    "build:watch": "postcss styles/tailwind.scss -o styles/main.scss --watch",
-    "prod:build": "NODE_ENV=production yarn run build:css && npm run build"
+    "start": "next start -p $PORT"
   },
   "dependencies": {
     "autoprefixer": "^10.2.4",

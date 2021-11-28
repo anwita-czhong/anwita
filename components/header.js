@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Image from "next/image";
+import styles from "./header.module.scss";
 
 const navbarButtonWrapperStyling = 'navbar:inline-flex navbar:flex-1 navbar:w-auto w-full items-center justify-center';
 const navbarButtonStyling = 'rounded text-blue-900 items-center justify-center px-3 py-2 hover:bg-gray-100 focus:bg-gray-100 hover:text-orange focus:text-orange focus:ring focus:ring-gray-300 outline-none';
@@ -51,7 +52,7 @@ export const Navbar = () => {
     return (
         <div>
             <nav className='fixed flex items-center max-h-screen flex-wrap p-3 bg-white w-full content-around z-10'>
-                <div className='hidden lg:inline-flex' style={{minWidth: '0.5em', width: '10%'}}></div>
+                <div className='hidden navbar:inline-flex' style={{minWidth: '0.5em', width: '10%'}}></div>
                 <button onClick={toTop} name="Home Button" className='inline-flex items-center mr-4 focus:outline-none focus:ring focus:ring-gray-300 rounded'>
                     <div className="h-12 max-h-12 items-center" style={{width: '183.2px', maxWidth: '50vw'}}>
                         <Image src="/assets/branding/AnwitaLogoAlphaGradient.png" width="500" height="131" layout="responsive" alt="Anwita Biosciences" />

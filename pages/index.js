@@ -3,6 +3,8 @@ import Image from 'next/image';
 import { Navbar } from '../components/header';
 import { Footer } from '../components/footer';
 import { People } from '../components/people';
+import Pipeline from '../components/Pipeline';
+
 export default function Home() {
   const sectionWrapperClasses = 'flex-1 my-6 py-6';
 
@@ -19,7 +21,7 @@ export default function Home() {
         <Navbar />
       </header>
 
-      <div style={{height: '64px'}}></div>
+      <div style={{height: '72px'}}></div>
 
       <main>
         <div id='banner-wrapper' className='bg-home-banner bg-cover bg-center flex content-center justify-center h-third-screen'>
@@ -55,11 +57,14 @@ export default function Home() {
             <div className={sectionWrapperClasses}>
               <span id='pipeline' className='anchor'/>
               <h1 className='text-center text-4xl mb-2 font-semibold'>Pipeline</h1>
-              <br/>
-              <div className='w-full'>
-                <Image src='/assets/graphics/pipeline.jpg' alt="Image of Anwita's pipeline" width="100%" height="33%" layout="responsive" objectFit="contain"/>
-                <div className='grid-cols-4'></div>
-              </div>
+              <Pipeline
+                pipelines={[
+                  {
+                    name: "Exenokine-21",
+                    target: "IL-21",
+                  },
+                ]}
+              />
             </div>
 
             <hr className='my-3 h-px border-1 border-gray-400'></hr>
