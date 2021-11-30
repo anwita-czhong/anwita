@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export",
-    "start": "next start -p $PORT"
+    "start": "next start -p $PORT",
+    "lint": "next lint"
   },
   "dependencies": {
     "autoprefixer": "^10.2.4",
@@ -19,10 +20,12 @@
     "sass": "^1.33.0",
     "tailwindcss": "^2.0.3"
   },
-  "devDependencies": {
-    "eslint": "^8.3.0"
-  },
   "cacheDirectories": [
     ".next/cache"
-  ]
+  ],
+  "devDependencies": {
+    "@next/eslint-plugin-next": "^12.0.4",
+    "eslint": "^7.0",
+    "eslint-config-next": "12.0.4"
+  }
 }

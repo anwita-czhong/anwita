@@ -1,15 +1,5 @@
 {
-  "extends": "eslint:recommended",
-  "env": {
-    "node": true,
-    "es6": true
-  },
-  "parser": "babel-eslint",
-  "parserOptions": {
-    "sourceType": "module",
-    "allowImportExportEverywhere": true,
-    "ecmaVersion": "latest"
-  },
+  "extends": "next/core-web-vitals",
   "rules": {
     "arrow-spacing": ["warn", { "before": true, "after": true }],
     "brace-style": ["error", "1tbs", { "allowSingleLine": true }],
