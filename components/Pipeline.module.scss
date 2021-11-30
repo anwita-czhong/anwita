@@ -28,14 +28,17 @@ $border: #2E89CA;
     }
   }
 
-  div {
+  & > div {
     p {
       margin: 0.25rem;
-      margin-top: 0.5rem;
-      margin-bottom: 0.5rem;
-      height: 100%;
+      margin-top: 0.75rem;
+      margin-bottom: 0.75rem;
     }
+    height: 100%;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
