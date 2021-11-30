@@ -1,4 +1,4 @@
-import { Link } from "next/link";
+import Link from "next/link";
 
 export default function FourOhFour() {
   const linkStyling = "text-blue-400 hover:text-yellow-500 hover:underline focus:underline focus:outline-none focus:ring focus:ring-gray-400 rounded";
