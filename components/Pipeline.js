@@ -25,22 +25,8 @@ export default function Pipeline(props) {
           <p><b>Clinic</b></p>
         </div>
       </div>
-      <div className={styles.pipelines__row}>
-        <div className="w-full h-full">.</div>
-        <div className="">
-          <p><b>Exenokine-21</b></p>
-        </div>
-        <p>IL-21</p>
-        <div className={styles["pipelines__row__progress-area"]}>
-          <div className={styles["pipelines__row__progress-area__markers"]}>
-            <div>&nbsp;</div>
-            <div>&nbsp;</div>
-            <div>&nbsp;</div>
-          </div>
-          <div className={styles["pipelines__row__progress-bar"]}></div>
-        </div>
-      </div>
-      {/* {pipelines} */}
+
+      {pipelines}
     </div>
   )
 };
