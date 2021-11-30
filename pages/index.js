@@ -59,10 +59,57 @@ export default function Home() {
               <h1 className='text-center text-4xl mb-2 font-semibold'>Pipeline</h1>
               <Pipeline
                 pipelines={[
+                  // Progress must be a multiple of 5
                   {
-                    name: "Exenokine-21",
+                    name: "Exenokine<wbr />-21",
+                    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste cupiditate voluptate eligendi tenetur quod nemo, similique eos nobis beatae fuga hic ullam? Quasi quos voluptates voluptate illo tempora velit accusamus?",
                     target: "IL-21",
+                    indication: "Solid Tumors",
+                    progress: 80,
+                    partnership: "top-alliance",
                   },
+                  {
+                    name: "Exenokine<wbr />-2",
+                    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit excepturi dolorum minima fuga eveniet non iusto eius labore ab debitis.",
+                    target: "IL-2",
+                    indication: "Solid Tumors",
+                    progress: 60,
+                    partnership: "top-alliance",
+                  },
+                  {
+                    name: "Mableukin<wbr />-2PD1",
+                    target: "PD-1 and IL-2",
+                    indication: "Solid Tumors",
+                    progress: 55,
+                  },
+                  {
+                    name: "MSLN<wbr />-MMAE",
+                    target: "Mesothelin",
+                    indication: "Solid Tumors",
+                    progress: 40,
+                  },
+                  {
+                    name: "FRα<wbr />-MMAE",
+                    target: "Folate Receptor",
+                    indication: "Solid Tumors",
+                    progress: 40,
+                  },
+                  {
+                    name: "B7H3<wbr />-MMAE",
+                    target: "B7H3",
+                    indication: "Solid Tumors",
+                    progress: 40,
+                  },
+                  {
+                    name: "AWT<wbr />-024",
+                    target: "IL-36 Receptor",
+                    indication: "Solid Tumors",
+                    progress: 40,
+                  },
+                  {
+                    name: "Discovery Programs",
+                    progress: 20
+                  }
                 ]}
               />
             </div>
