@@ -1,4 +1,4 @@
-import styles from './Pipeline.module.scss'
+import styles from './Pipeline.module.scss';
 
 export default function Pipeline(props) {
   const pipelines = props.pipelines.map((pipeline) => {
@@ -38,22 +38,21 @@ export default function Pipeline(props) {
 
   return (
     <div className={styles.pipelines}>
-      <div className={styles.pipelines__headers}>
-        <div></div>
+      <div className={styles.pipelines__row + " " + styles["pipelines__row--headers"]}>
         <div>
-          <p><b>Candidate</b></p>
+          <p><b>Program</b></p>
         </div>
         <div>
           <p><b>Target</b></p>
         </div>
         <div>
-          <p><b>Pre&shy;clinical</b></p>
+          <p className="lg:text-center"><b>Pre&shy;clinical</b></p>
         </div>
         <div>
-          <p><b>IND Enabling</b></p>
+          <p className="lg:text-center"><b>IND Enabling</b></p>
         </div>
         <div>
-          <p><b>Clinic</b></p>
+          <p className="lg:text-center"><b>Clinic</b></p>
         </div>
       </div>
 
