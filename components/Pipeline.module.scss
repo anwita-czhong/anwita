@@ -54,7 +54,7 @@ $border: #2E89CA;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  height: min(1.25rem, 3vw);
+  height: min(1.5rem, 4vw);
 
   &__fill {
     background-color: $primary;
