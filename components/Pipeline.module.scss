@@ -4,8 +4,6 @@ $primary: #0070C0;
 $border: #2E89CA;
 
 .pipelines {
-  display: flex;
-  flex-direction: column;
   border-top: 2px solid $border;
   border-bottom: 4px solid $border;
   background-color: rgb(242, 242, 242);
