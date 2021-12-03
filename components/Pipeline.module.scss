@@ -120,12 +120,12 @@ $border: #2E89CA;
   z-index: 1;
 
   position: absolute;
-  width: 30ch;
-  left: 50%;
-  top: 100%;
-  transform: translateX(-50%);
+  width: min(65ch, 75vw);
+  left: 90%;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.hoverParent:hover .hoverParent__text {
+.hoverParent:hover,.hoverParent:active .hoverParent__text {
   visibility: visible;
 }
