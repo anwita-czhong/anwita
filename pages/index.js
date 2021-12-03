@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Navbar } from "../components/header";
 import { Footer } from "../components/footer";
 import { People } from "../components/people";
-import Pipeline from "../components/Pipeline";
+import Pipelines from "../components/Pipeline";
 
 export default function Home() {
   const sectionWrapperClasses = "flex-1 my-6 py-6";
@@ -57,12 +57,12 @@ export default function Home() {
             <div className={sectionWrapperClasses}>
               <span id='pipeline' className='anchor'/>
               <h1 className='text-center text-4xl mb-2 font-semibold'>Pipeline</h1>
-              <Pipeline
+              <Pipelines
                 pipelines={[
-                  // Progress must be a multiple of 5
+                  // Progress will be rounded to a multiple of 5
                   {
                     name: "Exenokine<wbr />-21",
-                    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste cupiditate voluptate eligendi tenetur quod nemo, similique eos nobis beatae fuga hic ullam? Quasi quos voluptates voluptate illo tempora velit accusamus?",
+                    description: "JS014 is an Exenokine-21 molecule being developed as an IV infusion treatment for patients with melanoma, renal cell carcinoma, non-small cell lung cancer, breast cancer and other tumors either alone or in combination with immune checkpoint inhibitors. The antitumor activities of JS014 have been demonstrated in multiple mouse tumor models, both as a superior single agent when compared to the unmodified rhIL-21 and as an effective combined agent potentiating the efficacy of immunotherapies. JS014 has recently received IND acceptance from the FDA. Anwita plans to conduct a first-in-human, dose-escalation and expansion Phase 1 clinical trial to evaluate the safety and efficacy of JS14 in cancer patients in Q1 2022. Shanghai Junshi Biosciences has exclusive rights to Anwita's Exenokine-21, JS014, in the Greater China territories.",
                     target: "IL-21",
                     indication: "Solid Tumors",
                     progress: 80,
