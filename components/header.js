@@ -11,12 +11,12 @@ const links = [
     "anchor":  "about",
   },
   {
-    "display": "Pipeline",
-    "anchor":  "pipeline",
-  },
-  {
     "display": "Technology",
     "anchor":  "technology",
+  },
+  {
+    "display": "Pipeline",
+    "anchor":  "pipeline",
   },
   {
     "display": "Team",

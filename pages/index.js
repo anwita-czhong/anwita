@@ -49,6 +49,28 @@ export default function Home() {
 
           <hr className='my-3 h-px border-1 border-gray-400'></hr>
 
+          <div className={sectionWrapperClasses + " flex flex-col items-start"}>
+            <span id='technology' className='anchor'/>
+            <h1 className='text-center text-4xl mb-2 font-semibold place-self-center'>Our Approach</h1>
+            <br/><br/>
+            <p className='text-xl'>
+                Exenokines<sup>TM</sup> are proprietary cytokines designed using Anwita Biosciences’ patented platform technology.  Our modular design enables accelerated development of a diversified portfolio of cytokine-based products with improved pharmaceutical properties.
+            </p>
+            <div className='my-12 w-full place-self-center' style={{ maxWidth: "44rem" }}>
+              <Image src='/assets/graphics/tech-01.jpg'
+                width='100%' height = '60%' layout='responsive' objectFit='contain' className='object-scale-down' alt='Tech 01' />
+            </div>
+            <p className='text-xl'>
+              Our scientists are developing a suite of innovative ADC technologies and payloads. The company is advancing a pipeline of tumor targeting ADCs with enhanced efficacy <i>in vivo</i>.
+            </p>
+            <div className='my-12 w-full place-self-center' style={{ maxWidth: "44rem" }}>
+              <Image src='/assets/graphics/tech-02.jpg'
+                width='100%' height = '40%' layout='responsive' objectFit='contain' className='object-scale-down' alt='Tech 02' />
+            </div>
+          </div>
+
+          <hr className='my-3 h-px border-1 border-gray-400'></hr>
+
           <div className={sectionWrapperClasses}>
             <span id='pipeline' className='anchor'/>
             <h1 className='text-center text-4xl mb-4 font-semibold'>Pipeline</h1>
@@ -107,28 +129,6 @@ export default function Home() {
                 },
               ]}
             />
-          </div>
-
-          <hr className='my-3 h-px border-1 border-gray-400'></hr>
-
-          <div className={sectionWrapperClasses + " flex flex-col items-start"}>
-            <span id='technology' className='anchor'/>
-            <h1 className='text-center text-4xl mb-2 font-semibold place-self-center'>Our Approach</h1>
-            <br/><br/>
-            <p className='text-xl'>
-                Exenokines<sup>TM</sup> are proprietary cytokines designed using Anwita Biosciences’ patented platform technology.  Our modular design enables accelerated development of a diversified portfolio of cytokine-based products with improved pharmaceutical properties.
-            </p>
-            <div className='my-12 w-full place-self-center' style={{ maxWidth: "44rem" }}>
-              <Image src='/assets/graphics/tech-01.jpg'
-                width='100%' height = '60%' layout='responsive' objectFit='contain' className='object-scale-down' alt='Tech 01' />
-            </div>
-            <p className='text-xl'>
-              Our scientists are developing a suite of innovative ADC technologies and payloads. The company is advancing a pipeline of tumor targeting ADCs with enhanced efficacy <i>in vivo</i>.
-            </p>
-            <div className='my-12 w-full place-self-center' style={{ maxWidth: "44rem" }}>
-              <Image src='/assets/graphics/tech-02.jpg'
-                width='100%' height = '40%' layout='responsive' objectFit='contain' className='object-scale-down' alt='Tech 02' />
-            </div>
           </div>
 
           <hr className='my-3 h-px border-1 border-gray-400'></hr>
