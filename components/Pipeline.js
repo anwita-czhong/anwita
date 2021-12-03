@@ -4,11 +4,13 @@ function Product(props) {
   const pipeline = props.pipeline;
   return (
     <div className={styles.pipelines__row} key={pipeline.name}>
-      <div className={styles.hoverParent} style={{ gridColumn: (pipeline.target ? "" : "1 / 3"), overflow: (pipeline.description ? "visible" : "hidden") }}>
-        <p>
-          <b dangerouslySetInnerHTML={{ __html: pipeline.name }}></b>
-        </p>
-        { pipeline.description && <span className={styles.hoverParent__text + " text-sm"}><p>{pipeline.description}</p></span> }
+      <div style={{ gridColumn: (pipeline.target ? "" : "1 / 3"), overflow: (pipeline.description ? "visible" : "hidden") }}>
+        <details className={styles.hoverParent + " my-3"} >
+          <summary>
+            <b dangerouslySetInnerHTML={{ __html: pipeline.name }}></b>
+          </summary>
+          { pipeline.description && <div className={styles.hoverParent__text + " text-sm p-2"}><p>{pipeline.description}</p></div> }
+        </details>
       </div>
       {pipeline.target &&
         <div style={{ borderLeft: "1px dashed gray" }}>

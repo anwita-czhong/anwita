@@ -111,7 +111,6 @@ $border: #2E89CA;
 }
 
 .hoverParent .hoverParent__text {
-  visibility: hidden;
   text-align: center;
   background-color: rgba(255, 255, 255, 50);
   height: fit-content;
@@ -120,12 +119,9 @@ $border: #2E89CA;
   z-index: 1;
 
   position: absolute;
-  width: min(65ch, 75vw);
-  left: 90%;
-  top: 50%;
-  transform: translateY(-50%);
+  width: min(65ch, 70vw);
+  left: 100%;
+  top: 0%;
+  // transform: translateY(-50%);
 }
 
-.hoverParent:hover,.hoverParent:active .hoverParent__text {
-  visibility: visible;
-}
