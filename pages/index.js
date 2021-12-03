@@ -6,7 +6,7 @@ import { People } from "../components/people";
 import Pipelines from "../components/Pipeline";
 
 export default function Home() {
-  const sectionWrapperClasses = "flex-1 my-6 py-6";
+  const sectionWrapperClasses = "my-6 py-6";
 
   const linkStyling = "text-blue-400 hover:text-yellow-500 hover:underline focus:underline focus:outline-none focus:ring focus:ring-gray-400 rounded";
 
