@@ -63,7 +63,7 @@ export default function Pipelines(props) {
         </div>
       </div>
 
-      {pipelines}
+      {/* {pipelines} */}
     </div>
   );
 };
