@@ -17,11 +17,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header>
-        <Navbar />
-      </header>
-
-      <div style={{ height: "72px" }}></div>
+      <Navbar />
 
       <main>
         <div id='banner-wrapper' className='bg-home-banner bg-cover bg-center flex content-center justify-center h-third-screen'>
