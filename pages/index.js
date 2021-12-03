@@ -158,29 +158,32 @@ export default function Home() {
 
           <hr className='my-3 h-px border-1 border-gray-400'></hr>
 
-          <div className={sectionWrapperClasses + " flex flex-col"}>
-            <br/>
+          <div className={sectionWrapperClasses}>
             <span id='careers' className='anchor'/>
-            <h1 className='text-center text-4xl mb-2 font-semibold'>Careers</h1>
-            <hr className='my-3 h-px border-1 border-gray-400 w-1/3 place-self-center'></hr>
-            <br/>
-            <h2 className='text-3xl mb-6 italic font-semibold text-center'>Working at Anwita</h2>
-            <p className='text-xl'>We are always seeking exceptional talent that is passionate about making a difference in the lives of patients with cancer or autoimmune disorders. If you share our mission, and are interested in joining our team, please reach out to us via email at <a href='mailto:contact@anwitabio.com' className={linkStyling}>contact@anwitabio.com</a>.</p>
-            <br/>
-            <h2 className='text-center text-3xl mb-2 italic font-semibold'>Benefits</h2>
-            <div className='text-xl'>
-              <ul className='list-disc list-inside'>
-                <li>Competitive compensation</li>
-                <li>Stock options at all levels</li>
-                <li>401(K) plan</li>
-                <li>Official holidays</li>
-                <li>Generous paid time off (PTO)</li>
-                <li>Sick days</li>
-                <li>Medical plan</li>
-                <li>Dental plan</li>
-                <li>Visional plan</li>
-                <li>Life insurance</li>
-              </ul>
+            <h1 className='text-center text-4xl my-2 font-semibold'>Careers</h1>
+            <hr className='mt-3 h-px border-1 border-gray-400 w-1/3 m-auto'></hr>
+            <div className="lg:grid grid-cols-2 gap-2">
+              <div className="my-4">
+                <h2 className='text-3xl my-4 italic font-semibold text-center'>Working at Anwita</h2>
+                <p className='text-xl'>We are always seeking exceptional talent that is passionate about making a difference in the lives of patients with cancer or autoimmune disorders. If you share our mission, and are interested in joining our team, please reach out to us via email at <a href='mailto:contact@anwitabio.com' className={linkStyling}>contact@anwitabio.com</a>.</p>
+              </div>
+              <div className="my-4">
+                <h2 className='text-center text-3xl my-4 italic font-semibold'>Benefits</h2>
+                <div className='text-xl px-4 lg:px-8'>
+                  <ul className='list-disc list-inside'>
+                    <li>Competitive compensation</li>
+                    <li>Stock options at all levels</li>
+                    <li>401(K) plan</li>
+                    <li>Official holidays</li>
+                    <li>Generous paid time off (PTO)</li>
+                    <li>Sick days</li>
+                    <li>Medical plan</li>
+                    <li>Dental plan</li>
+                    <li>Visional plan</li>
+                    <li>Life insurance</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
