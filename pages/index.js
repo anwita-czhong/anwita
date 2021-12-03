@@ -47,7 +47,7 @@ export default function Home() {
                   </p>
                 </div>
                 <div>
-                  <img src='/assets/graphics/about.webp' alt="" width="870" height="872" layout="responsive" className='object-scale-down w-full h-96'/>
+                  <Image src='/assets/graphics/about.webp' alt="" width="870" height="872" layout="responsive" className='object-scale-down w-full h-96'/>
                 </div>
               </div>
             </div>
