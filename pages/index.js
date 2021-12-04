@@ -79,7 +79,7 @@ export default function Home() {
               pipelines={[
                 // Progress will be rounded to the nearest multiple of 5
                 {
-                  name: "Exenokine<wbr />-21",
+                  name: "Exenokine&#8203;-21",
                   description: "JS014 is an Exenokine-21 molecule being developed as an IV infusion treatment for patients with melanoma, renal cell carcinoma, non-small cell lung cancer, breast cancer and other tumors either alone or in combination with immune checkpoint inhibitors. The antitumor activities of JS014 have been demonstrated in multiple mouse tumor models, both as a superior single agent when compared to the unmodified rhIL-21 and as an effective combined agent potentiating the efficacy of immunotherapies. JS014 has recently received IND acceptance from the FDA. Anwita plans to conduct a first-in-human, dose-escalation and expansion Phase 1 clinical trial to evaluate the safety and efficacy of JS14 in cancer patients in Q1 2022. Shanghai Junshi Biosciences has exclusive rights to Anwita's Exenokine-21, JS014, in the Greater China territories.",
                   target: "IL-21",
                   indication: "Solid Tumors",
@@ -87,7 +87,7 @@ export default function Home() {
                   partnership: "top-alliance",
                 },
                 {
-                  name: "Exenokine<wbr />-2",
+                  name: "Exenokine&#8203;-2",
                   description: "RT003 is a systemically delivered Exenokine-2 molecule being developed to minimize the severe toxicity observed with recombinant IL-2 therapy while maximizing the clinical benefit as a monotherapy or in combination with immune checkpoint inhibitors in multiple tumor types. Key features of RT003 include preferential activation of the &beta;&gamma;-IL-2 receptor and extension of half-life for an improved systemic exposure. In preclinical studies, RT003 exhibits potent antitumor and PD activities with a favorable pharmacokinetic and tolerability profile. Pharmacological activity of RT003 is driven by the selective activation and expansion of effector T cells. Shanghai Junshi Biosciences has exclusive rights to Anwita's Exenokine-2, RT003, in the Greater China territories.",
                   target: "IL-2",
                   indication: "Solid Tumors",
@@ -95,28 +95,28 @@ export default function Home() {
                   partnership: "top-alliance",
                 },
                 {
-                  name: "Mableukin<wbr />-2PD1",
+                  name: "Mableukin&#8203;-2PD1",
                   description: "Mableukine2-PD1 is a targeted fusion protein comprised of an anti-PD1 antibody and a potency optimized IL-2. The IL-2 component is engineered to have significantly lower toxicity compared to the simple “no-alpha” IL-2. The anti-PD1 antibody component of the fusion protein serves not only to block the interaction between PD1 and PD-L1 but also functions to direct optimized IL-2 to the desired cell populations. Leveraging on the function of PD1 and IL-2 signaling pathway to selectively stimulate effector T cells, Mableukine2-PD1 exhibits impressive antitumor and PD activities with an excellent pharmacokinetic and low systematic toxicity profile.",
                   target: "PD-1 and IL-2",
                   indication: "Solid Tumors",
                   progress: 55,
                 },
                 {
-                  name: "MSLN<wbr />-MMAE",
+                  name: "MSLN&#8203;-MMAE",
                   description: "MSLN-MMAE is a novel mesothelin (MSLN)-directed antibody-drug conjugate (ADC) composed of a humanized anti-MSLN monoclonal antibody coupled to the potent microtubule-disrupting agent monomethyl auristatin E (MMAE). Specific binding to tumor cells that overexpress MSLN, MSLN-MMAE induced cell death in vitro in a dose-dependent manner and significantly inhibited the growth of several target-expressing xenograft tumor models. We plan to further develop our lead molecule for the treatment of patients with MSLN-expressing tumors such as mesotheliomas, pancreatic cancer and ovarian cancer.",
                   target: "Meso&shy;thelin",
                   indication: "Solid Tumors",
                   progress: 40,
                 },
                 {
-                  name: "B7H3<wbr />-MMAE",
+                  name: "B7H3&#8203;-MMAE",
                   description: "B7H3-MMAE, an antibody-drug conjugate (ADC) targeting the human B7H3 protein, is comprised of monomethyl auristatin E (MMAE) conjugated to a humanized anti-B7H3 antibody. In vitro, B7H3-MMAE exhibits cytotoxicity towards B7H3-positive human tumor cell lines.  In vivo, B7H3-MMAE demonstrates potent antitumor activity in preclinical tumor models of breast, ovarian, and lung cancer. Our study provides evidence of a potentially favorable therapeutic index and supports the development of B7H3-MMAE for the treatment of solid cancers.",
                   target: "B7H3",
                   indication: "Solid Tumors",
                   progress: 40,
                 },
                 {
-                  name: "AWT<wbr />-024",
+                  name: "AWT&#8203;-024",
                   description: "IL-36 cytokines and their receptors are normally expressed at low levels but are markedly elevated during inflammation in several tissues including skin, lung, joints, and gut. The importance of proper IL-36 signaling has been demonstrated in several preclinical in vivo models of skin inflammation, lung inflammation and inflammatory bowel disease. In the human setting, based on proof-of-concept clinical data, blockade of IL-36 signaling through inhibition of IL-36R could be an appealing therapeutic target for patients suffering from chronic and potentially life-threatening generalized pustular psoriasis. Anwita is developing a best-in-class IL-36R directed antibody-based therapeutic that exhibits exquisite potency and excellent CMC profile.",
                   target: "IL-36 Receptor",
                   indication: "Autoimmune",

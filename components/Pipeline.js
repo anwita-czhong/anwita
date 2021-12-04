@@ -1,5 +1,6 @@
 import styles from "./Pipeline.module.scss";
 import React from "react";
+import he from "he";
 
 function Product(props) {
   const pipeline = props.pipeline;
@@ -8,15 +9,15 @@ function Product(props) {
       <div className={((pipeline.target && pipeline.indication) ? "" : styles["pipelines__row__name--no-info"]) + " pl-1"} style={{ overflow: (pipeline.description ? "visible" : "hidden") }}>
         <details className={styles.hoverParent + " my-3"} open={props.isOpen} onClick={(event) => props.onClick(event)}>
           <summary>
-            <b dangerouslySetInnerHTML={{ __html: pipeline.name }}></b>
+            <b>{he.decode(pipeline.name)}</b>
             {pipeline.indication && <p>{pipeline.indication}</p>}
           </summary>
-          { pipeline.description && <div className={styles.hoverParent__text + ((pipeline.target && pipeline.indication) ? "" : ` ${styles["hoverParent__text--bottom"]}`) + " text-xs p-2"}><p>{pipeline.description}</p></div> }
+          { pipeline.description && <div className={styles.hoverParent__text + ((pipeline.target && pipeline.indication) ? "" : ` ${styles["hoverParent__text--bottom"]}`) + " text-xs p-2"}><p>{he.decode(pipeline.description)}</p></div> }
         </details>
       </div>
 
       <div style={{ borderLeft: "1px dashed gray", display: pipeline.target ? "" : "none" }}>
-        <p dangerouslySetInnerHTML={{ __html: pipeline.target }}></p>
+        <p>{he.decode(pipeline.target || "")}</p>
       </div>
 
       <div style={{ borderLeft: "1px dashed gray", display: pipeline.indication ? "" : "none" }}>
