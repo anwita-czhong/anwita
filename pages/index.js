@@ -52,19 +52,19 @@ export default function Home() {
           <div className={sectionWrapperClasses + " flex flex-col items-start"}>
             <span id='technology' className='anchor'/>
             <h1 className='text-center text-4xl mb-6 font-semibold place-self-center'>Our Approach</h1>
-            <p className='text-xl'>
-                Exenokines<sup>TM</sup> are proprietary cytokines designed using Anwita Biosciences’ patented platform technology.  Our modular design enables accelerated development of a diversified portfolio of cytokine-based products with improved pharmaceutical properties.
-            </p>
-            <div className='my-12 w-full place-self-center' style={{ maxWidth: "44rem" }}>
-              <Image src='/assets/graphics/tech-01.jpg'
-                width='100%' height = '60%' layout='responsive' objectFit='contain' className='object-scale-down' alt='Tech 01' />
-            </div>
-            <p className='text-xl'>
-              Our scientists are developing a suite of innovative ADC technologies and payloads. The company is advancing a pipeline of tumor targeting ADCs with enhanced efficacy <i>in vivo</i>.
-            </p>
-            <div className='my-12 w-full place-self-center' style={{ maxWidth: "44rem" }}>
-              <Image src='/assets/graphics/tech-02.jpg'
-                width='100%' height = '40%' layout='responsive' objectFit='contain' className='object-scale-down' alt='Tech 02' />
+            <div className="lg:grid grid-cols-2 gap-4">
+              <div className='my-4 w-full place-self-center' style={{ maxWidth: "44rem" }}>
+                <Image src='/assets/graphics/anwitaTech-02.png'
+                  width='810' height = '431' alt='A diagram showcasing Anwita&apos;s technology workflow.' />
+              </div>
+              <div>
+                <p className='text-xl my-4 max-w-readable place-self-center'>
+                    Exenokines<sup>TM</sup> are proprietary cytokines designed using Anwita Biosciences’ patented platform technology.  Our modular design enables accelerated development of a diversified portfolio of cytokine-based products with improved pharmaceutical properties.
+                </p>
+                <p className='text-xl my-4 max-w-readable place-self-center'>
+                  Our scientists are developing a suite of innovative ADC technologies and payloads. The company is advancing a pipeline of tumor targeting ADCs with enhanced efficacy <i>in vivo</i>.
+                </p>
+              </div>
             </div>
           </div>
 
