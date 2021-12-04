@@ -4,19 +4,24 @@ function Product(props) {
   const pipeline = props.pipeline;
   return (
     <div className={styles.pipelines__row} key={pipeline.name}>
-      <div style={{ gridColumn: (pipeline.target ? "" : "1 / 3"), overflow: (pipeline.description ? "visible" : "hidden") }}>
+      <div className={((pipeline.target && pipeline.indication) ? "" : styles["pipelines__row__name--no-info"]) + " pl-1"} style={{ overflow: (pipeline.description ? "visible" : "hidden") }}>
         <details className={styles.hoverParent + " my-3"} >
           <summary>
             <b dangerouslySetInnerHTML={{ __html: pipeline.name }}></b>
+            {pipeline.indication && <p>{pipeline.indication}</p>}
           </summary>
-          { pipeline.description && <div className={styles.hoverParent__text + " text-sm p-2"}><p>{pipeline.description}</p></div> }
+          { pipeline.description && <div className={styles.hoverParent__text + ((pipeline.target && pipeline.indication) ? "" : ` ${styles["hoverParent__text--bottom"]}`) + " text-xs p-2"}><p>{pipeline.description}</p></div> }
         </details>
       </div>
-      {pipeline.target &&
-        <div style={{ borderLeft: "1px dashed gray" }}>
-          <p>{pipeline.target}</p>
-        </div>
-      }
+
+      <div style={{ borderLeft: "1px dashed gray", display: pipeline.target ? "" : "none" }}>
+        <p dangerouslySetInnerHTML={{ __html: pipeline.target }}></p>
+      </div>
+
+      <div style={{ borderLeft: "1px dashed gray", display: pipeline.indication ? "" : "none" }}>
+        <p>{pipeline.indication}</p>
+      </div>
+
       <div className={styles["pipelines__row__progress-area"]}>
         <div className={
           styles["pipelines__row__progress-bar"]
@@ -24,10 +29,11 @@ function Product(props) {
           + " " + (pipeline.partnership ? styles[`pipelines__row__progress-bar--${pipeline.partnership}`] : "")
         }>
           <div className={styles["pipelines__row__progress-bar__fill"]}></div>
-          <svg viewBox="0 0 50 100" preserveAspectRatio="none">
-            <polygon points="-1,-1 50,50 -1,101" />
+          <svg viewBox="0 0 50 100" preserveAspectRatio="none" alt="">
+            <polygon points="0,0 50,50 0,100" />
           </svg>
         </div>
+
         <div className={styles["pipelines__row__progress-area__markers"]}>
           <div>&nbsp;</div>
           <div>&nbsp;</div>
