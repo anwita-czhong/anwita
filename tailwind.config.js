@@ -330,6 +330,8 @@ module.exports = {
       10: "repeat(10, minmax(0, 1fr))",
       11: "repeat(11, minmax(0, 1fr))",
       12: "repeat(12, minmax(0, 1fr))",
+      "left-uneven": "3fr 2fr",
+      "right-uneven": "2fr 3fr",
     },
     gridTemplateRows: {
       none: "none",

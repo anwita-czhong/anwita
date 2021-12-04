@@ -52,7 +52,7 @@ export default function Home() {
           <div className={sectionWrapperClasses + " flex flex-col items-start"}>
             <span id='technology' className='anchor'/>
             <h1 className='text-center text-4xl mb-6 font-semibold place-self-center'>Our Approach</h1>
-            <div className="lg:grid grid-cols-2 gap-4">
+            <div className="lg:grid grid-cols-left-uneven gap-4">
               <div className='my-4 w-full place-self-center' style={{ maxWidth: "44rem" }}>
                 <Image src='/assets/graphics/anwitaTech-02.png'
                   width='810' height = '431' alt='A diagram showcasing Anwita&apos;s technology workflow.' />
@@ -161,7 +161,7 @@ export default function Home() {
             <span id='careers' className='anchor'/>
             <h1 className='text-center text-4xl my-2 font-semibold'>Careers</h1>
             <hr className='mt-3 h-px border-1 border-gray-400 w-1/3 m-auto'></hr>
-            <div className="lg:grid grid-cols-2 gap-2">
+            <div className="lg:grid grid-cols-left-uneven gap-2">
               <div className="my-4">
                 <h2 className='text-3xl my-4 italic font-semibold text-center'>Working at Anwita</h2>
                 <p className='text-xl'>We are always seeking exceptional talent that is passionate about making a difference in the lives of patients with cancer or autoimmune disorders. If you share our mission, and are interested in joining our team, please reach out to us via email at <a href='mailto:contact@anwitabio.com' className={linkStyling}>contact@anwitabio.com</a>.</p>
