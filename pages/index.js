@@ -52,19 +52,16 @@ export default function Home() {
           <div className={sectionWrapperClasses + " flex flex-col items-start"}>
             <span id='science' className='anchor'/>
             <h1 className='text-center text-4xl mb-6 font-semibold place-self-center'>Science</h1>
-            <div className="lg:grid grid-cols-left-uneven gap-4">
-              <div className='my-4 w-full place-self-center' style={{ maxWidth: "44rem" }}>
+            <div className="flex flex-col place-self-center">
+              <div className='w-full place-self-center' style={{ maxWidth: "55rem" }}>
                 <Image src='/assets/graphics/anwitaTech-02.webp'
-                  width='810' height = '431' alt='A diagram showcasing Anwita&apos;s technology workflow.' />
+                  width='1620' height = '862' alt='A diagram showcasing Anwita&apos;s technology workflow.' />
               </div>
-              <div>
-                <p className='text-xl my-4 max-w-readable place-self-center'>
-                    Exenokines<sup>TM</sup> are proprietary cytokines designed using Anwita Biosciences’ patented platform technology.  Our modular design enables accelerated development of a diversified portfolio of cytokine-based products with improved pharmaceutical properties.
-                </p>
-                <p className='text-xl my-4 max-w-readable place-self-center'>
-                  Our scientists are developing a suite of innovative ADC technologies and payloads. The company is advancing a pipeline of tumor targeting ADCs with enhanced efficacy <i>in vivo</i>.
-                </p>
-              </div>
+
+              <p className='text-xl my-4 max-w-[75ch] place-self-center'>
+              Anwita’s core technology integrates structure-guided AccuKine cytokine evolution and AccuBody discovery of full spectrum nanobodies, enabling the development of fully optimized cytokine fusions with superior therapeutic potential, favorable safety profile and great developmentability. Our unique product portfolio includes half-live extended Exenokines, immune cell- or tumor cell-targeting Mableukines, and bi-functional Duoleukins. These new generation of cytokines could serve as powerful novel immune therapies with a wide range of applications in treating patients with cancers and autoimmune diseases.
+              </p>
+
             </div>
           </div>
 
