@@ -7,24 +7,25 @@
     "build-only": "next build",
     "build": "next build && next export",
     "start": "next start -p $PORT",
-    "build:css": "postcss styles/tailwind.scss -o styles/main.scss",
-    "build:watch": "postcss styles/tailwind.scss -o styles/main.scss --watch",
-    "prod:build": "NODE_ENV=production yarn run build:css && yarn run build"
+    "lint": "next lint"
   },
   "dependencies": {
     "autoprefixer": "^10.2.4",
-    "next": "11.1.1",
-    "next-images": "^1.8.1",
-    "postcss": "^8.2.10",
-    "postcss-cli": "^8.3.1",
-    "react": "17.0.1",
-    "react-dom": "17.0.1",
+    "he": "^1.2.0",
+    "next": "^12.0.0",
+    "next-images": "^1.8.4",
+    "react": "~17.0.1",
+    "react-dom": "~17.0.1",
     "react-modal": "^3.12.1",
-    "react-scroll": "^1.8.1",
-    "sass": "^1.32.8",
-    "tailwindcss": "^2.0.3"
+    "sass": "^1.33.0",
+    "tailwindcss": "^2.1.0"
   },
   "cacheDirectories": [
     ".next/cache"
-  ]
+  ],
+  "devDependencies": {
+    "@next/eslint-plugin-next": "^12.0.4",
+    "eslint": "^7.0",
+    "eslint-config-next": "^12.0.4"
+  }
 }
