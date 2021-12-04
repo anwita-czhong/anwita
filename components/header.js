@@ -11,8 +11,8 @@ const links = [
     "anchor":  "about",
   },
   {
-    "display": "Technology",
-    "anchor":  "technology",
+    "display": "Science",
+    "anchor":  "science",
   },
   {
     "display": "Pipeline",

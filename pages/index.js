@@ -50,8 +50,8 @@ export default function Home() {
           <hr className='my-3 h-px border-1 border-gray-400'></hr>
 
           <div className={sectionWrapperClasses + " flex flex-col items-start"}>
-            <span id='technology' className='anchor'/>
-            <h1 className='text-center text-4xl mb-6 font-semibold place-self-center'>Our Approach</h1>
+            <span id='science' className='anchor'/>
+            <h1 className='text-center text-4xl mb-6 font-semibold place-self-center'>Science</h1>
             <div className="lg:grid grid-cols-left-uneven gap-4">
               <div className='my-4 w-full place-self-center' style={{ maxWidth: "44rem" }}>
                 <Image src='/assets/graphics/anwitaTech-02.webp'
