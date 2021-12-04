@@ -51,8 +51,7 @@ export default function Home() {
 
           <div className={sectionWrapperClasses + " flex flex-col items-start"}>
             <span id='technology' className='anchor'/>
-            <h1 className='text-center text-4xl mb-2 font-semibold place-self-center'>Our Approach</h1>
-            <br/><br/>
+            <h1 className='text-center text-4xl mb-6 font-semibold place-self-center'>Our Approach</h1>
             <p className='text-xl'>
                 Exenokines<sup>TM</sup> are proprietary cytokines designed using Anwita Biosciences’ patented platform technology.  Our modular design enables accelerated development of a diversified portfolio of cytokine-based products with improved pharmaceutical properties.
             </p>
