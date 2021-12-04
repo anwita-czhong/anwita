@@ -12,7 +12,7 @@ function Product(props) {
             <b>{he.decode(pipeline.name)}</b>
             {pipeline.indication && <p>{pipeline.indication}</p>}
           </summary>
-          { pipeline.description && <div className={styles.hoverParent__text + ((pipeline.target && pipeline.indication) ? "" : ` ${styles["hoverParent__text--bottom"]}`) + " text-xs p-2"}><p>{he.decode(pipeline.description)}</p></div> }
+          { pipeline.description && <div className={styles.hoverParent__text + ((pipeline.target && pipeline.indication) ? "" : ` ${styles["hoverParent__text--bottom"]}`) + " text-xs lg:text-sm p-2"}><p>{he.decode(pipeline.description)}</p></div> }
         </details>
       </div>
 
