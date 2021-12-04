@@ -54,7 +54,7 @@ export default function Home() {
             <h1 className='text-center text-4xl mb-6 font-semibold place-self-center'>Our Approach</h1>
             <div className="lg:grid grid-cols-left-uneven gap-4">
               <div className='my-4 w-full place-self-center' style={{ maxWidth: "44rem" }}>
-                <Image src='/assets/graphics/anwitaTech-02.png'
+                <Image src='/assets/graphics/anwitaTech-02.webp'
                   width='810' height = '431' alt='A diagram showcasing Anwita&apos;s technology workflow.' />
               </div>
               <div>
