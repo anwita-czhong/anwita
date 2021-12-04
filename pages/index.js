@@ -35,7 +35,7 @@ export default function Home() {
             <h1 className='text-center text-4xl mb-4 font-semibold'>Our Mission</h1>
             <div className='lg:grid grid-cols-3 gap-8'>
               <div className='col-span-2 mb-8'>
-                <p className='text-xl'>
+                <p className='text-xl max-w-prose'>
                     Anwita Biosciences, Inc. is an emerging biopharmaceutical company headquartered in the San Francisco Bay Area.<br/><br/>
                     Our mission is to deliver transformative treatment options to improve the lives of patients with cancer and autoimmune diseases. We specialize in the discovery and development of optimized immunotherapeutics, leveraging our core expertise in cancer immunotherapy, bioinformatics, and structure-based protein engineering.<br/><br/>
                     We are advancing our product pipeline of improved cytokines (Exenokines<sup>TM</sup>) and tumor targeting antibody drug conjugates. Our lead product is expected to enter clinical trials in 1H 2021.
