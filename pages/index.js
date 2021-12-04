@@ -73,7 +73,6 @@ export default function Home() {
           <div className={sectionWrapperClasses}>
             <span id='pipeline' className='anchor'/>
             <h1 className='text-center text-4xl mb-4 font-semibold'>Pipeline</h1>
-            <p className="text-sm my-4">Click or tap on any Program to read more about that project.</p>
             <Pipelines
               pipelines={[
                 // Progress will be rounded to the nearest multiple of 5
@@ -128,6 +127,7 @@ export default function Home() {
                 },
               ]}
             />
+            <p className="text-sm my-4">Click or tap on any Program to read more about that project.</p>
           </div>
 
           <hr className='my-3 h-px border-1 border-gray-400'></hr>
