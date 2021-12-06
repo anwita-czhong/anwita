@@ -6,7 +6,7 @@ import { People } from "../components/people";
 import Pipelines from "../components/Pipeline";
 
 export default function Home() {
-  const sectionWrapperClasses = "my-6 py-6";
+  const sectionWrapperClasses = "py-6";
 
   const linkStyling = "text-blue-400 hover:text-yellow-500 hover:underline focus:underline focus:outline-none focus:ring focus:ring-gray-400 rounded";
 
@@ -34,7 +34,7 @@ export default function Home() {
             <span id='about' className='anchor'/>
             <h1 className='text-center text-4xl mb-4 font-semibold'>Our Mission</h1>
             <div className='flex flex-col'>
-              <div className='mb-8 place-self-center'>
+              <div className='place-self-center'>
                 <p className='text-xl max-w-prose mb-6'>
                     Anwita Biosciences, Inc. is a clinical stage biopharmaceutical company headquartered in the San Francisco Bay Area. We are advancing our product pipeline of improved cytokines (Exenokines, Mableukins etc) and tumor-targeting antibody drug conjugates. Our lead product, Exenokine-21, has been accepted by China NMPA and the US FDA to initiate clinical studies.
                 </p>
