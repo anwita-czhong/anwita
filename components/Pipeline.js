@@ -4,7 +4,7 @@ import he from "he";
 import ReactMarkdown from "react-markdown";
 import remarkSuperSub from "remark-supersub";
 
-function Product(props) {
+function Program(props) {
   const pipeline = props.pipeline;
   return (
     <div className={styles.pipelines__row} key={pipeline.name}>
@@ -80,7 +80,7 @@ export default class Pipelines extends React.Component {
 
   render() {
     const pipelines = this.props.pipelines.map((pipeline) => {
-      return <Product
+      return <Program
         key={pipeline.name}
         pipeline={pipeline}
         isOpen={this.state.openDetails === pipeline.name}
