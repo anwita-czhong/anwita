@@ -132,10 +132,8 @@ export default function Home() {
           <hr className='my-3 h-px border-1 border-gray-400'></hr>
 
           <div className={sectionWrapperClasses}>
-            <br/>
             <span id='news' className='anchor'/>
-            <h1 className='text-center text-4xl mb-2 font-semibold'>News</h1>
-            <br/>
+            <h1 className='text-center text-4xl mb-6 font-semibold'>News</h1>
             <div className='text-xl grid md:grid-cols-2 xl:grid-cols-3 gap-4'>
               <div className='bg-gray-100 p-8 rounded-lg'>
                 <p className='mb-4'><b>Date:</b> September 30<sup>th</sup>, 2020</p>
@@ -185,8 +183,7 @@ export default function Home() {
 
           <div className={sectionWrapperClasses}>
             <span id='contact' className='anchor'/>
-            <h1 className='text-center text-4xl mb-2 font-semibold'>Contact</h1>
-            <br/>
+            <h1 className='text-center text-4xl mb-6 font-semibold'>Contact</h1>
             <div className='flex flex-col sm:flex-row content-evenly justify-center gap-8'>
               {/* <iframe className="w-96 h-48" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1669.5229423824994!2d-122.26270389781278!3d37.51492603078649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f98aa79bc4f55%3A0xd47219d8b27ce42a!2sAnwita%20Biosciences!5e0!3m2!1sen!2sus!4v1632246025164!5m2!1sen!2sus" style={{width: "35rem", height: "30rem", maxWidth: "95%", maxHeight: "35rem", border: 0}} allow="fullscreen" allowFullScreen={true} loading="lazy"></iframe> */}
               <div className='sm:text-right'>

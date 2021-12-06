@@ -65,11 +65,10 @@ export const Person = (props) => {
         <h1 className='font-bold text-xl'>{props.name}, {props.titles}</h1>
         <h1 className='font-bold text-xl'>{props.position}</h1>
         <hr className='my-3'/>
-        <div className='overflow-y-auto overflow-x-hidden'>
+        <div className='overflow-y-auto overflow-x-hidden flex flex-col gap-4'>
           {props.bio.map(function(text, index) {
             return <div key={ index }>
               <p>{text}</p>
-              { props.bio[index + 1] ? <br/> : "" }
             </div>;
           })}
         </div>
