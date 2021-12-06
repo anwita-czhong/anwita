@@ -38,7 +38,7 @@ function Program(props) {
       </div>
 
       <div style={{ borderLeft: "1px dashed gray", display: pipeline.indication ? "" : "none" }}>
-        <p>{pipeline.indication}</p>
+        <p>{he.decode(pipeline.indication || "")}</p>
       </div>
 
       <div className={styles["pipelines__row__progress-area"]}>
