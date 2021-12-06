@@ -20,7 +20,7 @@ export default function Home() {
       <Navbar />
 
       <main>
-        <div id='banner-wrapper' className='bg-home-banner bg-cover bg-center flex content-center justify-center h-third-screen'>
+        <div id='banner-wrapper' className='bg-home-banner bg-cover bg-center flex content-center justify-center h-[300px] lg:h-[400px]'>
           <div
             className='flex flex-col w-full flex-none text-center content-center justify-center items-center space-y-2' style={{ backgroundColor: "rgba(54, 58, 69, 0.4)" }}
           >

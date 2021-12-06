@@ -88,7 +88,7 @@ module.exports = {
       "gradient-to-bl": "linear-gradient(to bottom left, var(--tw-gradient-stops))",
       "gradient-to-l": "linear-gradient(to left, var(--tw-gradient-stops))",
       "gradient-to-tl": "linear-gradient(to top left, var(--tw-gradient-stops))",
-      "home-banner": "url(\"/assets/branding/careers.webp\")",
+      "home-banner": "url(\"/assets/branding/careers-scale-down-height-clamp.webp\")",
     },
     backgroundOpacity: (theme) => theme("opacity"),
     backgroundPosition: {
