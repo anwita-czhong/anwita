@@ -25,6 +25,10 @@ $border: #2E89CA;
     }
   }
 
+  & > div:nth-child(4) {
+    overflow: visible;
+  }
+
   &--headers {
     grid-template-columns: 6fr 4fr repeat(3, 4fr);
     @screen md {
@@ -63,35 +67,40 @@ $border: #2E89CA;
   position: relative;
   width: 100%;
   height: 100%;
-
-  div {
-    overflow: visible;
-  }
 }
 
 .pipelines__row__progress-bar {
-  display: flex;
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  height: min(1.5rem, 4vw);
+  height: 100%;
 
-  &__fill {
-    background-color: $primary;
-    flex-shrink: 1;
-    flex-grow: 1;
+  &__inner {
+    display: flex;
+    position: absolute;
+    height: min(1.5rem, 4vw);
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+
+    &__fill {
+      flex-shrink: 1;
+      flex-grow: 1;
+      background-color: $primary;
+    }
   }
+
 
   &--top-alliance {
     &:after {
       position: absolute;
+      top: 50%;
       right: 0;
-      transform: translateX(100%);
+      transform: translate(100%, -50%);
       content: "";
       background: transparent url("/assets/graphics/top_alliance_logo.webp") no-repeat;
       background-size: contain;
-      height: 100%;
-      width: 3.5rem; // enough to let image expand fully
+      height: min(80%, 2.5rem);
+      max-height: 8vw;
+      width: 7rem; // enough to let image expand fully
     }
   }
 

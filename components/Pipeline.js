@@ -47,10 +47,14 @@ function Program(props) {
           + " " + styles[`pipelines__row__progress-bar__${Math.round(pipeline.progress / 5) * 5}`]
           + " " + (pipeline.partnership ? styles[`pipelines__row__progress-bar--${pipeline.partnership}`] : "")
         }>
-          <div className={styles["pipelines__row__progress-bar__fill"]}></div>
-          <svg viewBox="0 0 50 100" preserveAspectRatio="none" alt="">
-            <polygon points="0,0 50,50 0,100" />
-          </svg>
+          <div className={
+            styles["pipelines__row__progress-bar__inner"]
+          }>
+            <div className={styles["pipelines__row__progress-bar__inner__fill"]}></div>
+            <svg viewBox="0 0 50 100" preserveAspectRatio="none" alt="">
+              <polygon points="0,0 50,50 0,100" />
+            </svg>
+          </div>
         </div>
 
         <div className={styles["pipelines__row__progress-area__markers"]}>
