@@ -52,7 +52,7 @@ export default function Home() {
             <h1 className='text-center text-4xl mb-6 font-semibold place-self-center'>Science</h1>
             <div className="flex flex-col place-self-center">
               <div className='w-full place-self-center' style={{ maxWidth: "55rem" }}>
-                <Image src='/assets/graphics/anwitaTech-02.webp'
+                <Image src='/assets/graphics/pipeline.jpg'
                   width='1620' height = '862' alt='A diagram showcasing Anwita&apos;s technology workflow.' />
               </div>
 
