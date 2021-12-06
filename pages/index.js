@@ -57,7 +57,7 @@ export default function Home() {
               </div>
 
               <p className='text-xl my-4 max-w-[75ch] place-self-center'>
-              Anwita’s core technology integrates structure-guided AccuKineTM cytokine evolution and AccuBodyTM discovery of full spectrum nanobodies, enabling the development of fully optimized cytokine fusions with superior therapeutic potential, favorable safety profile and great developmentability. Our unique product portfolio includes half-live extended Exenokines, immune cell- or tumor cell-targeting Mableukines, and bi-functional Duoleukins. These new generation of cytokines could serve as powerful novel immune therapies with a wide range of applications in treating patients with cancers and autoimmune diseases.
+              Anwita’s core technology integrates structure-guided AccuKine<sup>TM</sup> cytokine evolution and AccuBody<sup>TM</sup> discovery of full spectrum nanobodies, enabling the development of fully optimized cytokine fusions with superior therapeutic potential, favorable safety profile and great developmentability. Our unique product portfolio includes half-live extended Exenokines, immune cell- or tumor cell-targeting Mableukines, and bi-functional Duoleukins. These new generation of cytokines could serve as powerful novel immune therapies with a wide range of applications in treating patients with cancers and autoimmune diseases.
               </p>
 
             </div>
@@ -89,7 +89,7 @@ export default function Home() {
                 },
                 {
                   name: "Mableukin&#8203;-2PD1",
-                  description: "Mableukine-2PD1 is a targeted fusion protein comprised of an anti-PD1 antibody and an optimized IL-2. The IL-2 component is engineered to have significantly lower toxicity. The anti-PD1 antibody component of the fusion protein serves not only to block the interaction between PD1 and PD-L1 but also functions to direct the optimized IL-2 to the desired cell populations within the tumor microenvironment. Leveraging on the function of PD1 and IL-2 signaling pathway to selectively stimulate effector T cells, Mableukine-2PD1 exhibits excellent antitumor and pharmacodynamic activities with low systematic toxicities. ",
+                  description: "Mableukine-2PD1 is a targeted fusion protein comprised of an anti-PD1 antibody and an optimized IL-2. The IL-2 component is engineered to have significantly lower toxicity. The anti-PD1 antibody component of the fusion protein serves not only to block the interaction between PD1 and PD-L1 but also functions to direct the optimized IL-2 to the desired cell populations within the tumor microenvironment. Leveraging on the function of PD1 and IL-2 signaling pathway to selectively stimulate effector T cells, Mableukine-2PD1 exhibits excellent antitumor and pharmacodynamic activities with low systematic toxicities.",
                   target: "PD-1 and IL-2",
                   indication: "Solid Tumors",
                   progress: 55,
@@ -117,7 +117,7 @@ export default function Home() {
                 },
                 {
                   name: "Discovery Programs",
-                  description: "Anwita applies our AccuKineTM cytokine evolution and AccuBodyTM discovery platform to design, optimize, and validate new therapeutic candidates with improved pharmaceutical properties in immuno-oncology, autoimmune, and inflammatory disease areas.",
+                  description: "Anwita applies our AccuKine^TM^ cytokine evolution and AccuBody^TM^ discovery platform to design, optimize, and validate new therapeutic candidates with improved pharmaceutical properties in immuno-oncology, autoimmune, and inflammatory disease areas.",
                   progress: 20,
                 },
               ]}
