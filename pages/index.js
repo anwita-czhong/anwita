@@ -8,7 +8,7 @@ import Pipelines from "../components/Pipeline";
 export default function Home() {
   const sectionWrapperClasses = "py-6";
 
-  const linkStyling = "text-blue-400 hover:text-yellow-500 hover:underline focus:underline focus:outline-none focus:ring focus:ring-gray-400 rounded";
+  const linkStyling = "text-blue-600 hover:text-yellow-700 underline focus:outline-none focus:ring-2 focus:ring-gray-400 rounded";
 
   return (
     <div>
