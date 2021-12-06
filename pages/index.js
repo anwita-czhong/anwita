@@ -15,6 +15,8 @@ export default function Home() {
       <Head>
         <title>Anwita Biosciences Inc.</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="description" content="Anwita Biosciences, Inc. is a clinical stage biopharmaceutical company headquartered in the San Francisco Bay Area. Our mission is to deliver transformative treatment options to improve the lives of patients with cancer and autoimmune diseases." />
+        <meta name="keywords" content="Anwita, Bioscience, Anwita Bioscience, Anwita Bio" />
       </Head>
 
       <Navbar />
