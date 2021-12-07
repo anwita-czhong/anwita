@@ -141,22 +141,22 @@ export default function Home() {
               <div className='flex flex-col bg-gray-100 p-8 rounded-lg'>
                 <p className='mb-4'><b>Date:</b> October 29<sup>th</sup>, 2021</p>
                 <p className='mb-4'>Anwita Biosciences, Inc. Announces Initiation of first-in-human Phase 1 clinical trial of Exenokine-21 for monotherapy and combination, earns $2.5 million milestone for IND acceptance from Partner Shanghai Junshi Biosciences</p>
-                <p className="mt-auto"><b><a className={linkStyling} target='_blank' href='/assets/news/Press release Exenokine-21 IND.pdf'>Press Release</a></b></p>
+                <p className="mt-auto"><b><a className={linkStyling} target='_blank' href='/assets/news/pr-004.pdf'>Press Release</a></b></p>
               </div>
               <div className='flex flex-col bg-gray-100 p-8 rounded-lg'>
                 <p className='mb-4'><b>Date:</b> June 28<sup>th</sup>, 2021</p>
                 <p className='mb-4'>Anwita Biosciences, Inc. Completes $18.5 Million Series B Financing to Advance Its Improved Cytokines (Exenokines) And Tumor Targeting Antibody Drug Conjugates</p>
-                <p className="mt-auto"><b><a className={linkStyling} target='_blank' href='/assets/news/Press release 2021-07-13 V2-20211207.pdf'>Press Release</a></b></p>
+                <p className="mt-auto"><b><a className={linkStyling} target='_blank' href='/assets/news/pr-003.pdf'>Press Release</a></b></p>
               </div>
               <div className='flex flex-col bg-gray-100 p-8 rounded-lg'>
                 <p className='mb-4'><b>Date:</b> September 30<sup>th</sup>, 2020</p>
                 <p className='mb-4'>Anwita Biosciences and Shanghai Junshi Biosciences entered into a new collaboration in which Junshi was granted the exclusive rights to Anwita&apos;s Exenokine-2, an improved IL-2 variant with extended half-life, in the Greater China territories.</p>
-                <p className="mt-auto"><b><a className={linkStyling} target='_blank' href='/assets/news/Anwita-Junshi IL-2 Collaboration HK Announcement.pdf'>Press Release</a></b></p>
+                <p className="mt-auto"><b><a className={linkStyling} target='_blank' href='/assets/news/pr-002.pdf'>Press Release</a></b></p>
               </div>
               <div className='flex flex-col bg-gray-100 p-8 rounded-lg'>
                 <p className='mb-4'><b>Date:</b> June 24<sup>th</sup>, 2019</p>
                 <p className='mb-4'>Strategic collaboration between Anwita Biosciences and Shanghai Junshi Biosciences whereby Junshi was granted the exclusive rights to develop and commercialize Anwita&apos;s Exenokine-21 program in the Greater China territories.</p>
-                <p className="mt-auto"><b><a className={linkStyling} target='_blank' href='/assets/news/Anwita-Junshi First Collaboration (IL-21, HK Announcement).pdf'>Press Release</a></b></p>
+                <p className="mt-auto"><b><a className={linkStyling} target='_blank' href='/assets/news/pr-001.pdf'>Press Release</a></b></p>
               </div>
             </div>
           </div>
