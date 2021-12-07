@@ -137,6 +137,17 @@ export default function Home() {
             <span id='news' className='anchor'/>
             <h1 className='text-center text-4xl mb-6 font-semibold'>News</h1>
             <div className='text-xl grid md:grid-cols-2 xl:grid-cols-3 gap-4'>
+              {/* TODO: Refactor into actual React components */}
+              <div className='bg-gray-100 p-8 rounded-lg'>
+                <p className='mb-4'><b>Date:</b> October 29<sup>th</sup>, 2021</p>
+                <p className='mb-4'>Anwita Biosciences, Inc. Announces Initiation of first-in-human Phase 1 clinical trial of Exenokine-21 for monotherapy and combination and earns $2.5 million milestone for IND acceptance from Partner Shanghai Junshi Biosciences</p>
+                <p><b><a className={linkStyling} target='_blank' href='/assets/news/Press release Exenokine-21 IND.pdf'>Press Release</a></b></p>
+              </div>
+              <div className='bg-gray-100 p-8 rounded-lg'>
+                <p className='mb-4'><b>Date:</b> June 28<sup>th</sup>, 2021</p>
+                <p className='mb-4'>Anwita Biosciences, Inc. Completes $18.5 Million Series B Financing to Advance Its Improved Cytokines (Exenokines) And Tumor Targeting Antibody Drug Conjugates</p>
+                <p><b><a className={linkStyling} target='_blank' href='/assets/news/Press release AWT-B Round.pdf'>Press Release</a></b></p>
+              </div>
               <div className='bg-gray-100 p-8 rounded-lg'>
                 <p className='mb-4'><b>Date:</b> September 30<sup>th</sup>, 2020</p>
                 <p className='mb-4'>Anwita Biosciences and Shanghai Junshi Biosciences entered into a new collaboration in which Junshi was granted the exclusive rights to Anwita&apos;s Exenokine-2, an improved IL-2 variant with extended half-life, in the Greater China territories.</p>
