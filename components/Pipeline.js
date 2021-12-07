@@ -19,9 +19,8 @@ function Program(props) {
               className={styles.hoverParent__text + ((pipeline.target && pipeline.indication) ? "" : ` ${styles["hoverParent__text--bottom"]}`) + " text-xs lg:text-sm p-2"}
             >
               <ReactMarkdown
-                source={pipeline.description}
                 plugins={[remarkSuperSub]}
-                renderers={{
+                components={{
                   sub: "sub",
                   super: "super",
                 }}
