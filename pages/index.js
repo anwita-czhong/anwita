@@ -34,13 +34,13 @@ export default function Home() {
 
           <div className={sectionWrapperClasses}>
             <span id='about' className='anchor'/>
-            <h1 className='text-center text-4xl mb-4 font-semibold'>Our Mission</h1>
             <div className='lg:grid grid-cols-3 gap-8'>
-              <div className='col-span-2 mb-8'>
-                <p className='text-xl max-w-prose mb-6'>
+              <div className='flex flex-col col-span-2 mb-8'>
+                <h1 className='text-center text-4xl mb-4 font-semibold'>Our Mission</h1>
+                <p className='place-self-center text-xl max-w-prose mb-6'>
                   Anwita Biosciences, Inc. is a clinical stage biopharmaceutical company headquartered in the San Francisco Bay Area. We are advancing our product pipeline of improved cytokines (Exenokines, Mableukins etc) and tumor-targeting antibody drug conjugates. Our lead product, Exenokine-21, has been accepted by China NMPA and the US FDA to initiate clinical studies.
                 </p>
-                <p className='text-xl max-w-prose mb-6'>
+                <p className='place-self-center text-xl max-w-prose mb-6'>
                   Our mission is to deliver transformative treatment options to improve the lives of patients with cancer and autoimmune diseases. We specialize in the discovery and development of optimized immunotherapeutics, leveraging our core expertise in cancer immunotherapy, bioinformatics, and target-based protein evolution.
                 </p>
               </div>
