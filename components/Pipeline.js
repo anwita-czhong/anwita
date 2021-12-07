@@ -60,6 +60,7 @@ function Program(props) {
           <div>&nbsp;</div>
           <div>&nbsp;</div>
           <div>&nbsp;</div>
+          <div>&nbsp;</div>
         </div>
       </div>
     </div>
@@ -105,6 +106,12 @@ export default class Pipelines extends React.Component {
           </div>
           <div>
             <p className="lg:text-center"><b>Pre&shy;clinical</b></p>
+          </div>
+          <div>
+            <p className="lg:text-center"><b>Lead ID</b></p>
+          </div>
+          <div>
+            <p className="lg:text-center"><b>Lead OP</b></p>
           </div>
           <div>
             <p className="lg:text-center"><b>IND Enabling</b></p>
