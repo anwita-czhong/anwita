@@ -62,7 +62,7 @@ export default function Home() {
               </div>
 
               <p className='text-xl my-4 max-w-[75ch] place-self-center'>
-              Anwita’s core technology integrates structure-guided AccuKine<sup>TM</sup> cytokine evolution and AccuBody<sup>TM</sup> discovery of full spectrum nanobodies, enabling the development of fully optimized cytokine fusions with superior therapeutic potential, favorable safety profile and great developmentability. Our unique product portfolio includes half-live extended Exenokines, immune cell- or tumor cell-targeting Mableukines, and bi-functional Duoleukins. These new generation of cytokines could serve as powerful novel immune therapies with a wide range of applications in treating patients with cancers and autoimmune diseases.
+                Anwita’s core technology integrates structure-guided AccuKine cytokine evolution and AccuBody discovery of full spectrum nanobodies, enabling the development of fully optimized cytokine fusions with superior therapeutic potential, favorable safety profile and great developmentability. Our unique product portfolio includes half-live extended Exenokines, immune cell- or tumor cell-targeting Mableukines, and bi-functional Duoleukins. These new generation of cytokines could serve as powerful novel immune therapies with a wide range of applications in treating patients with cancers and autoimmune diseases.
               </p>
 
             </div>
@@ -124,7 +124,7 @@ export default function Home() {
                 },
                 {
                   name: "Discovery Programs",
-                  description: "Anwita applies our AccuKine^TM^ cytokine evolution and AccuBody^TM^ discovery platform to design, optimize, and validate new therapeutic candidates with improved pharmaceutical properties in immuno-oncology, autoimmune, and inflammatory disease areas.",
+                  description: "Anwita applies our AccuKine cytokine evolution and AccuBody discovery platform to design, optimize, and validate new therapeutic candidates with improved pharmaceutical properties in immuno-oncology, autoimmune, and inflammatory disease areas.",
                   progress: 20,
                 },
               ]}
