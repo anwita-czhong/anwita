@@ -74,6 +74,7 @@ export default function Home() {
             <span id='pipeline' className='anchor'/>
             <h1 className='text-center text-4xl mb-4 font-semibold'>Pipeline</h1>
             <Pipelines
+            // TODO: Load from AirTables
               pipelines={[
                 // Progress will be rounded to the nearest multiple of 5
                 // Progress is measured in percentage if Lead ID and Lead OP were same size as IND enabling and Clinic sections
