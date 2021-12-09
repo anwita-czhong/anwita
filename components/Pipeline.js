@@ -3,6 +3,7 @@ import React from "react";
 import he from "he";
 import ReactMarkdown from "react-markdown";
 import remarkSuperSub from "remark-supersub";
+import Image from "next/image";
 
 function Program(props) {
   const pipeline = props.pipeline;
@@ -44,7 +45,6 @@ function Program(props) {
         <div className={
           styles["pipelines__row__progress-bar"]
           + " " + styles[`pipelines__row__progress-bar__${Math.min(Math.max(1, pipeline.progress), 100)}`]
-          + " " + (pipeline.partnership ? styles[`pipelines__row__progress-bar--${pipeline.partnership}`] : "")
         }>
           <div className={
             styles["pipelines__row__progress-bar__inner"]
@@ -54,6 +54,14 @@ function Program(props) {
               <polygon points="0,0 50,50 0,100" />
             </svg>
           </div>
+          { pipeline.partner && <div className={styles["pipelines__row__progress-bar__partner-logo"]}>
+            <img
+              width={pipeline.partner.partnerLogoWidth}
+              height={pipeline.partner.partnerLogoHeight}
+              src={pipeline.partner.partnerLogoUrl}
+              alt={pipeline.partner.partnerName + " Logo"}
+            />
+          </div>}
         </div>
 
         <div className={styles["pipelines__row__progress-area__markers"]}>
