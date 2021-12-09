@@ -10,6 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "airtable": "^0.11.1",
     "autoprefixer": "^10.2.4",
     "he": "^1.2.0",
     "next": "^12.0.5",

@@ -126,11 +126,3 @@ export default class Pipelines extends React.Component {
     );
   }
 };
-
-// Fetch the pipelines to use
-export async function getStaticProps() {
-  // TODO: Use an actual database instead of hard-coding
-  return {
-    props: {},
-  };
-}
