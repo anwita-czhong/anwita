@@ -43,7 +43,7 @@ function Program(props) {
       <div className={styles["pipelines__row__progress-area"]}>
         <div className={
           styles["pipelines__row__progress-bar"]
-          + " " + styles[`pipelines__row__progress-bar__${Math.round(pipeline.progress / 5) * 5}`]
+          + " " + styles[`pipelines__row__progress-bar__${Math.min(Math.max(1, pipeline.progress), 100)}`]
           + " " + (pipeline.partnership ? styles[`pipelines__row__progress-bar--${pipeline.partnership}`] : "")
         }>
           <div className={
