@@ -3,7 +3,6 @@ import React from "react";
 import he from "he";
 import ReactMarkdown from "react-markdown";
 import remarkSuperSub from "remark-supersub";
-import Image from "next/image";
 
 function Program(props) {
   const pipeline = props.pipeline;
