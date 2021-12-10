@@ -106,14 +106,14 @@ export default function Home() {
                   description: "MSLN-MMAE is a novel mesothelin (MSLN)-directed antibody-drug conjugate (ADC) composed of a humanized anti-MSLN monoclonal antibody coupled to the potent microtubule-disrupting agent monomethyl auristatin E (MMAE). Specific binding to tumor cells that overexpress MSLN, MSLN-MMAE induced cell death in vitro in a dose-dependent manner and significantly inhibited the growth of several target-expressing xenograft tumor models. Anwita plans to further develop our lead molecule for the treatment of patients with MSLN-expressing tumors such as mesotheliomas, pancreatic, and ovarian cancers.",
                   target: "Meso&shy;thelin",
                   indication: "Solid Tumors",
-                  progress: 40,
+                  progress: 52,
                 },
                 {
                   name: "B7H3&#8203;-MMAE",
                   description: "B7H3-MMAE, an antibody-drug conjugate (ADC) targeting the human B7H3 protein, is comprised of monomethyl auristatin E (MMAE) conjugated to a humanized anti-B7H3 antibody. In vitro, B7H3-MMAE exhibits cytotoxicity towards B7H3-positive human tumor cell lines. In vivo, B7H3-MMAE demonstrates potent antitumor activity in preclinical tumor models of breast, ovarian, and lung cancer. These studies provide evidence of a potentially favorable therapeutic index and support the development of B7H3-MMAE for the treatment of solid cancers.",
                   target: "B7H3",
                   indication: "Solid Tumors",
-                  progress: 40,
+                  progress: 50,
                 },
                 {
                   name: "AWT&#8203;-024",
