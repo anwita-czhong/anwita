@@ -1,11 +1,12 @@
 import Link from "next/link";
+import styles from "./footer.module.scss";
 
 export const Footer = () => {
   const footerItemContainerClasses = "flex flex-col text-center m-4 flex-initial w-full lg:flex-1";
   const linkStyling = "text-blue-400 hover:text-yellow-500 hover:underline focus:underline focus:outline-none focus:ring focus:ring-gray-400 rounded";
 
   return (
-    <div id='footer'>
+    <div id='footer' className={styles.footer}>
       <nav className='flex flex-wrap flex-row items-start justify-center p-2 bg-blue-900' style={{ paddingLeft: "10vw", paddingRight: "10vw" }}>
         <div className={footerItemContainerClasses}>
           <h1 className='text-white text-2xl font-bold'>About</h1>

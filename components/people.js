@@ -45,8 +45,7 @@ export const People = (props) => {
   return (
     <div className={props.sectionWrapperClasses}>
       <span className='anchor' id='team'></span>
-      <h1 className='text-center text-4xl mb-2 font-semibold'>Our Leadership</h1>
-      <br/>
+      <h1 className='text-center text-4xl mb-6 font-semibold'>Our Leadership</h1>
       <div className='flex flex-row items-start flex-wrap justify-center'>
         {people.map(function(person) {
           return <Person key={person.fname} {...person} />;

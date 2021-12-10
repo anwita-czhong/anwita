@@ -1,8 +1,10 @@
 import styles from "./Pipeline.module.scss";
 import React from "react";
 import he from "he";
+import ReactMarkdown from "react-markdown";
+import remarkSuperSub from "remark-supersub";
 
-function Product(props) {
+function Program(props) {
   const pipeline = props.pipeline;
   return (
     <div className={styles.pipelines__row} key={pipeline.name}>
@@ -12,7 +14,21 @@ function Product(props) {
             <b>{he.decode(pipeline.name)}</b>
             {pipeline.indication && <p>{pipeline.indication}</p>}
           </summary>
-          { pipeline.description && <div className={styles.hoverParent__text + ((pipeline.target && pipeline.indication) ? "" : ` ${styles["hoverParent__text--bottom"]}`) + " text-xs lg:text-sm p-2"}><p>{he.decode(pipeline.description)}</p></div> }
+          { pipeline.description &&
+            <div
+              className={styles.hoverParent__text + ((pipeline.target && pipeline.indication) ? "" : ` ${styles["hoverParent__text--bottom"]}`) + " text-xs lg:text-sm p-2"}
+            >
+              <ReactMarkdown
+                plugins={[remarkSuperSub]}
+                components={{
+                  sub: "sub",
+                  super: "super",
+                }}
+              >
+                {pipeline.description}
+              </ReactMarkdown>
+            </div>
+          }
         </details>
       </div>
 
@@ -21,22 +37,27 @@ function Product(props) {
       </div>
 
       <div style={{ borderLeft: "1px dashed gray", display: pipeline.indication ? "" : "none" }}>
-        <p>{pipeline.indication}</p>
+        <p>{he.decode(pipeline.indication || "")}</p>
       </div>
 
       <div className={styles["pipelines__row__progress-area"]}>
         <div className={
           styles["pipelines__row__progress-bar"]
-          + " " + styles[`pipelines__row__progress-bar__${Math.round(pipeline.progress / 5) * 5}`]
+          + " " + styles[`pipelines__row__progress-bar__${Math.min(Math.max(1, pipeline.progress), 100)}`]
           + " " + (pipeline.partnership ? styles[`pipelines__row__progress-bar--${pipeline.partnership}`] : "")
         }>
-          <div className={styles["pipelines__row__progress-bar__fill"]}></div>
-          <svg viewBox="0 0 50 100" preserveAspectRatio="none" alt="">
-            <polygon points="0,0 50,50 0,100" />
-          </svg>
+          <div className={
+            styles["pipelines__row__progress-bar__inner"]
+          }>
+            <div className={styles["pipelines__row__progress-bar__inner__fill"]}></div>
+            <svg viewBox="0 0 50 100" preserveAspectRatio="none" alt="">
+              <polygon points="0,0 50,50 0,100" />
+            </svg>
+          </div>
         </div>
 
         <div className={styles["pipelines__row__progress-area__markers"]}>
+          <div>&nbsp;</div>
           <div>&nbsp;</div>
           <div>&nbsp;</div>
           <div>&nbsp;</div>
@@ -63,7 +84,7 @@ export default class Pipelines extends React.Component {
 
   render() {
     const pipelines = this.props.pipelines.map((pipeline) => {
-      return <Product
+      return <Program
         key={pipeline.name}
         pipeline={pipeline}
         isOpen={this.state.openDetails === pipeline.name}
@@ -85,6 +106,12 @@ export default class Pipelines extends React.Component {
           </div>
           <div>
             <p className="lg:text-center"><b>Pre&shy;clinical</b></p>
+          </div>
+          <div>
+            <p className="lg:text-center"><b>Lead ID</b></p>
+          </div>
+          <div>
+            <p className="lg:text-center"><b>Lead OP</b></p>
           </div>
           <div>
             <p className="lg:text-center"><b>IND Enabling</b></p>

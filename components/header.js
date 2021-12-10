@@ -53,12 +53,13 @@ export const Navbar = () => {
     <header className="sticky top-0 z-50">
       <nav className='flex items-center max-h-screen flex-wrap p-3 bg-white w-full content-around z-10'>
         <div className='hidden navbar:inline-flex' style={{ minWidth: "0.5em", width: "10%" }}></div>
-        <button onClick={toTop} name="Home Button" className='inline-flex items-center mr-4 focus:outline-none focus:ring focus:ring-gray-300 rounded'>
+        <button aria-label="Back To Top" onClick={toTop} name="Home Button" className='inline-flex items-center mr-4 focus:outline-none focus:ring focus:ring-gray-300 rounded'>
           <div className="h-12 max-h-12 items-center" style={{ width: "183.2px", maxWidth: "50vw" }}>
             <Image src="/assets/branding/AnwitaLogoAlphaGradient.png" width="500" height="131" layout="responsive" alt="Anwita Biosciences" />
           </div>
         </button>
         <button
+          aria-label="Open Navigation"
           className='inline-flex px-3 py-2 hover:bg-blue-900 rounded navbar:hidden text-blue-900 ml-auto hover:text-white'
           onClick={handleClick}
         >
