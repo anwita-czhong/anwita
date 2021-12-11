@@ -43,7 +43,7 @@ function Program(props) {
       <div className={styles["pipelines__row__progress-area"]}>
         <div className={
           styles["pipelines__row__progress-bar"]
-          + " " + styles[`pipelines__row__progress-bar__${Math.min(Math.max(1, pipeline.progress), 100)}`]
+          + " " + styles[`pipelines__row__progress-bar__${Math.min(Math.max(1, Math.round(pipeline.progress)), 100)}`]
         }>
           <div className={
             styles["pipelines__row__progress-bar__inner"]
