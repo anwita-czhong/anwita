@@ -8,8 +8,6 @@ import Pipelines from "../components/Pipeline";
 export default function Home(props) {
   const sectionWrapperClasses = "py-6";
 
-  const linkStyling = "text-blue-600 hover:text-yellow-700 underline focus:outline-none focus:ring-2 focus:ring-gray-400 rounded";
-
   return (
     <div>
       <Head>
@@ -123,7 +121,7 @@ export default function Home(props) {
             <div className="lg:grid grid-cols-left-uneven gap-2">
               <div className="my-4">
                 <h2 className='text-3xl my-4 italic font-semibold text-center'>Working at Anwita</h2>
-                <p className='text-xl'>We are always seeking exceptional talent that is passionate about making a difference in the lives of patients with cancer or autoimmune disorders. If you share our mission, and are interested in joining our team, please reach out to us via email at <a href='mailto:contact@anwitabio.com' className={linkStyling}>contact@anwitabio.com</a>.</p>
+                <p className='text-xl'>We are always seeking exceptional talent that is passionate about making a difference in the lives of patients with cancer or autoimmune disorders. If you share our mission, and are interested in joining our team, please reach out to us via email at <a href='mailto:contact@anwitabio.com'>contact@anwitabio.com</a>.</p>
               </div>
               <div className="my-4">
                 <h2 className='text-center text-3xl my-4 italic font-semibold'>Benefits</h2>
@@ -153,13 +151,13 @@ export default function Home(props) {
             <div className='flex flex-col sm:flex-row content-evenly justify-center gap-8'>
               {/* <iframe className="w-96 h-48" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1669.5229423824994!2d-122.26270389781278!3d37.51492603078649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f98aa79bc4f55%3A0xd47219d8b27ce42a!2sAnwita%20Biosciences!5e0!3m2!1sen!2sus!4v1632246025164!5m2!1sen!2sus" style={{width: "35rem", height: "30rem", maxWidth: "95%", maxHeight: "35rem", border: 0}} allow="fullscreen" allowFullScreen={true} loading="lazy"></iframe> */}
               <div className='sm:text-right'>
-                <p>Company Address: <br/><a href='https://www.google.com/maps/place/300+Industrial+Rd,+San+Carlos,+CA+94070/@37.5149181,-122.2641003,17z/data=!3m1!4b1!4m5!3m4!1s0x808f98aa79063b39:0x9744f7cb0ddf62fa!8m2!3d37.5149181!4d-122.2619063' target="_blank" rel="noreferrer noopener" className={linkStyling}>300 Industrial Road,<br/>San Carlos, CA 94070</a></p>
-                <p>Phone:&nbsp;<a href='tel:1-650-600-9828' target='_blank' className={linkStyling} rel="noreferrer">(650) 600-9828</a></p>
-                <p>Email:&nbsp;<a href='mailto:contact@anwitabio.com' className={linkStyling}>contact@anwitabio.com</a></p>
+                <p>Company Address: <br/><a href='https://www.google.com/maps/place/300+Industrial+Rd,+San+Carlos,+CA+94070/@37.5149181,-122.2641003,17z/data=!3m1!4b1!4m5!3m4!1s0x808f98aa79063b39:0x9744f7cb0ddf62fa!8m2!3d37.5149181!4d-122.2619063' target="_blank" rel="noreferrer noopener">300 Industrial Road,<br/>San Carlos, CA 94070</a></p>
+                <p>Phone:&nbsp;<a href='tel:1-650-600-9828' target='_blank' rel="noreferrer">(650) 600-9828</a></p>
+                <p>Email:&nbsp;<a href='mailto:contact@anwitabio.com'>contact@anwitabio.com</a></p>
               </div>
               <div>
-                <p>Shanghai Division: <br/><a href='https://www.google.com/maps/place/China,+Shang+Hai+Shi,+Pu+Dong+Xin+Qu,+%E7%A7%80%E6%B5%A6%E8%B7%AF2555%E5%8F%B7/@31.1302446,121.6053713,17z/data=!3m1!4b1!4m5!3m4!1s0x35b2788b3666b481:0x462a91e8462cbf6d!8m2!3d31.13024!4d121.60756' target="_blank" rel="noreferrer noopener" className={linkStyling}>11/F Building E6,<br/>2555 Xiupu Road<br/>Pudong New Area, Shanghai</a></p>
-                <p>Phone:&nbsp;<a href='tel:86-21-58080598' target='_blank' className={linkStyling} rel="noreferrer">86(21)-58080598</a></p>
+                <p>Shanghai Division: <br/><a href='https://www.google.com/maps/place/China,+Shang+Hai+Shi,+Pu+Dong+Xin+Qu,+%E7%A7%80%E6%B5%A6%E8%B7%AF2555%E5%8F%B7/@31.1302446,121.6053713,17z/data=!3m1!4b1!4m5!3m4!1s0x35b2788b3666b481:0x462a91e8462cbf6d!8m2!3d31.13024!4d121.60756' target="_blank" rel="noreferrer noopener">11/F Building E6,<br/>2555 Xiupu Road<br/>Pudong New Area, Shanghai</a></p>
+                <p>Phone:&nbsp;<a href='tel:86-21-58080598' target='_blank' rel="noreferrer">86(21)-58080598</a></p>
               </div>
             </div>
           </div>

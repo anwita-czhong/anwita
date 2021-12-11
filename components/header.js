@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from "./header.module.scss";
 
 const navbarButtonWrapperStyling = "navbar:inline-flex navbar:flex-1 navbar:w-auto w-full items-center justify-center";
-const navbarButtonStyling = "rounded text-blue-900 items-center justify-center px-3 py-2 hover:bg-gray-100 focus:bg-gray-100 hover:text-orange focus:text-orange focus:ring focus:ring-gray-300 outline-none";
+const navbarButtonStyling = "rounded text-blue-900 items-center justify-center px-3 py-2 hover:bg-gray-100 focus:bg-gray-100 hover:text-orange focus:text-orange focus:ring focus:ring-gray-300 outline-none no-underline";
 
 const links = [
   {
