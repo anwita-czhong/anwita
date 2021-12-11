@@ -173,14 +173,17 @@ export default function Home(props) {
 }
 
 import { getAllPrograms } from "../utils/airtable/program";
+import { getAllNews } from "../utils/airtable/news";
+import News from "../components/News";
 
 export async function getStaticProps(context) {
 
   const programs = await getAllPrograms();
-  console.log(programs);
+  const news = await getAllNews();
   return {
     props: {
       programs: programs,
+      news: news,
     },
     revalidate: 600, // seconds
   };
