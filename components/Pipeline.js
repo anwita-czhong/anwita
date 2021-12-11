@@ -54,6 +54,7 @@ function Program(props) {
             </svg>
           </div>
           { pipeline.partner && <div className={styles["pipelines__row__progress-bar__partner-logo"]}>
+            { /* eslint-disable-next-line @next/next/no-img-element */ }
             <img
               width={pipeline.partner.partnerLogoWidth}
               height={pipeline.partner.partnerLogoHeight}
