@@ -1,4 +1,4 @@
-// Requires environment variable `AIRTABLE_API_KEY` to be set
+// Requires environment variables `AIRTABLE_API_KEY` and `AIRTABLE_BASE` to be set
 import Airtable from "airtable";
 import { getPartner } from "./partner";
 const base = new Airtable().base(process.env.AIRTABLE_BASE);
