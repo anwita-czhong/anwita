@@ -4,6 +4,7 @@ import { Navbar } from "../components/header";
 import { Footer } from "../components/footer";
 import { People } from "../components/people";
 import Pipelines from "../components/Pipeline";
+import ErrorBoundary from "../components/errorBoundary";
 
 export default function Home(props) {
   const sectionWrapperClasses = "py-6";
@@ -71,10 +72,11 @@ export default function Home(props) {
           <div className={sectionWrapperClasses}>
             <span id='pipeline' className='anchor'/>
             <h1 className='text-center text-4xl mb-4 font-semibold'>Pipeline</h1>
-            <Pipelines
-            // TODO: Load from AirTables
-              pipelines={props.programs}
-            />
+            <ErrorBoundary>
+              <Pipelines
+                pipelines={props.programs}
+              />
+            </ErrorBoundary>
             <p className="text-sm my-4">Click or tap on any Program to read more about that project.</p>
           </div>
 
