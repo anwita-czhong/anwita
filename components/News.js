@@ -12,10 +12,16 @@ const nth = function(d) {
   }
 };
 
+// Adapted from https://stackoverflow.com/a/33909265/10077280
+function parseISOLocalDateOnly(s) {
+  const b = s.split(/\D/);
+  return new Date(b[0], b[1] - 1, b[2]);
+}
+
 function NewsItem(props) {
 
   // Adapted from https://stackoverflow.com/a/15397495/10077280
-  const date = new Date(props.date);
+  const date = parseISOLocalDateOnly(props.date);
   const dateString = `**Date**: ${date.toLocaleDateString("en-US", { month: "long" })} ${date.getDate()}^${nth(date.getDate())}^, ${date.getFullYear()}`;
 
   return (
