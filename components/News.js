@@ -56,7 +56,7 @@ export default class News extends React.Component {
   }
 
   handleNewsPressReleaseClick(event, clickedUrl) {
-    // TODO
+    // Potential TODO in the future: show on current page instead of in new tab
   }
 
   render() {
