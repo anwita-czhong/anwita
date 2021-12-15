@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { Navbar } from "../components/header";
 import { Footer } from "../components/footer";
-import { People } from "../components/people";
+import People from "../components/People";
 import Pipelines from "../components/Pipeline";
 import ErrorBoundary from "../components/errorBoundary";
 
