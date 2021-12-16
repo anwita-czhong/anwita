@@ -6,6 +6,9 @@ on:
     branches: [ main ]
 jobs:
   test:
+    env:
+      AIRTABLE_API_KEY: ${{ secrets.AIRTABLE_API_KEY }}
+      AIRTABLE_BASE: ${{ secrets.AIRTABLE_BASE }}
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
