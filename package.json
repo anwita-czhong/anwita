@@ -9,7 +9,7 @@
     "start": "next start -p $PORT",
     "lint": "next lint",
     "test:e2e": "yarn playwright test",
-    "test:e2e:skip-build": "SKIP_BUILD=1 yarn e2e"
+    "test:e2e:skip-build": "SKIP_BUILD=1 yarn test:e2e"
   },
   "dependencies": {
     "airtable": "^0.11.1",
