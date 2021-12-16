@@ -101,7 +101,7 @@ export default class Pipelines extends React.Component {
     });
 
     return (
-      <div className={styles.pipelines}>
+      <div className={styles.pipelines} data-role="pipeline-display">
         <div className={styles.pipelines__row + " " + styles["pipelines__row--headers"]}>
           <div>
             <p><b>Program</b></p>
