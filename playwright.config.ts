@@ -32,7 +32,7 @@ const config: PlaywrightTestConfig = {
   workers: process.env.CI ? 1 : 5,
 
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: "html",
+  reporter: process.env.CI ? "dot" : [["html", { open: "never" }]],
 
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
