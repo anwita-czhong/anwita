@@ -61,6 +61,7 @@ $border: #2E89CA;
     }
     height: 100%;
     overflow: hidden;
+    overflow-wrap: break-word;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -88,7 +89,7 @@ $border: #2E89CA;
   &__inner {
     display: flex;
     position: absolute;
-    height: min(1.5rem, 4vw);
+    height: 1.5rem;
     top: 50%;
     transform: translateY(-50%);
     width: 100%;
@@ -101,18 +102,19 @@ $border: #2E89CA;
   }
 
 
-  &--top-alliance {
-    &:after {
-      position: absolute;
-      top: 50%;
-      right: 0;
-      transform: translate(100%, -50%);
-      content: "";
-      background: transparent url("/assets/graphics/top_alliance_logo.webp") no-repeat;
-      background-size: contain;
-      height: min(80%, 2.5rem);
-      max-height: 8vw;
-      width: 7rem; // enough to let image expand fully
+  &__partner-logo {
+    position: absolute;
+    display: block;
+    top: 50%;
+    right: 0;
+    height: min(80%, 2.5rem);
+    max-height: 8vw;
+    transform: translate(100%, -50%);
+
+    & > img {
+      object-fit: scale-down;
+      width: fit-content;
+      height: 100%;
     }
   }
 

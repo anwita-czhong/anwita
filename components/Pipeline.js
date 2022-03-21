@@ -43,8 +43,7 @@ function Program(props) {
       <div className={styles["pipelines__row__progress-area"]}>
         <div className={
           styles["pipelines__row__progress-bar"]
-          + " " + styles[`pipelines__row__progress-bar__${Math.min(Math.max(1, pipeline.progress), 100)}`]
-          + " " + (pipeline.partnership ? styles[`pipelines__row__progress-bar--${pipeline.partnership}`] : "")
+          + " " + styles[`pipelines__row__progress-bar__${Math.min(Math.max(1, Math.round(pipeline.progress)), 100)}`]
         }>
           <div className={
             styles["pipelines__row__progress-bar__inner"]
@@ -54,6 +53,15 @@ function Program(props) {
               <polygon points="0,0 50,50 0,100" />
             </svg>
           </div>
+          { pipeline.partner && <div className={styles["pipelines__row__progress-bar__partner-logo"]}>
+            { /* eslint-disable-next-line @next/next/no-img-element */ }
+            <img
+              width={pipeline.partner.partnerLogoWidth}
+              height={pipeline.partner.partnerLogoHeight}
+              src={pipeline.partner.partnerLogoUrl}
+              alt={pipeline.partner.partnerName + " Logo"}
+            />
+          </div>}
         </div>
 
         <div className={styles["pipelines__row__progress-area__markers"]}>
@@ -126,11 +134,3 @@ export default class Pipelines extends React.Component {
     );
   }
 };
-
-// Fetch the pipelines to use
-export async function getStaticProps() {
-  // TODO: Use an actual database instead of hard-coding
-  return {
-    props: {},
-  };
-}
