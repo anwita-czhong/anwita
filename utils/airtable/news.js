@@ -15,7 +15,7 @@ export function getAllNews(sort = [{ field: "Date", direction: "desc" }]) {
             id: record.get("ID"),
             date: record.get("Date"),
             description: record.get("Copytext"),
-            pressReleaseLink: record.get("Press Release PDF")?.[0]?.url || "",
+            pressReleaseLink: `/assets/news/pr-${record.get("ID")}.pdf`,
           });
         }
 
