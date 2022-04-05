@@ -12,10 +12,10 @@ export function getAllNews(sort = [{ field: "Date", direction: "desc" }]) {
       async function page(records, fetchNextPage) {
         for (const record of records) {
           allNews.push({
-            id: record.get("fldyUvPSoOg10qVMx"),
+            id: record.get("ID"),
             date: record.get("Date"),
             description: record.get("Copytext"),
-            pressReleaseLink: `/assets/news/pr-${record.get("fldyUvPSoOg10qVMx")}.pdf`,
+            pressReleaseLink: `/assets/news/pr-${record.get("ID")}.pdf`,
           });
         }
 
