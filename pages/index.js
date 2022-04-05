@@ -172,6 +172,5 @@ export async function getStaticProps(context) {
       news: await getAllNews(),
       people: await getAllPeople(),
     },
-    revalidate: 600, // seconds
   };
 }
