@@ -143,7 +143,8 @@ export default function Home(props) {
                 <p>Email:&nbsp;<a href='mailto:contact@anwitabio.com'>contact@anwitabio.com</a></p>
               </div>
               <div>
-                <p>Shanghai Division: <br/><a href='https://www.google.com/maps/place/China,+Shang+Hai+Shi,+Pu+Dong+Xin+Qu,+%E7%A7%80%E6%B5%A6%E8%B7%AF2555%E5%8F%B7/@31.1302446,121.6053713,17z/data=!3m1!4b1!4m5!3m4!1s0x35b2788b3666b481:0x462a91e8462cbf6d!8m2!3d31.13024!4d121.60756' target="_blank" rel="noreferrer noopener">11/F Building E6,<br/>2555 Xiupu Road<br/>Pudong New Area, Shanghai</a></p>
+                <p>Shanghai Division:</p>
+                <p><a href='https://www.google.com/maps/place/China,+Shang+Hai+Shi,+Pu+Dong+Xin+Qu,+%E7%A7%80%E6%B5%A6%E8%B7%AF2555%E5%8F%B7/@31.1302446,121.6053713,17z/data=!3m1!4b1!4m5!3m4!1s0x35b2788b3666b481:0x462a91e8462cbf6d!8m2!3d31.13024!4d121.60756' target="_blank" rel="noreferrer noopener">11/F Building E6,<br/>2555 Xiupu Road<br/>Pudong New Area, Shanghai</a></p>
                 <p>Phone:&nbsp;<a href='tel:86-21-58080598' target='_blank' rel="noreferrer">86(21)-58080598</a></p>
               </div>
             </div>
