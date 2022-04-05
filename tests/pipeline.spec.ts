@@ -13,8 +13,6 @@ test("can see all available pipelines", async ({ page, port }) => {
     "Exenokine-21",
     "Exenokine-2",
     "Mableukin-2PD1",
-    "MSLN-MMAE",
-    "B7H3-MMAE",
     "AWT-024",
     "Discovery Programs",
   ];
