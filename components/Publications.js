@@ -4,14 +4,14 @@ import ReactMarkdown from "react-markdown";
 function Publication(props) {
 
   return (
-    <div className="flex flex-col bg-gray-100 p-6 rounded-lg">
+    <li className="flex justify-center gap-4">
       <p className="font-bold">{props.title}</p>
       <ReactMarkdown
         className=""
       >
         {props.description}
       </ReactMarkdown>
-    </div>
+    </li>
   );
 }
 
@@ -27,7 +27,7 @@ export default class Publications extends React.Component {
 
   render() {
     return (
-      <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-4">
+      <ul className="text-lg">
         {this.props.publications.map((publication) => (
           <Publication
             key={publication.id}
@@ -35,7 +35,7 @@ export default class Publications extends React.Component {
             description={publication.description}
           />
         ))}
-      </div>
+      </ul>
     );
   }
 }
