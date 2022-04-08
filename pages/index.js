@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { Navbar } from "../components/header";
 import { Footer } from "../components/footer";
+import Publications from "../components/Publications";
 import People from "../components/People";
 import Pipelines from "../components/Pipeline";
 import News from "../components/News";
@@ -56,6 +57,7 @@ export default function Home(props) {
             <span id='science' className='anchor'/>
             <h1 className='text-center text-4xl mb-6 font-semibold place-self-center'>Science</h1>
             <div className="flex flex-col place-self-center">
+              <h2 className="text-center text-3xl mb-4 font-medium">Technology</h2>
               <div className='w-full place-self-center' style={{ maxWidth: "55rem" }}>
                 <Image src='/assets/graphics/anwitaTech.webp'
                   width='1620' height = '862' alt='A diagram showcasing Anwita&apos;s technology workflow.' />
@@ -65,6 +67,14 @@ export default function Home(props) {
                 Anwita’s core technology integrates structure-guided AccuKine cytokine evolution and AccuBody discovery of full spectrum nanobodies and antibodies, enabling the development of fully optimized cytokine fusions with superior therapeutic potential, favorable safety profile and great developmentability. Our unique product portfolio includes half-live extended Exenokines, immune cell- or tumor cell-targeting Mableukines, and bi-functional Duoleukins. These new generation of cytokines could serve as powerful novel immune therapies with a wide range of applications in treating patients with cancers and autoimmune diseases.
               </p>
 
+            </div>
+            <div className="flex flex-col w-full place-self-center">
+              <h2 className="text-center text-3xl mb-4 font-medium">Publications</h2>
+              <ErrorBoundary>
+                <Publications
+                  publications={props.publications}
+                />
+              </ErrorBoundary>
             </div>
           </div>
 
@@ -163,6 +173,7 @@ export default function Home(props) {
 import { getAllPrograms } from "../utils/airtable/program";
 import { getAllNews } from "../utils/airtable/news";
 import { getAllPeople } from "../utils/airtable/people";
+import { getAllPublications } from "../utils/airtable/publications";
 
 export async function getStaticProps(context) {
 
@@ -171,6 +182,7 @@ export async function getStaticProps(context) {
       programs: await getAllPrograms(),
       news: await getAllNews(),
       people: await getAllPeople(),
+      publications: await getAllPublications(),
     },
   };
 }

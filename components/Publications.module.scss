@@ -1,0 +1,13 @@
+.publications {
+  counter-reset: publications;
+
+  li:before {
+    counter-increment: publications;
+    content: counter(publications) ".";
+    margin-right: 1em;
+  }
+
+  li + li {
+    margin-top: .75em;
+  }
+}
