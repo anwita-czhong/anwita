@@ -68,7 +68,7 @@ export default function Home(props) {
               </p>
 
             </div>
-            <div className="flex flex-col place-self-center">
+            <div className="flex flex-col w-full place-self-center">
               <h2 className="text-center text-3xl mb-4 font-medium">Publications</h2>
               <ErrorBoundary>
                 <Publications

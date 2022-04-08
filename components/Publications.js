@@ -1,13 +1,14 @@
+import styles from "./Publications.module.scss";
 import React from "react";
 import ReactMarkdown from "react-markdown";
 
 function Publication(props) {
 
   return (
-    <li className="flex justify-center gap-4">
-      <p className="font-bold">{props.title}</p>
+    <li className="flex">
       <ReactMarkdown
-        className=""
+        components={{ p: "span" }}
+        linkTarget="_blank"
       >
         {props.description}
       </ReactMarkdown>
@@ -27,15 +28,14 @@ export default class Publications extends React.Component {
 
   render() {
     return (
-      <ul className="text-lg">
+      <ol className={styles.publications + " text-lg gap-4"}>
         {this.props.publications.map((publication) => (
           <Publication
             key={publication.id}
-            title={publication.title}
             description={publication.description}
           />
         ))}
-      </ul>
+      </ol>
     );
   }
 }
