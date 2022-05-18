@@ -8,7 +8,7 @@ function JobCard(props) {
   return (
     <div className={`flex flex-col gap-4 bg-gray-100 p-8 py-4 rounded-lg ${styles["job-card"]}`}>
       {/* Position Title */}
-      <h3 className="font-semibold text-xl text-center">{props.title}</h3>
+      <h3 className="font-semibold text-2xl text-center">{props.title}</h3>
       {/* Description */}
       <ReactMarkdown className="">
         {props.description}
