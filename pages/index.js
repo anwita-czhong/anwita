@@ -6,6 +6,7 @@ import Publications from "../components/Publications";
 import People from "../components/People";
 import Pipelines from "../components/Pipeline";
 import News from "../components/News";
+import Jobs from "../components/Jobs";
 import ErrorBoundary from "../components/errorBoundary";
 
 export default function Home(props) {
@@ -117,8 +118,12 @@ export default function Home(props) {
             <hr className='mt-3 h-px border-1 border-gray-400 w-1/3 m-auto'></hr>
             <div className="lg:grid grid-cols-left-uneven gap-2">
               <div className="my-4">
-                <h2 className='text-3xl my-4 italic font-semibold text-center'>Working at Anwita</h2>
-                <p className='text-xl'>We are always seeking exceptional talent that is passionate about making a difference in the lives of patients with cancer or autoimmune disorders. If you share our mission, and are interested in joining our team, please reach out to us via email at <a href='mailto:contact@anwitabio.com'>contact@anwitabio.com</a>.</p>
+                <h2 className='text-center text-3xl my-4 italic font-semibold'>
+                  {props.jobs.length === 0 ? "Working at Anwita" : "Openings"}
+                </h2>
+                <ErrorBoundary>
+                  <Jobs jobs={props.jobs} />
+                </ErrorBoundary>
               </div>
               <div className="my-4">
                 <h2 className='text-center text-3xl my-4 italic font-semibold'>Benefits</h2>
@@ -174,6 +179,7 @@ import { getAllPrograms } from "../utils/airtable/program";
 import { getAllNews } from "../utils/airtable/news";
 import { getAllPeople } from "../utils/airtable/people";
 import { getAllPublications } from "../utils/airtable/publications";
+import { getAllJobs } from "../utils/airtable/jobs";
 
 export async function getStaticProps(context) {
 
@@ -183,6 +189,7 @@ export async function getStaticProps(context) {
       news: await getAllNews(),
       people: await getAllPeople(),
       publications: await getAllPublications(),
+      jobs: await getAllJobs(),
     },
   };
 }
