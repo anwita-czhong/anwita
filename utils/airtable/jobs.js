@@ -11,11 +11,13 @@ export function getAllJobs(sort = [{ field: "ID", direction: "asc" }]) {
     }).eachPage(
       async function page(records, fetchNextPage) {
         for (const record of records) {
+          if (record.get("ID") == null) continue;
+          if (record.get("Title") == null) continue;
           allJobs.push({
             id: record.get("ID"),
             title: record.get("Title"),
-            description: record.get("Description"),
-            requirements: record.get("Requirements"),
+            description: record.get("Description") || "",
+            requirements: record.get("Requirements") || "No specific requirements.",
           });
         }
 
