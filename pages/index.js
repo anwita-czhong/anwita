@@ -118,7 +118,9 @@ export default function Home(props) {
             <hr className='mt-3 h-px border-1 border-gray-400 w-1/3 m-auto'></hr>
             <div className="lg:grid grid-cols-left-uneven gap-2">
               <div className="my-4">
-                <h2 className='text-center text-3xl my-4 italic font-semibold'>Openings</h2>
+                <h2 className='text-center text-3xl my-4 italic font-semibold'>
+                  {props.jobs.length === 0 ? "Working at Anwita" : "Openings"}
+                </h2>
                 <ErrorBoundary>
                   <Jobs jobs={props.jobs} />
                 </ErrorBoundary>

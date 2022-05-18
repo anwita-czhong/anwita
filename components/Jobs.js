@@ -25,6 +25,13 @@ function JobCard(props) {
 }
 
 export default function Jobs(props) {
+  if (props.jobs.length === 0) {
+    return (
+      <p className="text-lg">
+        We are always seeking exceptional talent that is passionate about making a difference in the lives of patients with cancer or autoimmune disorders. If you share our mission, and are interested in joining our team, please reach out to us via email at <a href="mailto:contact@anwitabio.com">contact@anwitabio.com</a>.
+      </p>
+    );
+  }
   return (
     <div className="grid">
       {/* Job Cards */}
