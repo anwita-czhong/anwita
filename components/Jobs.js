@@ -10,10 +10,10 @@ function JobCard(props) {
       {/* Position Title */}
       <h3 className="font-semibold text-2xl text-center">{props.title}</h3>
       {/* Description */}
-      <ReactMarkdown className="">
+      <ReactMarkdown>
         {props.description}
       </ReactMarkdown>
-      <h4 className="text-center text-lg font-semibold underline">Requirements</h4>
+      <h4 className="text-center text-lg font-semibold underline">Education and Experience</h4>
       {/* Requirements */}
       <ReactMarkdown components={{
         ul: ({ node, ...ulProps }) => <CustomList {...ulProps}/>,
