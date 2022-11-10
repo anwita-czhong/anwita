@@ -2,7 +2,7 @@
 import Airtable from "airtable";
 const base = new Airtable().base(process.env.AIRTABLE_BASE);
 
-export function getAllPublications(sort = [{ field: "ID", direction: "asc" }]) {
+export function getAllPublications(sort = [{ field: "ID", direction: "desc" }]) {
   return new Promise((resolve, reject) => {
     const allPublications = [];
 
