@@ -107,10 +107,10 @@ export default class Pipelines extends React.Component {
             <p><b>Program</b></p>
           </div>
           <div>
-            <p><b>Target</b></p>
+            <p><b>MOA</b></p>
           </div>
           <div>
-            <p><b>Indication</b></p>
+            <p><b>Patient Population</b></p>
           </div>
           <div>
             <p className="lg:text-center"><b>Pre&shy;clinical</b></p>
@@ -125,7 +125,7 @@ export default class Pipelines extends React.Component {
             <p className="lg:text-center"><b>IND Enabling</b></p>
           </div>
           <div>
-            <p className="lg:text-center"><b>Clinic</b></p>
+            <p className="lg:text-center"><b>Phase 1</b></p>
           </div>
         </div>
 
