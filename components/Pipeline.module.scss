@@ -122,6 +122,20 @@ $border: #2E89CA;
     }
   }
 
+  &__label {
+    position: absolute;
+    max-width: 100%;
+    top: 50%;
+    left: 0;
+    height: min(80%, 2.5rem);
+    max-height: 8vw;
+    transform: translate(0%, -0.75em);
+    color: white;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
   svg {
     transform: translateX(-4%);
     fill: $primary;

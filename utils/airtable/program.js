@@ -18,6 +18,7 @@ export function getAllPrograms() {
             target: record.get("Target") || "",
             indication: record.get("Indication") || "",
             progress: record.get("Progress") * 100 || 0,
+            label: record.get("Progress-Bar-Text") || "",
           };
           // Handle partnership
           if (record.get("Partnership")) {

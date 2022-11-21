@@ -59,6 +59,9 @@ function Program(props) {
             <svg viewBox="0 0 50 100" preserveAspectRatio="none" alt="">
               <polygon points="0,0 50,50 0,100" />
             </svg>
+            { pipeline.label && <div className={styles["pipelines__row__progress-bar__label"] }>
+              <b>{pipeline.label}</b>
+            </div> }
           </div>
           { pipeline.partner && <div className={styles["pipelines__row__progress-bar__partner-logo"]}>
             { /* eslint-disable-next-line @next/next/no-img-element */ }
