@@ -175,7 +175,7 @@ $border: #2E89CA;
   height: fit-content;
   border-radius: 0.5rem;
   border: 0.1rem solid gray;
-  z-index: 1;
+  z-index: 101;
 
   position: absolute;
   width: min(65ch, 65vw);
@@ -187,4 +187,13 @@ $border: #2E89CA;
     left: 40%;
     // transform: translateX(-50%);
   }
+}
+
+.hoverParent .hoverParent__background {
+  position: fixed;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
 }

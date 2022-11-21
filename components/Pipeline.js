@@ -9,8 +9,8 @@ function Program(props) {
   return (
     <div className={styles.pipelines__row} key={pipeline.name}>
       <div className={((pipeline.target && pipeline.indication) ? "" : styles["pipelines__row__name--no-info"]) + " pl-1"} style={{ overflow: (pipeline.description ? "visible" : "hidden") }}>
-        <details className={styles.hoverParent + " my-3"} open={props.isOpen} onClick={(event) => props.onClick(event)}>
-          <summary>
+        <details className={styles.hoverParent + " my-3"} open={props.isOpen}>
+          <summary onClick={(event) => props.onClick(event)}>
             <b>{he.decode(pipeline.name)}</b>
             {pipeline.indication && <p>{pipeline.indication}</p>}
           </summary>
@@ -28,6 +28,12 @@ function Program(props) {
                 {pipeline.description}
               </ReactMarkdown>
             </div>
+          }
+          {
+            pipeline.description &&
+            <div
+              className={styles.hoverParent__background}
+              onClick={props.closeDetails}></div>
           }
         </details>
       </div>
@@ -81,6 +87,10 @@ export default class Pipelines extends React.Component {
     this.state = { openDetails: null };
   }
 
+  closeDetails = () => {
+    this.setState({ openDetails: null });
+  }
+
   handleDetailsClick(event, clickedDetails) {
     event.preventDefault();
     if (this.state.openDetails === clickedDetails) {
@@ -97,6 +107,7 @@ export default class Pipelines extends React.Component {
         pipeline={pipeline}
         isOpen={this.state.openDetails === pipeline.name}
         onClick={(event) => this.handleDetailsClick(event, pipeline.name)}
+        closeDetails={this.closeDetails}
       />;
     });
 
