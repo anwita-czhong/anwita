@@ -10,10 +10,11 @@ test("can see all available pipelines", async ({ page, port }) => {
     .filter((s) => s.trim().length > 0)
     .map((s) => s.trim());
   const programs = [
-    "Exenokine-21",
-    "Exenokine-2",
-    "Mableukin-2PD1",
-    "AWT-024",
+    "Exenokine-21 (JS014)",
+    "Exenokine-2 (RT003)",
+    "aPD1-IL-2c (AWT020)",
+    "aLAG3-IL-2c",
+    "Antibody Drug Conjugates",
     "Discovery Programs",
   ];
   programs.forEach((program) => {

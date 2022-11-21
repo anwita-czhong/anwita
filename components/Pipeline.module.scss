@@ -109,6 +109,10 @@ $border: #2E89CA;
     right: 0;
     height: min(80%, 2.5rem);
     max-height: 8vw;
+    max-width: 3rem;
+    @screen md {
+      max-width: none;
+    }
     transform: translate(100%, -50%);
 
     & > img {
@@ -116,6 +120,21 @@ $border: #2E89CA;
       width: fit-content;
       height: 100%;
     }
+  }
+
+  &__label {
+    position: absolute;
+    font-size: 0.85em;
+    max-width: 100%;
+    left: 0;
+    top: 50%;
+    transform: translate(0%, -50%);
+    color: white;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow-x: hidden;
+    vertical-align: middle;
+    line-height: normal;
   }
 
   svg {
@@ -151,6 +170,20 @@ $border: #2E89CA;
 @for $i from 1 through 100 {
   $bar-length: $i;
   .pipelines__row__progress-bar__#{$bar-length} {
+    @if $i < 50 {
+      @media (max-width: theme('screens.md')) {
+        & .pipelines__row__progress-bar__label {
+          left: unset;
+          right: 0;
+          transform: translate(calc(100% + 0.5em), -50%);
+          color: $primary;
+          background-color: rgb(242, 242, 242);
+          border-radius: 0.25em;
+          padding: 0.2em;
+          max-width: unset;
+        }
+      }
+    }
     width: (clamp(0, $bar-length, 50) * math.div(2, 3) * 1%) + (clamp(0, $bar-length - 50, 50) * math.div(4, 3) * 1%);
     @screen md {
       width: (clamp(0, $bar-length, 50) * math.div(8, 9) + clamp(0, $bar-length - 50, 50) * math.div(10, 9)) * 1%;
@@ -161,6 +194,11 @@ $border: #2E89CA;
 .hoverParent {
   position: relative;
   display: inline-block;
+
+  & > summary {
+    list-style-position: outside;
+    margin-left: 1rem;
+  }
 
   & > summary > p {
     @screen md {
@@ -175,7 +213,7 @@ $border: #2E89CA;
   height: fit-content;
   border-radius: 0.5rem;
   border: 0.1rem solid gray;
-  z-index: 1;
+  z-index: 101;
 
   position: absolute;
   width: min(65ch, 65vw);
@@ -187,4 +225,13 @@ $border: #2E89CA;
     left: 40%;
     // transform: translateX(-50%);
   }
+}
+
+.hoverParent .hoverParent__background {
+  position: fixed;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
 }

@@ -9,8 +9,8 @@ function Program(props) {
   return (
     <div className={styles.pipelines__row} key={pipeline.name}>
       <div className={((pipeline.target && pipeline.indication) ? "" : styles["pipelines__row__name--no-info"]) + " pl-1"} style={{ overflow: (pipeline.description ? "visible" : "hidden") }}>
-        <details className={styles.hoverParent + " my-3"} open={props.isOpen} onClick={(event) => props.onClick(event)}>
-          <summary>
+        <details className={styles.hoverParent + " my-3"} open={props.isOpen}>
+          <summary onClick={(event) => props.onClick(event)}>
             <b>{he.decode(pipeline.name)}</b>
             {pipeline.indication && <p>{pipeline.indication}</p>}
           </summary>
@@ -28,6 +28,13 @@ function Program(props) {
                 {pipeline.description}
               </ReactMarkdown>
             </div>
+          }
+          {
+            pipeline.description &&
+            <div
+              aria-hidden
+              className={styles.hoverParent__background}
+              onClick={props.closeDetails}></div>
           }
         </details>
       </div>
@@ -52,6 +59,9 @@ function Program(props) {
             <svg viewBox="0 0 50 100" preserveAspectRatio="none" alt="">
               <polygon points="0,0 50,50 0,100" />
             </svg>
+            { pipeline.label && <div className={styles["pipelines__row__progress-bar__label"] }>
+              <b>{pipeline.label}</b>
+            </div> }
           </div>
           { pipeline.partner && <div className={styles["pipelines__row__progress-bar__partner-logo"]}>
             { /* eslint-disable-next-line @next/next/no-img-element */ }
@@ -81,6 +91,10 @@ export default class Pipelines extends React.Component {
     this.state = { openDetails: null };
   }
 
+  closeDetails = () => {
+    this.setState({ openDetails: null });
+  }
+
   handleDetailsClick(event, clickedDetails) {
     event.preventDefault();
     if (this.state.openDetails === clickedDetails) {
@@ -97,6 +111,7 @@ export default class Pipelines extends React.Component {
         pipeline={pipeline}
         isOpen={this.state.openDetails === pipeline.name}
         onClick={(event) => this.handleDetailsClick(event, pipeline.name)}
+        closeDetails={this.closeDetails}
       />;
     });
 
@@ -107,10 +122,10 @@ export default class Pipelines extends React.Component {
             <p><b>Program</b></p>
           </div>
           <div>
-            <p><b>Target</b></p>
+            <p><b>MOA</b></p>
           </div>
           <div>
-            <p><b>Indication</b></p>
+            <p><b>Patient Population</b></p>
           </div>
           <div>
             <p className="lg:text-center"><b>Pre&shy;clinical</b></p>
@@ -125,7 +140,7 @@ export default class Pipelines extends React.Component {
             <p className="lg:text-center"><b>IND Enabling</b></p>
           </div>
           <div>
-            <p className="lg:text-center"><b>Clinic</b></p>
+            <p className="lg:text-center"><b>Phase 1</b></p>
           </div>
         </div>
 
