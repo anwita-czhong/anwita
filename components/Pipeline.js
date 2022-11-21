@@ -32,6 +32,7 @@ function Program(props) {
           {
             pipeline.description &&
             <div
+              aria-hidden
               className={styles.hoverParent__background}
               onClick={props.closeDetails}></div>
           }
