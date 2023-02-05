@@ -10,6 +10,7 @@ export function getAllPeople() {
       view: "Grid view",
     }).eachPage(
       function page(records, fetchNextPage) {
+        if (records.length === 0) return;
         for (const record of records) {
           allPeople.push({
             id: record.get("ID"),

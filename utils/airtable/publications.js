@@ -10,6 +10,7 @@ export function getAllPublications(sort = [{ field: "ID", direction: "desc" }]) 
       sort: sort,
     }).eachPage(
       async function page(records, fetchNextPage) {
+        if (records.length === 0) return;
         for (const record of records) {
           allPublications.push({
             id: record.get("ID"),
