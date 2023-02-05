@@ -28,12 +28,8 @@ test("can click a pipeline to reveal its description", async ({ page, port }) =>
   const pipeline = page.locator("div[data-role~='pipeline-display']");
   const button = pipeline.locator("text='Discovery Programs'");
   // Stupid hack needed to make the test work on both touch and non-touch browsers
-  try {
-    await button.tap();
-  } catch (error) {
-    await button.click();
-  }
-  const pipelineText = (await page.locator("div[data-role~='pipeline-display'] details[open] div").innerText())
+  await button.click();
+  const pipelineText = (await page.locator("div[data-role~='pipeline-display'] details[open] div:not([aria-hidden])").innerText())
     .replace(/[^\P{C}\n]/gu, "");
   expect(pipelineText.includes("Anwita applies our AccuKine cytokine")).toBeTruthy();
 });
