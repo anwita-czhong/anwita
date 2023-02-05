@@ -19,7 +19,9 @@ export function getAllNews(sort = [{ field: "Date", direction: "desc" }]) {
           });
         }
 
-        fetchNextPage();
+        try {
+          fetchNextPage();
+        } catch { return; }
       },
       function done(err) {
         if (err) {

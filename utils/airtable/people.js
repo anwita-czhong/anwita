@@ -21,7 +21,9 @@ export function getAllPeople() {
           });
         }
 
-        fetchNextPage();
+        try {
+          fetchNextPage();
+        } catch { return; }
       },
       function done(err) {
         if (err) {

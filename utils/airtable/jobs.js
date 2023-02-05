@@ -21,7 +21,9 @@ export function getAllJobs(sort = [{ field: "ID", direction: "asc" }]) {
           });
         }
 
-        fetchNextPage();
+        try {
+          fetchNextPage();
+        } catch { return; }
       },
       function done(err) {
         if (err) {

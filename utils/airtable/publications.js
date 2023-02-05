@@ -17,7 +17,9 @@ export function getAllPublications(sort = [{ field: "ID", direction: "desc" }]) 
           });
         }
 
-        fetchNextPage();
+        try {
+          fetchNextPage();
+        } catch { return; }
       },
       function done(err) {
         if (err) {
