@@ -9,21 +9,15 @@ export function getAllPeople() {
     base("People").select({
       view: "Grid view",
     }).eachPage(
-      function page(records, fetchNextPage) {
+      async function page(records, fetchNextPage) {
         for (const record of records) {
-          const image = record.get("Image")?.[0];
-
           allPeople.push({
             id: record.get("ID"),
             name: record.get("Name"),
             qualifications: record.get("Qualifications"),
             position: record.get("Position"),
             biography: record.get("Biography"),
-            image: {
-              url: image?.url,
-              width: image?.width,
-              height: image?.height,
-            },
+            image_path: `/assets/people/${record.get("image_path")}`.replace(/\.\./g, ""),
           });
         }
 
