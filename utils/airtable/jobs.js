@@ -10,7 +10,6 @@ export function getAllJobs(sort = [{ field: "ID", direction: "asc" }]) {
       sort: sort,
     }).eachPage(
       async function page(records, fetchNextPage) {
-        if (records.length === 0) return;
         for (const record of records) {
           if (record.get("ID") == null) continue;
           if (record.get("Title") == null) continue;
@@ -22,9 +21,7 @@ export function getAllJobs(sort = [{ field: "ID", direction: "asc" }]) {
           });
         }
 
-        try {
-          fetchNextPage();
-        } catch { return; }
+        fetchNextPage();
       },
       function done(err) {
         if (err) {

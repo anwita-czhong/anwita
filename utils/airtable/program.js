@@ -11,7 +11,6 @@ export function getAllPrograms() {
       view: "Grid view",
     }).eachPage(
       async function page(records, fetchNextPage) {
-        if (records.length === 0) return;
         for (const record of records) {
           let programData = {
             name: record.get("Name").replace("-", "&#8203;-") || "",

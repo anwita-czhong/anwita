@@ -10,8 +10,9 @@ export function getAllPeople() {
       view: "Grid view",
     }).eachPage(
       function page(records, fetchNextPage) {
-        if (records.length === 0) return;
         for (const record of records) {
+          const image = record.get("Image")?.[0];
+
           allPeople.push({
             id: record.get("ID"),
             name: record.get("Name"),
@@ -22,9 +23,7 @@ export function getAllPeople() {
           });
         }
 
-        try {
-          fetchNextPage();
-        } catch { return; }
+        fetchNextPage();
       },
       function done(err) {
         if (err) {
