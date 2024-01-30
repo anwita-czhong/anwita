@@ -33,7 +33,7 @@ export default function Jobs(props) {
     );
   }
   return (
-    <div className="grid">
+    <div className="grid gap-4">
       {/* Job Cards */}
       {props.jobs.map((job) => (
         <JobCard key={job.id} title={job.title} description={job.description} requirements={job.requirements} />
