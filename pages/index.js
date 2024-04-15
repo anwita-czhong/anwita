@@ -40,7 +40,7 @@ export default function Home(props) {
               <div className='flex flex-col col-span-2 mb-8'>
                 <h1 className='text-center text-4xl mb-4 font-semibold'>Our Mission</h1>
                 <p className='place-self-center text-xl max-w-prose mb-6'>
-                  Anwita Biosciences, Inc. is a clinical stage biopharmaceutical company headquartered in the San Francisco Bay Area. We are advancing our product pipeline of improved cytokines (Exenokines, Mableukins etc) and tumor-targeting antibody drug conjugates. Our lead product, Exenokine-21, has been accepted by China NMPA and the US FDA to initiate clinical studies.
+                  Anwita Biosciences, Inc. is a clinical stage biopharmaceutical company headquartered in the San Francisco Bay Area. We are advancing our product pipeline of improved cytokines (Exenokines, Mableukins etc) and tumor-targeting antibody drug conjugates. Our first product, Exenokine-21 is in Phase 1 studies in China and Taiwan. We are also conducting a Phase 1 study for our anti-PD-1/IL2c fusion protein in Australia.
                 </p>
                 <p className='place-self-center text-xl max-w-prose mb-6'>
                   Our mission is to deliver transformative treatment options to improve the lives of patients with cancer and autoimmune diseases. We specialize in the discovery and development of optimized immunotherapeutics, leveraging our core expertise in cancer immunotherapy, bioinformatics, and target-based protein evolution.
