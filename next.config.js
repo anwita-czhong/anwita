@@ -4,6 +4,6 @@ module.exports = {
   ...withImages(),
   webpack5: true,
   images: {
-    domains: ["dl.airtable.com"],
+    domains: ["v5.airtableusercontent.com"],
   },
 };

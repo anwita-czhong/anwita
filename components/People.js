@@ -7,7 +7,7 @@ function PersonCard(props) {
   return (
     <button className="flex-initial w-52 m-2 flex flex-col justify-center text-center items-center bg-gray-200 rounded p-2 hover:bg-gray-400" onClick={props.handleClick}>
       <div className="w-full h-full overflow-hidden object-contain pb-3">
-        <Image src={props.image_path} width={200} height={200} layout="responsive" objectFit="cover" alt={`${props.name}`}/>
+        <Image src={props.image_path} width={200} height={200} alt={`${props.name}`}/>
       </div>
       <ReactMarkdown className="font-bold">
         {props.name + ", " + props.qualifications}
