@@ -55,7 +55,7 @@ export const Navbar = () => {
         <div className='hidden navbar:inline-flex' style={{ minWidth: "0.5em", width: "10%" }}></div>
         <button aria-label="Back To Top" onClick={toTop} name="Home Button" className='inline-flex items-center mr-4 focus:outline-none focus:ring focus:ring-gray-300 rounded'>
           <div className="h-12 max-h-12 items-center" style={{ width: "183.2px", maxWidth: "50vw" }}>
-            <Image src="/assets/branding/AnwitaLogoAlphaGradient.png" width="500" height="131" layout="responsive" alt="Anwita Biosciences" />
+            <Image src="/assets/branding/AnwitaLogoAlphaGradient.png" width="500" height="131" alt="Anwita Biosciences" />
           </div>
         </button>
         <button

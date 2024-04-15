@@ -3,6 +3,7 @@ import React from "react";
 import he from "he";
 import ReactMarkdown from "react-markdown";
 import remarkSuperSub from "remark-supersub";
+import Image from "next/image";
 
 function Program(props) {
   const pipeline = props.pipeline;
@@ -65,7 +66,7 @@ function Program(props) {
           </div>
           { pipeline.partner && <div className={styles["pipelines__row__progress-bar__partner-logo"]}>
             { /* eslint-disable-next-line @next/next/no-img-element */ }
-            <img
+            <Image
               width={pipeline.partner.partnerLogoWidth}
               height={pipeline.partner.partnerLogoHeight}
               src={pipeline.partner.partnerLogoUrl}

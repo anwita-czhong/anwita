@@ -47,7 +47,7 @@ export default function Home(props) {
                 </p>
               </div>
               <div className="relative lg:relative w-full h-96">
-                <Image src='/assets/graphics/about.webp' alt="" layout="fill" className='object-scale-down w-full h-96'/>
+                <Image src='/assets/graphics/about.webp' alt="" fill className='object-scale-down w-full h-96'/>
               </div>
             </div>
           </div>
