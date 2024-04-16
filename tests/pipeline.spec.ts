@@ -1,14 +1,8 @@
-import test from "./support/next-fixture";
-import { expect } from "@playwright/test";
+import { test, expect } from "@playwright/test";
 
-test("can see all available pipelines", async ({ page, port }) => {
-  await page.goto(`http://localhost:${port}/`);
+test("can see all available pipelines", async ({ page }) => {
+  await page.goto("/");
 
-  const pipelineText = (await page.locator("div[data-role~='pipeline-display']").innerText())
-    .replace(/[^\P{C}\n]/gu, "")
-    .split("\n")
-    .filter((s) => s.trim().length > 0)
-    .map((s) => s.trim());
   const programs = [
     "Exenokine-21 (JS014)",
     "Exenokine-2 (RT003)",
@@ -17,13 +11,11 @@ test("can see all available pipelines", async ({ page, port }) => {
     "Antibody Drug Conjugates",
     "Discovery Programs",
   ];
-  programs.forEach((program) => {
-    expect(pipelineText).toContain(program);
-  });
+  await expect(page.locator("div[data-role~='pipeline-display'] summary")).toContainText([new RegExp(`/${programs.join("|")}/`)]);
 });
 
-test("can click a pipeline to reveal its description", async ({ page, port }) => {
-  await page.goto(`http://localhost:${port}/`);
+test("can click a pipeline to reveal its description", async ({ page }) => {
+  await page.goto("/");
 
   const pipeline = page.locator("div[data-role~='pipeline-display']");
   const button = pipeline.locator("text='Discovery Programs'");
@@ -31,5 +23,5 @@ test("can click a pipeline to reveal its description", async ({ page, port }) =>
   await button.click();
   const pipelineText = (await page.locator("div[data-role~='pipeline-display'] details[open] div:not([aria-hidden])").innerText())
     .replace(/[^\P{C}\n]/gu, "");
-  expect(pipelineText.includes("Anwita applies our AccuKine cytokine")).toBeTruthy();
+  expect(pipelineText).toContain("Anwita applies our AccuKine cytokine");
 });
