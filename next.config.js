@@ -2,7 +2,7 @@ const withImages = require("next-images");
 
 module.exports = {
   ...withImages(),
-  webpack5: true,
+  output: "export",
   images: {
     domains: ["v5.airtableusercontent.com"],
   },
