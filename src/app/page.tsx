@@ -4,6 +4,8 @@ import News, { NewsItem } from "./_components/News";
 import Publications, { Publication } from "./_components/Publications";
 import Pipelines, { Partner, Program } from "./_components/Pipeline";
 import People, { Person } from "./_components/People";
+import { Footer } from "./_components/Footer";
+import { Header } from "./Header";
 
 export default function Home() {
   const jobs: Job[] = [
@@ -190,10 +192,12 @@ export default function Home() {
 
   return (
     <div>
+      <Header />
+
       <main>
         <div
           id="banner-wrapper"
-          className="bg-home-banner bg-cover bg-center flex content-center justify-center h-[300px] lg:h-[400px]"
+          className="bg-[url(/assets/branding/careers-scale-down-height-clamp.webp)] bg-cover bg-center flex content-center justify-center h-[300px] lg:h-[400px]"
         >
           <div
             className="flex flex-col w-full flex-none text-center content-center justify-center items-center space-y-2"
@@ -419,6 +423,8 @@ export default function Home() {
           </div>
         </div>
       </main>
+
+      <Footer />
     </div>
   );
 }
