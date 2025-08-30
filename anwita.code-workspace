@@ -1,0 +1,13 @@
+{
+  "folders": [
+    {
+      "path": ".",
+    },
+    {
+      "path": "../anwita-old",
+    },
+  ],
+  "settings": {
+    "editor.formatOnSave": true
+  },
+}

@@ -1,0 +1,176 @@
+'use client';
+
+import ReactMarkdown from "react-markdown";
+import remarkSuperSub from "remark-supersub";
+import styles from "./Pipeline.module.scss";
+import he from "he";
+import Image from "next/image";
+import React from "react";
+
+export interface Partner {
+  name: string;
+  logoImageData?: {
+    url: string;
+    width: number;
+    height: number;
+  }
+}
+
+export interface Program {
+  name: string;
+  description: string;
+  target: string;
+  indication: string;
+  progress: number;
+  label?: string;
+  partner?: Partner;
+}
+
+const Program: React.FC<{
+  program: Program,
+  isOpen: boolean,
+  onClick: (event: React.MouseEvent) => void,
+  closeDetails: () => void,
+}> = ({ program, isOpen, onClick, closeDetails }) => {
+  return (
+    <div className={styles.pipelines__row} key={program.name}>
+      <div className={((program.target && program.indication) ? "" : styles["pipelines__row__name--no-info"]) + " pl-1"} style={{ overflow: (program.description ? "visible" : "hidden") }}>
+        <details className={styles.hoverParent + " my-3"} open={isOpen}>
+          <summary onClick={(event) => onClick(event)}>
+            <b>{he.decode(program.name)}</b>
+            {program.indication && <p>{program.indication}</p>}
+          </summary>
+          {program.description &&
+            <div
+              className={styles.hoverParent__text + ((program.target && program.indication) ? "" : ` ${styles["hoverParent__text--bottom"]}`) + " text-xs lg:text-sm p-2"}
+            >
+              <ReactMarkdown
+                remarkPlugins={[remarkSuperSub]}
+                components={{
+                  sub: "sub",
+                  sup: "sup",
+                }}
+              >
+                {program.description}
+              </ReactMarkdown>
+            </div>
+          }
+          {
+            program.description &&
+            <div
+              aria-hidden
+              className={styles.hoverParent__background}
+              onClick={closeDetails}></div>
+          }
+        </details>
+      </div>
+
+      <div style={{ borderLeft: "1px dashed gray", display: program.target ? "" : "none" }}>
+        <p>{he.decode(program.target || "")}</p>
+      </div>
+
+      <div style={{ borderLeft: "1px dashed gray", display: program.indication ? "" : "none" }}>
+        <p>{he.decode(program.indication || "")}</p>
+      </div>
+
+      <div className={styles["pipelines__row__progress-area"]}>
+        <div className={
+          styles["pipelines__row__progress-bar"]
+          + " " + styles[`pipelines__row__progress-bar__${Math.min(Math.max(1, Math.round(program.progress * 100)), 100)}`]
+        }>
+          <div className={
+            styles["pipelines__row__progress-bar__inner"]
+          }>
+            <div className={styles["pipelines__row__progress-bar__inner__fill"]}></div>
+            <svg viewBox="0 0 50 100" preserveAspectRatio="none">
+              <polygon points="0,0 50,50 0,100" />
+            </svg>
+            {program.label && <div className={styles["pipelines__row__progress-bar__label"]}>
+              <b>{program.label}</b>
+            </div>}
+          </div>
+          {program.partner && <div className={styles["pipelines__row__progress-bar__partner-logo"]}>
+            { /* eslint-disable-next-line @next/next/no-img-element */}
+            <Image
+              width={program.partner.logoImageData?.width}
+              height={program.partner.logoImageData?.height}
+              src={program.partner.logoImageData?.url || ""}
+              alt={program.partner.name + " Logo"}
+            />
+          </div>}
+        </div>
+
+        <div className={styles["pipelines__row__progress-area__markers"]}>
+          <div>&nbsp;</div>
+          <div>&nbsp;</div>
+          <div>&nbsp;</div>
+          <div>&nbsp;</div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+const Pipelines: React.FC<{
+  programs: Program[]
+}> = ({ programs }) => {
+  const [openProgram, setOpenProgram] = React.useState<string | null>(null);
+
+  const closeDetails = () => {
+    setOpenProgram(null);
+  };
+
+  const handleDetailsClick = (event: React.MouseEvent, programName: string) => {
+    event.preventDefault();
+    if (openProgram === programName) {
+      closeDetails();
+    } else {
+      setOpenProgram(programName);
+    }
+  };
+
+  const pipelines = programs.map((program) => (
+    <Program
+      key={program.name}
+      program={program}
+      isOpen={openProgram === program.name}
+      onClick={(event) => handleDetailsClick(event, program.name)}
+      closeDetails={closeDetails}
+    />
+  ));
+
+  return (
+    <div className={styles.pipelines} data-role="pipeline-display">
+      <div className={styles.pipelines__row + " " + styles["pipelines__row--headers"]}>
+        <div>
+          <p><b>Program</b></p>
+        </div>
+        <div>
+          <p><b>MOA</b></p>
+        </div>
+        <div>
+          <p><b>Patient Population</b></p>
+        </div>
+        <div>
+          <p className="lg:text-center"><b>Pre&shy;clinical</b></p>
+        </div>
+        <div>
+          <p className="lg:text-center"><b>Lead ID</b></p>
+        </div>
+        <div>
+          <p className="lg:text-center"><b>Lead OP</b></p>
+        </div>
+        <div>
+          <p className="lg:text-center"><b>IND Enabling</b></p>
+        </div>
+        <div>
+          <p className="lg:text-center"><b>Phase 1</b></p>
+        </div>
+      </div>
+
+      {pipelines}
+    </div>
+  );
+}
+
+export default Pipelines;
