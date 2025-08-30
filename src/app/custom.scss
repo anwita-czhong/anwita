@@ -1,0 +1,14 @@
+@use 'tailwindcss';
+
+@layer components {
+  span.anchor {
+    display: block;
+    position: relative;
+    top: -100px;
+    visibility: hidden;
+  }
+
+  a {
+    @apply text-blue-600 hover:text-orange underline focus:outline-none focus:ring-2 focus:ring-gray-400 rounded
+  }
+}
