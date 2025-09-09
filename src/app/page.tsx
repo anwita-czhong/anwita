@@ -88,6 +88,14 @@ export default function Home() {
     {
       "id": "5",
       "description": "Ye F. et al. A Safe and Highly Potent αPD1-IL2 Fusion (AWT020) that Decouples the Efficacy and Toxicity of IL-2 Therapy. <https://anwitabio.com/events/2022/sitc/poster/pd1-il2.pdf>\n"
+    },
+    {
+      "id": "6",
+      "description": "Ye F. et al. Synergistic enhancement of immunogenic cell death: Combining AWT020 with antibody-drug conjugates for superior anti-tumor activity. <https://doi.org/10.1158/1538-7445.AM2025-4774>\n"
+    },
+    {
+      "id": "7",
+      "description": "Ye F. et al. AWT020: a novel fusion protein harnessing PD-1 blockade and selective IL-2 Cis-activation for enhanced anti-tumor immunity and diminished toxicity. Front. Immunol. 16:1537466. doi: 10.3389/fimmu.2025.1537466\n"
     }
   ];
   const partners: Partner[] = [
