@@ -2,7 +2,7 @@ import Image from "next/image";
 import Jobs, { Job } from "./_components/Jobs";
 import News, { NewsItem } from "./_components/News";
 import Publications, { Publication } from "./_components/Publications";
-import Pipelines, { Partner, Program } from "./_components/Pipeline";
+import Pipelines, { Partner, Program, ProgramGroup } from "./_components/Pipeline";
 import People, { Person } from "./_components/People";
 import { Footer } from "./_components/Footer";
 import { Header } from "./Header";
@@ -99,59 +99,79 @@ export default function Home() {
         height: 81
       }
     }
-  ]
-  const programs: Program[] = [
-
+  ];
+  const programGroups: ProgramGroup[] = [
     {
-      "name": "Exenokine-21 (JS014)",
-      "description": "Exenokine-21 (JS014) is a half-life extended IL-21 being developed for treating cancer patients as a combined therapy with standard-of-care therapies. The antitumor activities of Exenokine-21 have been demonstrated in multiple mouse tumor models, both as a superior single agent when compared to the unmodified IL-21 and as an effective combined agent potentiating the efficacy of immunotherapies. The safety and efficacy of Exenokine-21 in humans is being evaluated in ongoing Phase 1 clinical trials. World-wide rights excluding Greater China territories are available for partnership.",
-      "target": "IL-21",
-      "indication": "Lymphoma, head and neck, RCC, melanoma as a combined agent​",
-      "progress": 0.95,
-      "label": "First-in-Class",
-      "partner": partners[0]
+      name: "Targeted Cytokines",
+      programs: [
+        {
+          name: "AWT020",
+          description: "aPD1-IL-2c (AWT020) is a targeted fusion protein comprised of an anti-PD1 antibody linked to a potency optimized IL-2Na The IL-2Na component of the fusion protein has been engineered to have low systemic toxicity. The anti-PD1 antibody component not only serves to block the interaction between PD1 and PD-L1 but also functions to selectively deliver the potency optimized IL-2Na to PD1+ T cells within the tumor microenvironment. In preclinical studies, aPD1-IL-2c demonstrated superior single-agent antitumor activity with robust immunological memory accompanied by preferential activation and expansion of functional intratumoral T cells. The antitumor activity of aPD1-IL-2c is driven by CD8+ T cells. In contrast to competitors’ products, aPD1-IL-2c is devoid of NK cell dependent toxicity. In non-human primates, aPD1-IL-2c is well tolerated at dose levels that support the clinical plan. World-wide rights are available for partnership.",
+          target: "PD-1 and IL-2",
+          indication: "NSCLC, GI and gynecological cancers",
+          progress: 0.97,
+          partner: partners[0]
+        },
+        {
+          name: "AWT026",
+          description: "",
+          target: "LAG-3 and IL-2",
+          indication: "Melanoma combined with aPD-1; CART",
+          progress: 0.49,
+        },
+      ],
     },
     {
-      "name": "aPD1-IL-2c (AWT020)",
-      "description": "aPD1-IL-2c (AWT020) is a targeted fusion protein comprised of an anti-PD1 antibody linked to a potency optimized IL-2Na The IL-2Na component of the fusion protein has been engineered to have low systemic toxicity. The anti-PD1 antibody component not only serves to block the interaction between PD1 and PD-L1 but also functions to selectively deliver the potency optimized IL-2Na to PD1+ T cells within the tumor microenvironment. In preclinical studies, aPD1-IL-2c demonstrated superior single-agent antitumor activity with robust immunological memory accompanied by preferential activation and expansion of functional intratumoral T cells. The antitumor activity of aPD1-IL-2c is driven by CD8+ T cells. In contrast to competitors’ products, aPD1-IL-2c is devoid of NK cell dependent toxicity. In non-human primates, aPD1-IL-2c is well tolerated at dose levels that support the clinical plan. World-wide rights are available for partnership. ",
-      "target": "PD-1 and IL-2",
-      "indication": "aPD-1 refractory NSCLC, RCC, melanoma, and urothelial carcinoma​",
-      "progress": 0.8,
-      "label": "Best-in-Class",
+      name: "ADCs",
+      programs: [
+        {
+          name: "JS212",
+          description: "",
+          target: "EGFR and HER3",
+          indication: "NSCLC; CRC",
+          progress: 0.85,
+          partner: partners[0]
+        },
+        {
+          name: "AWT041",
+          description: "",
+          target: "VEGF and PD-L1",
+          indication: "Solid tumors",
+          progress: 0.47,
+        }
+      ]
     },
     {
-      "name": "EGFR/HER3 BsADC (RT022)",
-      "description": "Exenokine-2 (RT003) is a half-life extended IL-2Na being developed to minimize systemic toxicity while maximizing the clinical benefits of wild-type IL-2. In preclinical studies, Exenokine-2 demonstrated robust dose-dependent single-agent activity as well as an enhanced antitumor activity when combined with anti-PD1, trastuzumab or rituximab. In non-human primates, Exn-2 induced pronounced and sustained expansion of lymphocytes and CD8+ T cells with no or minimal effects on eosinophils and Treg cells.  No major safety findings or signs of VLS were observed at the pharmacologically active doses. GMP manufacturing has been completed producing sufficient drug product to support Phase1 clinical study. World-wide rights excluding Greater China territories are available for partnership.",
-      "target": "Bispecific ADC",
-      "indication": "NSCLC with EGFR mutations",
-      "progress": 0.6,
-      "label": "Best-in-Class",
-      "partner": partners[0]
+      name: "T-cell Engagers",
+      programs: [
+        {
+          name: "AWT032",
+          description: "",
+          target: "BCMA, CD19, CD3",
+          indication: "Hematological autoimmune disease",
+          progress: 0.55,
+        },
+        {
+          name: "Others",
+          description: "",
+          target: "Multiple Targets",
+          indication: "Solid tumors",
+          progress: 0.4,
+        },
+      ],
     },
     {
-      "name": "aLAG3-IL-2c",
-      "description": "aLAG3-IL-2c is a targeted immunocytokine comprised of a biparatopic anti-LAG3 antibody and a potency optimized IL-2Na. aLAG3-IL-2c selectively targets and activates LAG3+ cells which are predominately tumor-specific CD8+ T cells. The selective targeting of aLAG3-IL-2c enabled the single-agent to be superiorly efficacious with unappreciable systemic toxicity in various tumor models, as well as to be synergistic with anti-PD1 antibody in both anti-PD1 sensitive and resistant models.  In addition, aLAG3-IL-2c demonstrated enhanced in vitro expansion and cytotoxicity, and in vivo efficacy of MSLN-targeted CAR-T cells, demonstrating the potential to be combined with CART therapy. World-wide rights are available for partnership.",
-      "target": "LAG-3 and IL-2",
-      "indication": "Melanoma combined with aPD-1;​  Solid tumors combined with CART therap",
-      "progress": 0.4,
-      "label": "First-in-Class",
-    },
-    {
-      "name": "Bispecific Antibody Drug Conjugates",
-      "description": "Leveraging on Anwita’s powerful antibody discovery engine and proprietary topoisomerase inhibitor ATI020, our ADC program aims at developing treatment options for cancer patients with unmet medical needs. ATI020 is a potent topoisomerase inhibitor with efficient by-stander killing activity. Our antibody discovery platform had enabled the discovery and development of high affinity antibodies for many clinically validated targets, including CD78b, Nectin-4, mesothelin, B7H3, and HER3. The feasibilities of these antibodies as ADC candidates have been demonstrated with MMAE as the payload. And they are being further evaluated with ATI020 as the payload to target tumors that are responsive to topoisomerase inhibition. Our current ADC pipeline includes an anti-Nectin-4-ATI020 ADC for the potential treatment of urothelial carcinoma and GI cancers, an anti-B7H3-ATI020 for the potential treatment solid tumors including CRC and NSCLC, and an anti-MSLN-ATI020 for treating mesothelioma and pancreatic cancer. Anwita is continuing to explore other potential targets for effective cancer treatment.",
-      "target": "Multiple targets",
-      "indication": "Solid tumors",
-      "progress": 0.35,
-      "label": "Proprietary Payloads",
-    },
-    {
-      "name": "Discovery Programs",
-      "description": "Anwita applies our AccuKine cytokine evolution and AccuBody discovery platform to design, optimize, and validate new therapeutic candidates with improved pharmaceutical properties in immuno-oncology, autoimmune, and inflammatory disease areas.",
-      "target": "",
-      "indication": "",
-      "progress": 0.2,
-      "label": "",
-    },
+      name: "Cancer Cachexia",
+      programs: [
+        {
+          name: "AWT038",
+          description: "",
+          target: "GDF15 and IL-6",
+          indication: "Solid tumors",
+          progress: 0.51,
+        }
+      ]
+    }
   ];
   const people: Person[] = [
     {
@@ -305,7 +325,7 @@ export default function Home() {
             <h1 className="text-center text-4xl mb-4 font-semibold">
               Pipeline
             </h1>
-            <Pipelines programs={programs} />
+            <Pipelines programGroups={programGroups} />
             <p className="text-sm my-4">
               Click or tap on any Program to read more about that project.
             </p>

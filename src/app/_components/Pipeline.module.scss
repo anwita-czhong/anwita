@@ -65,7 +65,12 @@ $border: #2E89CA;
     overflow-wrap: break-word;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+  }
+
+  &.pipelines__row--center {
+    & > div {
+      justify-content: center;
+    }
   }
 }
 
@@ -198,7 +203,6 @@ $border: #2E89CA;
   display: inline-block;
 
   & > summary {
-    list-style-position: outside;
     margin-left: 1rem;
   }
 
