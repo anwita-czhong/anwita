@@ -5,7 +5,7 @@ import remarkSuperSub from "remark-supersub";
 import styles from "./Pipeline.module.scss";
 import he from "he";
 import Image from "next/image";
-import React from "react";
+import React, { Fragment } from "react";
 
 export interface Partner {
   name: string;
@@ -24,6 +24,11 @@ export interface Program {
   progress: number;
   label?: string;
   partner?: Partner;
+}
+
+export interface ProgramGroup {
+  name: string;
+  programs: Program[];
 }
 
 const Program: React.FC<{
@@ -112,8 +117,8 @@ const Program: React.FC<{
 }
 
 const Pipelines: React.FC<{
-  programs: Program[]
-}> = ({ programs }) => {
+  programGroups: ProgramGroup[]
+}> = ({ programGroups }) => {
   const [openProgram, setOpenProgram] = React.useState<string | null>(null);
 
   const closeDetails = () => {
@@ -129,19 +134,49 @@ const Pipelines: React.FC<{
     }
   };
 
-  const pipelines = programs.map((program) => (
-    <Program
-      key={program.name}
-      program={program}
-      isOpen={openProgram === program.name}
-      onClick={(event) => handleDetailsClick(event, program.name)}
-      closeDetails={closeDetails}
-    />
+  const pipelines = programGroups.map((programGroup) => (
+    <Fragment key={programGroup.name}>
+      <div className={styles.pipelines__row}>
+        <p className="p-2"><b>{programGroup.name}</b></p>
+        <div style={{ borderLeft: "1px dashed gray" }}>&nbsp;</div>
+        <div style={{ borderLeft: "1px dashed gray" }}>&nbsp;</div>
+        <div className={styles["pipelines__row__progress-area"]}>
+          <div className={styles["pipelines__row__progress-area__markers"]}>
+            <div>&nbsp;</div>
+            <div>&nbsp;</div>
+            <div>&nbsp;</div>
+            <div>&nbsp;</div>
+          </div>
+        </div>
+      </div>
+      {programGroup.programs.map((program) => (
+        <Program
+          key={program.name}
+          program={program}
+          isOpen={openProgram === program.name}
+          onClick={(event) => handleDetailsClick(event, program.name)}
+          closeDetails={closeDetails}
+        />
+      ))}
+      <div className={`${styles.pipelines__row} height-4`}>
+        <div></div>
+        <div style={{ borderLeft: "1px dashed gray" }}>&nbsp;</div>
+        <div style={{ borderLeft: "1px dashed gray" }}>&nbsp;</div>
+        <div className={styles["pipelines__row__progress-area"]}>
+          <div className={styles["pipelines__row__progress-area__markers"]}>
+            <div>&nbsp;</div>
+            <div>&nbsp;</div>
+            <div>&nbsp;</div>
+            <div>&nbsp;</div>
+          </div>
+        </div>
+      </div>
+    </Fragment>
   ));
 
   return (
     <div className={styles.pipelines} data-role="pipeline-display">
-      <div className={styles.pipelines__row + " " + styles["pipelines__row--headers"]}>
+      <div className={`${styles.pipelines__row} ${styles["pipelines__row--headers"]} ${styles["pipelines__row--center"]}`}>
         <div>
           <p><b>Program</b></p>
         </div>
