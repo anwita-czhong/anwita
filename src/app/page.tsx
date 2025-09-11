@@ -287,9 +287,9 @@ export default function Home() {
                 style={{ maxWidth: "55rem" }}
               >
                 <Image
-                  src="/assets/graphics/anwitaTech.png"
-                  width="1620"
-                  height="862"
+                  src="/assets/graphics/technology_and_product.png"
+                  width="1209"
+                  height="884"
                   alt="A diagram showcasing Anwita's technology workflow."
                 />
               </div>
