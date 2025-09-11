@@ -257,21 +257,7 @@ export default function Home() {
                   Our Mission
                 </h1>
                 <p className="place-self-center text-xl max-w-prose mb-6">
-                  Anwita Biosciences, Inc. is a clinical stage biopharmaceutical
-                  company headquartered in the San Francisco Bay Area. We are
-                  advancing our product pipeline of improved cytokines
-                  (Exenokines, Mableukins etc) and tumor-targeting antibody drug
-                  conjugates. Our first product, Exenokine-21 is in Phase 1
-                  studies in China and Taiwan. We are also conducting a Phase 1
-                  study for our anti-PD-1/IL2c fusion protein in Australia.
-                </p>
-                <p className="place-self-center text-xl max-w-prose mb-6">
-                  Our mission is to deliver transformative treatment options to
-                  improve the lives of patients with cancer and autoimmune
-                  diseases. We specialize in the discovery and development of
-                  optimized immunotherapeutics, leveraging our core expertise in
-                  cancer immunotherapy, bioinformatics, and target-based protein
-                  evolution.
+                  At Anwita Biosciences, our mission is to precisely reprogram immunity and related tumor biology, to deliver durable benefit for patients. Building on clinical-stage targeted cytokine AWT020 (PD-1-IL-2 fusion protein), we now advance a diversified pipeline spanning next-generation antibody-drug conjugates (ADCs) with novel mechanisms, multifunction T-cell engagers, and programs aimed at the neuroimmune drivers of cancer cachexia. Our approach is translation-first: validate the biology, engineer for selectivity and safety, and move rapidly into the clinic.
                 </p>
               </div>
               <div className="relative lg:relative w-full h-96">
@@ -309,17 +295,7 @@ export default function Home() {
               </div>
 
               <p className="text-xl my-4 max-w-[75ch] place-self-center">
-                Anwita’s core technology integrates structure-guided AccuKine
-                cytokine evolution and AccuBody discovery of full spectrum
-                nanobodies and antibodies, enabling the development of fully
-                optimized cytokine fusions with superior therapeutic potential,
-                favorable safety profile and great developmentability. Our
-                unique product portfolio includes half-live extended Exenokines,
-                immune cell- or tumor cell-targeting Mableukines, and
-                bi-functional Duoleukins. These new generation of cytokines
-                could serve as powerful novel immune therapies with a wide range
-                of applications in treating patients with cancers and autoimmune
-                diseases.
+                Our science platform brings together antibody discovery, cytokine engineering, a proprietary toxin-linker toolkit, and AI-assisted protein design. By combining structure- and sequence-aware models with experimental data, we precisely tune key biological properties: developability, target affinity and bias, safety profile, and payload-release kinetics, while compressing the design-build-test cycle to advance superior molecules faster. This engine powers a diversified pipeline: (i) targeted cytokine fusion proteins led by PD-1–IL-2 to focus potent signals on tumor-reactive T cells; (ii) next-generation, multi-specific ADCs with novel mechanisms of action; (iii) multifunction T-cell engagers that address antigen heterogeneity and resistance; and (iv) a bispecific GDF15 trap aimed at the neuro-metabolic drivers of cancer cachexia.
               </p>
             </div>
             <div className="flex flex-col w-full place-self-center">
