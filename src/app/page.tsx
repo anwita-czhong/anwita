@@ -288,8 +288,8 @@ export default function Home() {
               >
                 <Image
                   src="/assets/graphics/technology_and_product.png"
-                  width="1209"
-                  height="884"
+                  width="1785"
+                  height="1300"
                   alt="A diagram showcasing Anwita's technology workflow."
                 />
               </div>
