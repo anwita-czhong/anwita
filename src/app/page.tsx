@@ -138,7 +138,7 @@ export default function Home() {
       ],
     },
     {
-      name: "ADCs",
+      name: "Bispecific ADCs",
       programs: [
         {
           name: "JS212",
