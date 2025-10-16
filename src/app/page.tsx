@@ -100,6 +100,10 @@ export default function Home() {
     {
       "id": "8",
       "description": "Jiang H. et al. NK cells limit the synergistic anti-tumor effect of PD-1 inhibition and βγ-biased IL-2, International Journal of Biological Macromolecules. <https://doi.org/10.1016/j.ijbiomac.2025.147437>\n"
+    },
+    {
+      "id": "9",
+      "description": "Jermaine C. et. al. First-in-human study of AWT020, a bifunctional anti-PD-1/IL-2 fusion protein, in patients with advanced cancer. <https://doi.org/10.1200/JCO.2025.43.16_suppl.e14500>"
     }
   ];
   const partners: Partner[] = [
