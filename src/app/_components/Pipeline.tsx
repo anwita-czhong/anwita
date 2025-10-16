@@ -40,34 +40,7 @@ const Program: React.FC<{
   return (
     <div className={styles.pipelines__row} key={program.name}>
       <div className={((program.target && program.indication) ? "" : styles["pipelines__row__name--no-info"]) + " pl-1"} style={{ overflow: (program.description ? "visible" : "hidden") }}>
-        <details className={styles.hoverParent + " my-3"} open={isOpen}>
-          <summary onClick={(event) => onClick(event)}>
-            <b>{he.decode(program.name)}</b>
-            {program.indication && <p>{program.indication}</p>}
-          </summary>
-          {program.description &&
-            <div
-              className={styles.hoverParent__text + ((program.target && program.indication) ? "" : ` ${styles["hoverParent__text--bottom"]}`) + " text-xs lg:text-sm p-2"}
-            >
-              <ReactMarkdown
-                remarkPlugins={[remarkSuperSub]}
-                components={{
-                  sub: "sub",
-                  sup: "sup",
-                }}
-              >
-                {program.description}
-              </ReactMarkdown>
-            </div>
-          }
-          {
-            program.description &&
-            <div
-              aria-hidden
-              className={styles.hoverParent__background}
-              onClick={closeDetails}></div>
-          }
-        </details>
+        <p><span className={styles.program__name}>{he.decode(program.name)}</span></p>
       </div>
 
       <div style={{ borderLeft: "1px dashed gray", display: program.target ? "" : "none" }}>
@@ -137,7 +110,7 @@ const Pipelines: React.FC<{
   const pipelines = programGroups.map((programGroup) => (
     <Fragment key={programGroup.name}>
       <div className={styles.pipelines__row}>
-        <p className="p-2"><b>{programGroup.name}</b></p>
+        <p className="p-2"><i>{programGroup.name}</i></p>
         <div style={{ borderLeft: "1px dashed gray" }}>&nbsp;</div>
         <div style={{ borderLeft: "1px dashed gray" }}>&nbsp;</div>
         <div className={styles["pipelines__row__progress-area"]}>
