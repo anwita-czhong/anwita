@@ -64,9 +64,10 @@ const NewsItem: React.FC<{ item: NewsItem }> = ({ item }) => {
 };
 
 const News: React.FC<{ newsItems: NewsItem[] }> = ({ newsItems }) => {
+  const sortedNewsItems = newsItems.toSorted((a, b) => parseInt(b.id) - parseInt(a.id));
   return (
     <div className="text-xl grid md:grid-cols-2 xl:grid-cols-3 gap-4">
-      {newsItems.map(item => (
+      {sortedNewsItems.map(item => (
         <NewsItem key={item.id} item={item} />
       ))}
     </div>
