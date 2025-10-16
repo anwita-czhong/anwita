@@ -95,7 +95,7 @@ export default function Home() {
     },
     {
       "id": "7",
-      "description": "Ye F. et al. AWT020: a novel fusion protein harnessing PD-1 blockade and selective IL-2 Cis-activation for enhanced anti-tumor immunity and diminished toxicity. Front. Immunol. 16:1537466. doi: 10.3389/fimmu.2025.1537466\n"
+      "description": "Ye F. et al. AWT020: a novel fusion protein harnessing PD-1 blockade and selective IL-2 Cis-activation for enhanced anti-tumor immunity and diminished toxicity. <https://www.frontiersin.org/journals/immunology/articles/10.3389/fimmu.2025.1537466/full>\n"
     },
     {
       "id": "8",
