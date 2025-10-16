@@ -27,9 +27,10 @@ const Publication: React.FC<{ item: Publication }> = ({ item }) => {
 }
 
 const Publications: React.FC<{ publications: Publication[] }> = ({ publications }) => {
+  const sortedPublications = publications.toSorted((a, b) => parseInt(b.id) - parseInt(a.id));
   return (
     <ol className={styles.publications + " text-lg gap-4"}>
-      {publications.map((item) => (
+      {sortedPublications.map((item) => (
         <Publication key={item.id} item={item} />
       ))}
     </ol>
