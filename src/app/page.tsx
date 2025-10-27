@@ -62,6 +62,12 @@ export default function Home() {
       date: "2022-10-05",
       description: "Anwita Biosciences, Inc. Announces Multiple Poster Presentations Showcasing Its Three Cytokine-Based Therapeutics at 37th Society for Immunotherapy of Cancer (SITC) 2022 Annual Meeting",
       link: "/assets/news/pr-8.pdf"
+    },
+    {
+      id: "9",
+      date: "2025-10-21",
+      description: "Anwita Biosciences Receives FDA Orphan Drug Designation for AWT020 in Thymic Epithelial Tumors",
+      link: "/assets/news/pr-9.pdf"
     }
   ];
   const publications: Publication[] = [
