@@ -7,6 +7,8 @@ import People, { Person } from "./_components/People";
 import { Footer } from "./_components/Footer";
 import { Header } from "./Header";
 
+import SciAndTechImg from "@/../public/assets/graphics/technology_and_product.png";
+
 export default function Home() {
   const jobs: Job[] = [
     {
@@ -62,6 +64,12 @@ export default function Home() {
       date: "2022-10-05",
       description: "Anwita Biosciences, Inc. Announces Multiple Poster Presentations Showcasing Its Three Cytokine-Based Therapeutics at 37th Society for Immunotherapy of Cancer (SITC) 2022 Annual Meeting",
       link: "/assets/news/pr-8.pdf"
+    },
+    {
+      id: "9",
+      date: "2025-10-21",
+      description: "Anwita Biosciences Receives FDA Orphan Drug Designation for AWT020 in Thymic Epithelial Tumors",
+      link: "/assets/news/pr-9.pdf"
     }
   ];
   const publications: Publication[] = [
@@ -261,7 +269,7 @@ export default function Home() {
                   Our Mission
                 </h1>
                 <p className="place-self-center text-xl max-w-prose mb-6">
-                  At Anwita Biosciences, our mission is to precisely reprogram immunity and related tumor biology, to deliver durable benefit for patients. Building on clinical-stage targeted cytokine AWT020 (PD-1-IL-2 fusion protein), we now advance a diversified pipeline spanning next-generation antibody-drug conjugates (ADCs) with novel mechanisms, multifunction T-cell engagers, and programs aimed at the neuroimmune drivers of cancer cachexia. Our approach is translation-first: validate the biology, engineer for selectivity and safety, and move rapidly into the clinic.
+                  At Anwita Biosciences, our mission is to precisely reprogram immunity and tumor biology to deliver durable benefits for patients. Building on our clinical-stage targeted cytokine AWT020 (anti-PD-1-IL-2 fusion protein), we are advancing a diversified pipeline that includes next-generation antibody-drug conjugates (ADCs) with novel mechanisms, multi-specific T-cell engagers, and program targeting the drivers of metabolic dysfunction in cancer cachexia. Our translation-first approach combines deep biological understanding with rational engineering for selectivity and safety, enabling the rapid advancement of innovative therapies into the clinic.
                 </p>
               </div>
               <div className="relative lg:relative w-full h-96">
@@ -287,23 +295,28 @@ export default function Home() {
                 Technology
               </h2>
               <div
-                className="w-full place-self-center"
-                style={{ maxWidth: "55rem" }}
+                className="w-full max-w-[55rem] place-self-center"
               >
                 <Image
-                  src="/assets/graphics/technology_and_product.png"
-                  width="1785"
-                  height="1300"
+                  src={SciAndTechImg}
                   alt="A diagram showcasing Anwita's technology workflow."
                 />
               </div>
 
               <p className="text-xl my-4 max-w-[75ch] place-self-center">
-                Our science platform brings together antibody discovery, cytokine engineering, a proprietary toxin-linker toolkit, and AI-assisted protein design. By combining structure- and sequence-aware models with experimental data, we precisely tune key biological properties: developability, target affinity and bias, safety profile, and payload-release kinetics, while compressing the design-build-test cycle to advance superior molecules faster. This engine powers a diversified pipeline: (i) targeted cytokine fusion proteins led by PD-1–IL-2 to focus potent signals on tumor-reactive T cells; (ii) next-generation, multi-specific ADCs with novel mechanisms of action; (iii) multifunction T-cell engagers that address antigen heterogeneity and resistance; and (iv) a bispecific GDF15 trap aimed at the neuro-metabolic drivers of cancer cachexia.
+                Anwita’s technology platform integrates antibody discovery, cytokine engineering, proprietary toxin-linker technologies, and AI-assisted protein design. By combining structure- and sequence-based modeling with experimental data, we precisely tune key molecular features ̶ target affinity, receptor bias, safety, TME-dependent payload release, and developability ̶ while accelerating the path from design concept to clinic.
+                <br /><br />
+                The technology platform supports a diversified pipeline including:
               </p>
+              <ol className="text-xl ml-16 max-w-[75ch] place-self-center list-[lower-roman] list-outside">
+                <li>Targeted cytokine fusion proteins led by clinical asset AWT020 (anti-PD-1–IL-2) designed to direct immune activation locally within the tumor microenvironment.</li>
+                <li>Bispecific ADCs with novel mechanisms of action.</li>
+                <li>Multi-specific T-cell engagers that address antigen heterogeneity and immune resistance.</li>
+                <li>A bispecific GDF15 trap in development for the treatment of cancer cachexia.</li>
+              </ol>
             </div>
             <div className="flex flex-col w-full place-self-center">
-              <h2 className="text-center text-3xl mb-4 font-medium">
+              <h2 className="text-center text-3xl my-4 font-medium">
                 Publications
               </h2>
               <Publications publications={publications} />
