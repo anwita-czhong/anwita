@@ -293,13 +293,12 @@ export default function Home() {
                 Technology
               </h2>
               <div
-                className="w-full place-self-center"
-                style={{ maxWidth: "55rem" }}
+                className="w-full max-w-[55rem] place-self-center"
               >
                 <Image
                   src="/assets/graphics/technology_and_product.png"
-                  width="1785"
-                  height="1300"
+                  width="892"
+                  height="652"
                   alt="A diagram showcasing Anwita's technology workflow."
                 />
               </div>
@@ -317,7 +316,7 @@ export default function Home() {
               </ol>
             </div>
             <div className="flex flex-col w-full place-self-center">
-              <h2 className="text-center text-3xl mb-4 font-medium">
+              <h2 className="text-center text-3xl my-4 font-medium">
                 Publications
               </h2>
               <Publications publications={publications} />
