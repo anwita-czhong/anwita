@@ -7,6 +7,8 @@ import People, { Person } from "./_components/People";
 import { Footer } from "./_components/Footer";
 import { Header } from "./Header";
 
+import SciAndTechImg from "@/../public/assets/graphics/technology_and_product.png";
+
 export default function Home() {
   const jobs: Job[] = [
     {
@@ -296,9 +298,7 @@ export default function Home() {
                 className="w-full max-w-[55rem] place-self-center"
               >
                 <Image
-                  src="/assets/graphics/technology_and_product.png"
-                  width="892"
-                  height="652"
+                  src={SciAndTechImg}
                   alt="A diagram showcasing Anwita's technology workflow."
                 />
               </div>
