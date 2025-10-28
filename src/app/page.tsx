@@ -308,12 +308,12 @@ export default function Home() {
                 <br /><br />
                 The technology platform supports a diversified pipeline including:
               </p>
-              <ol className="text-xl ml-16 max-w-[75ch] place-self-center list-[lower-roman] list-outside">
+              <ul className="text-xl ml-16 max-w-[75ch] place-self-center list-disc list-outside">
                 <li>Targeted cytokine fusion proteins led by clinical asset AWT020 (anti-PD-1–IL-2) designed to direct immune activation locally within the tumor microenvironment.</li>
                 <li>Bispecific ADCs with novel mechanisms of action.</li>
                 <li>Multi-specific T-cell engagers that address antigen heterogeneity and immune resistance.</li>
                 <li>A bispecific GDF15 trap in development for the treatment of cancer cachexia.</li>
-              </ol>
+              </ul>
             </div>
             <div className="flex flex-col w-full place-self-center">
               <h2 className="text-center text-3xl my-4 font-medium">
