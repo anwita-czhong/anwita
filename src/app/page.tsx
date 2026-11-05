@@ -450,7 +450,7 @@ export default function Home() {
             <h1 className="mb-6 text-center text-4xl font-semibold">Contact</h1>
             <div className="flex flex-col content-evenly justify-center gap-8 sm:flex-row">
               {/* <iframe className="w-96 h-48" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1669.5229423824994!2d-122.26270389781278!3d37.51492603078649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f98aa79bc4f55%3A0xd47219d8b27ce42a!2sAnwita%20Biosciences!5e0!3m2!1sen!2sus!4v1632246025164!5m2!1sen!2sus" style={{width: "35rem", height: "30rem", maxWidth: "95%", maxHeight: "35rem", border: 0}} allow="fullscreen" allowFullScreen={true} loading="lazy"></iframe> */}
-              <div className="sm:text-right">
+              <div className="">
                 <p>
                   Company Address: <br />
                   <a
@@ -495,6 +495,28 @@ export default function Home() {
                   Phone:&nbsp;
                   <a href="tel:86-21-58080598" target="_blank" rel="noreferrer">
                     86(21)-58080598
+                  </a>
+                </p>
+              </div>
+              <div>
+                <p>Australia Division:</p>
+                <p>
+                  <a
+                    href="https://maps.app.goo.gl/8YuR3WYcdxXqWMLK6"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    Suite 1, Level 3
+                    <br />
+                    62 Lygon Street
+                    <br />
+                    Carlton South Victoria 3053 Australia
+                  </a>
+                </p>
+                <p>
+                  Phone:&nbsp;
+                  <a href="tel:61-3-9824-5254" target="_blank" rel="noreferrer">
+                    +61 3 9824 5254
                   </a>
                 </p>
               </div>
